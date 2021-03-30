@@ -1,0 +1,13 @@
+#cover {
+  height: 80vh;
+  padding: 10vh;
+}
+
+
+#about,
+#experience,
+#projects,
+#contact {
+  height: 50vh;
+  padding: 10vh;
+}

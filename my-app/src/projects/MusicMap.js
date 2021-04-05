@@ -1,6 +1,6 @@
 import React from "react"
-import MusicMapDesktop from "../images/musicmap-desktop.png"
-import MusicMapMobile from "../images/musicmap-mobile.png"
+import MusicMapDesktop from "../images/projects/musicmap-desktop.png"
+import MusicMapMobile from "../images/projects/musicmap-mobile.png"
 
 export default function MusicMap({handleModal}) {
   return (

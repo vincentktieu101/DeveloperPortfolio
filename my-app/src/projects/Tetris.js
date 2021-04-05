@@ -1,6 +1,6 @@
 import React from "react"
-import TetrisDesktop from "../images/tetris-desktop.png"
-import TetrisDesktop2 from "../images/tetris-desktop2.png"
+import TetrisDesktop from "../images/projects/tetris-desktop.png"
+import TetrisDesktop2 from "../images/projects/tetris-desktop2.png"
 
 export default function Tetris({handleModal}) {
   return (

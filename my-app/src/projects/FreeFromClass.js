@@ -1,8 +1,8 @@
 import React from "react"
-import FreeFromClassDesktop from "../images/freefromclass-desktop.png"
-import FreeFromClassMobile2 from "../images/freefromclass-mobile2.png"
-import FreeFromClassMobile3 from "../images/freefromclass-mobile3.png"
-import FreeFromClassMobile from "../images/freefromclass-mobile.png"
+import FreeFromClassDesktop from "../images/projects/freefromclass-desktop.png"
+import FreeFromClassMobile2 from "../images/projects/freefromclass-mobile2.png"
+import FreeFromClassMobile3 from "../images/projects/freefromclass-mobile3.png"
+import FreeFromClassMobile from "../images/projects/freefromclass-mobile.png"
 
 export default function FreeFromClass({handleModal}) {
   return (

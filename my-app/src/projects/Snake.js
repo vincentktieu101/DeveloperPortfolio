@@ -1,6 +1,6 @@
 import React from "react"
-import SnakeDesktop from "../images/snake-desktop.png"
-import SnakeDesktop2 from "../images/snake-desktop2.png"
+import SnakeDesktop from "../images/projects/snake-desktop.png"
+import SnakeDesktop2 from "../images/projects/snake-desktop2.png"
 
 export default function Snake({handleModal}) {
   return (

@@ -1,6 +1,6 @@
 import React from "react"
-import ReactCRAStarterCodeDesktop from "../images/reactcrastartercode-desktop.png"
-import ReactCRAStarterCodeMobile from "../images/reactcrastartercode-mobile.png"
+import ReactCRAStarterCodeDesktop from "../images/projects/reactcrastartercode-desktop.png"
+import ReactCRAStarterCodeMobile from "../images/projects/reactcrastartercode-mobile.png"
 
 export default function ReactCRAStarterCode({handleModal}) {
   return (

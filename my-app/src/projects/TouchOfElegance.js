@@ -1,7 +1,7 @@
 import React from "react"
-import TouchOfEleganceDesktop from "../images/touchofelegance-desktop.png"
-import TouchOfEleganceMobile from "../images/touchofelegance-mobile.png"
-import TouchOfEleganceMobile2 from "../images/touchofelegance-mobile-2.png"
+import TouchOfEleganceDesktop from "../images/projects/touchofelegance-desktop.png"
+import TouchOfEleganceMobile from "../images/projects/touchofelegance-mobile.png"
+import TouchOfEleganceMobile2 from "../images/projects/touchofelegance-mobile-2.png"
 
 export default function TouchOfElegance({handleModal}) {
   return (

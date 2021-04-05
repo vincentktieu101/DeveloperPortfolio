@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <header className="nav-bar">
       <Container>
-        <div className="links">
+        <div className="nav-items">
           <Link to="/" className="brand link">
             <h4 className="brand-name"><b>VINCENT'S</b></h4>
             <div className="brand-under">Developer Portfolio</div>

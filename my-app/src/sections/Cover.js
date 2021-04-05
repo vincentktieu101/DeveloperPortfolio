@@ -1,12 +1,14 @@
 import React from "react"
-import Container from "@material-ui/core/Container"
+import VincentHeadshot from "../images/vincent-headshot.png"
 
 export default function Cover() {
   return (
     <div id="cover">
-      {/* <Container>
-        <div>This is my Cover Section</div>
-      </Container> */}
+      <div className="cover-background" />
+      <img
+        className="cover-content"
+        src={VincentHeadshot}
+      />
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from "react"
 import MusicMapDesktop from "../images/musicmap-desktop.png"
 import MusicMapMobile from "../images/musicmap-mobile.png"
 
-export default function MusicMap() {
+export default function MusicMap({handleModal}) {
   return (
     <div className="project-item">
       <div className="vl" />
@@ -27,12 +27,21 @@ export default function MusicMap() {
         </a>
         <br />
         <br />
-        <img
-          className="project-img"
-          src={MusicMapDesktop}
-          alt="project-img"
-        />{" "}
-        <img className="project-img" src={MusicMapMobile} alt="project-img" />
+        <button onClick={() => handleModal(MusicMapDesktop)}>
+          <img
+            className="project-img"
+            src={MusicMapDesktop}
+            alt="project-img"
+          />
+        </button>
+        {" "}
+        <button onClick={() => handleModal(MusicMapMobile)}>
+          <img 
+            className="project-img"
+            src={MusicMapMobile}
+            alt="project-img" 
+          />
+        </button>
         <br />
         <br />
         <div className="project-desc">

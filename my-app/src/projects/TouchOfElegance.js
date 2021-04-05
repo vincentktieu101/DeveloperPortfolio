@@ -3,7 +3,7 @@ import TouchOfEleganceDesktop from "../images/touchofelegance-desktop.png"
 import TouchOfEleganceMobile from "../images/touchofelegance-mobile.png"
 import TouchOfEleganceMobile2 from "../images/touchofelegance-mobile-2.png"
 
-export default function TouchOfElegance() {
+export default function TouchOfElegance({handleModal}) {
   return (
     <div className="project-item">
       <div className="vl" />
@@ -28,22 +28,30 @@ export default function TouchOfElegance() {
         </a>
         <br />
         <br />
-        <img
-          className="project-img"
-          src={TouchOfEleganceDesktop}
-          alt="project-img"
-        />{" "}
-        <img
-          className="project-img"
-          src={TouchOfEleganceMobile}
-          alt="project-img"
-        />{" "}
-        <img
-          className="project-img"
-          src={TouchOfEleganceMobile2}
-          alt="project-img"
-          rel="noreferrer"
-        />
+        <button onClick={() => handleModal(TouchOfEleganceDesktop)}>
+          <img
+            className="project-img"
+            src={TouchOfEleganceDesktop}
+            alt="project-img"
+          />
+        </button>
+        {" "}
+        <button onClick={() => handleModal(TouchOfEleganceMobile)}>
+          <img
+            className="project-img"
+            src={TouchOfEleganceMobile}
+            alt="project-img"
+          />
+        </button>
+        {" "}
+        <button onClick={() => handleModal(TouchOfEleganceMobile2)}>
+          <img
+            className="project-img"
+            src={TouchOfEleganceMobile2}
+            alt="project-img"
+            rel="noreferrer"
+          />
+        </button>
         <br />
         <br />
         <div className="project-desc">

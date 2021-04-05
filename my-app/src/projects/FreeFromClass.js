@@ -2,7 +2,7 @@ import React from "react"
 import FreeFromClassDesktop from "../images/freefromclass-desktop.png"
 import FreeFromClassMobile from "../images/freefromclass-mobile.png"
 
-export default function FreeFromClass() {
+export default function FreeFromClass({handleModal}) {
   return (
     <div className="project-item">
       <div className="vl" />
@@ -27,16 +27,21 @@ export default function FreeFromClass() {
         </a>
         <br />
         <br />
-        <img
-          className="project-img"
-          src={FreeFromClassDesktop}
-          alt="project-img"
-        />{" "}
-        <img
-          className="project-img"
-          src={FreeFromClassMobile}
-          alt="project-img"
-        />
+        <button onClick={() => handleModal(FreeFromClassDesktop)}>
+          <img
+            className="project-img"
+            src={FreeFromClassDesktop}
+            alt="project-img"
+          />
+        </button>
+        {" "}
+        <button onClick={() => handleModal(FreeFromClassMobile)}>
+          <img
+            className="project-img"
+            src={FreeFromClassMobile}
+            alt="project-img"
+          />
+        </button>
         <br />
         <br />
         <div className="project-desc">

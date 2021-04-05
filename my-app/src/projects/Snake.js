@@ -1,7 +1,7 @@
 import React from "react"
 import SnakeDesktop from "../images/snake-desktop.png"
 
-export default function Snake() {
+export default function Snake({handleModal}) {
   return (
     <div className="project-item">
       <div className="vl" />
@@ -17,7 +17,9 @@ export default function Snake() {
         </a>
         <br />
         <br />
-        <img className="project-img" src={SnakeDesktop} alt="project-img" />
+        <button onClick={() => handleModal(SnakeDesktop)}>
+          <img className="project-img" src={SnakeDesktop} alt="project-img" />
+        </button>
         <br />
         <br />
         <div className="project-desc">

@@ -1,15 +1,18 @@
 import React, { useState } from "react"
 import Container from "@material-ui/core/Container"
+import Button from "@material-ui/core/Button"
 import Modal from "@material-ui/core/Modal"
 import { makeStyles } from "@material-ui/core/styles"
 import Backdrop from "@material-ui/core/Backdrop"
-import Button from "@material-ui/core/Button"
+
 import ReactCRAStarterCode from "../projects/ReactCRAStarterCode"
 import TouchOfElegance from "../projects/TouchOfElegance"
 import MusicMap from "../projects/MusicMap"
 import FreeFromClass from "../projects/FreeFromClass"
 import Tetris from "../projects/Tetris"
 import Snake from "../projects/Snake"
+
+import VincentHeadShot from "../images/vincent-headshot.png"
 
 const useStyles = makeStyles(theme => ({
   modal: {
@@ -26,36 +29,36 @@ const useStyles = makeStyles(theme => ({
 
 export default function Projects() {
   const classes = useStyles()
-  const [open, setOpen] = useState(false)
+  const [modal, setModal] = useState({
+    open: false,
+    image: VincentHeadShot,
+  })
 
-  const handleOpen = () => {
-    setOpen(true)
+  const handleModal = (image) => {
+    setModal({image: image, open: true})
   }
 
   const handleClose = () => {
-    setOpen(false)
+    setModal({...modal, open: false})
   }
 
   const [projectsViewing, setProjectsViewing] = useState(3)
   const projects = [
-    <ReactCRAStarterCode key={0} />,
-    <TouchOfElegance key={1} />,
-    <MusicMap key={2} />,
-    <FreeFromClass key={3} />,
-    <Tetris key={4} />,
-    <Snake key={5} />,
+    <ReactCRAStarterCode key={0} handleModal={handleModal} />,
+    <TouchOfElegance key={1} handleModal={handleModal} />,
+    <MusicMap key={2} handleModal={handleModal} />,
+    <FreeFromClass key={3} handleModal={handleModal} />,
+    <Tetris key={4} handleModal={handleModal} />,
+    <Snake key={5} handleModal={handleModal} />,
   ]
 
   return (
     <div id="projects">
-      <button type="button" onClick={handleOpen}>
-        react-transition-group
-      </button>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         className={classes.modal}
-        open={open}
+        open={modal.open}
         onClose={handleClose}
         closeAfterTransition
         BackdropComponent={Backdrop}
@@ -64,10 +67,11 @@ export default function Projects() {
         }}
       >
         <div className={classes.paper}>
-          <h2 id="transition-modal-title">Transition modal</h2>
-          <p id="transition-modal-description">
-            react-transition-group animates me.
-          </p>
+          <img 
+            src={modal.image}
+            alt="modal popup"
+            className="project-modal-img"
+          />
         </div>
       </Modal>
       <Container>

@@ -1,7 +1,7 @@
 import React from "react"
 import ReactCRAStarterCodeDesktop from "../images/reactcrastartercode-desktop.png"
 
-export default function ReactCRAStarterCode() {
+export default function ReactCRAStarterCode({handleModal}) {
   return (
     <div className="project-item">
       <div className="vl" />
@@ -26,11 +26,13 @@ export default function ReactCRAStarterCode() {
         </a>
         <br />
         <br />
-        <img
-          className="project-img"
-          src={ReactCRAStarterCodeDesktop}
-          alt="project-img"
-        />
+        <button onClick={() => handleModal(ReactCRAStarterCodeDesktop)}>
+          <img
+            className="project-img"
+            src={ReactCRAStarterCodeDesktop}
+            alt="project-img"
+          />
+        </button>
         <br />
         <br />
         <div className="project-desc">

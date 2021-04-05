@@ -1,7 +1,7 @@
 import React from "react"
 import TetrisDesktop from "../images/tetris-desktop.png"
 
-export default function Tetris() {
+export default function Tetris({handleModal}) {
   return (
     <div className="project-item">
       <div className="vl" />
@@ -17,7 +17,13 @@ export default function Tetris() {
         </a>
         <br />
         <br />
-        <img className="project-img" src={TetrisDesktop} alt="project-img" />
+        <button onClick={() => handleModal(TetrisDesktop)}>
+          <img 
+            className="project-img"
+            src={TetrisDesktop}
+            alt="project-img" 
+          />
+        </button>
         <br />
         <br />
         <div className="project-desc">

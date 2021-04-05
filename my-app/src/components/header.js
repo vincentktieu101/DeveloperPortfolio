@@ -8,14 +8,15 @@ export default function NavBar() {
       <Container>
         <div className="nav-items">
           <Link to="/" className="brand link">
-            <h4 className="brand-name"><b>VINCENT'S</b></h4>
+            <h4 className="brand-name">
+              <b>VINCENT'S</b>
+            </h4>
             <div className="brand-under">Developer Portfolio</div>
           </Link>
           <div>
             <Link to="/about" className="link">
               <b>ABOUT</b>
-            </Link>
-            {" "}
+            </Link>{" "}
             <Link to="/projects" className="link">
               <b>PROJECTS</b>
             </Link>
@@ -23,6 +24,5 @@ export default function NavBar() {
         </div>
       </Container>
     </header>
-
-  );
+  )
 }

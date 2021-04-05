@@ -8,7 +8,7 @@ export default function TouchOfElegance() {
       <div className="project-item">
         <div className="vl" />
         <div>
-          <h2>Touch Of Elegance Website</h2>
+          <h3>Touch Of Elegance Website</h3>
           <a className="link" href="https://touchofelegance.netlify.app/" target="_blank">
             Website
           </a>

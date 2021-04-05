@@ -7,7 +7,7 @@ export default function FreeFromClass() {
       <div className="project-item">
         <div className="vl" />
         <div>
-          <h2>FreeFromClass</h2>
+          <h3>FreeFromClass</h3>
           <a className="link" href="https://cs48-s20-s2-t2-prod.herokuapp.com/" target="_blank">
             Website
           </a>

@@ -6,7 +6,7 @@ export default function ReactCRAStarterCode() {
       <div className="project-item">
         <div className="vl" />
         <div>
-          <h2>ReactCRAStarterCode</h2>
+          <h3>ReactCRAStarterCode</h3>
           <a className="link" href="https://react-cra-starter-code.herokuapp.com/" target="_blank">
             Website
           </a>

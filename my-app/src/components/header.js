@@ -8,7 +8,7 @@ export default function NavBar() {
       <Container>
         <div className="links">
           <Link to="/" className="brand link">
-            <h3 className="brand-name"><b>VINCENT'S</b></h3>
+            <h4 className="brand-name"><b>VINCENT'S</b></h4>
             <div className="brand-under">Developer Portfolio</div>
           </Link>
           <div>

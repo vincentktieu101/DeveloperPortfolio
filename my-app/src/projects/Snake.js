@@ -6,7 +6,7 @@ export default function MusicMap() {
       <div className="project-item">
         <div className="vl" />
         <div>
-          <h2>Snake</h2>
+          <h3>Snake</h3>
           <a className="link" href="https://github.com/vincentktieu101/Snake" target="_blank">
             Github
           </a>

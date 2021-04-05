@@ -6,7 +6,7 @@ export default function Tetris() {
       <div className="project-item">
         <div className="vl" />
         <div>
-          <h2>Tetris</h2>
+          <h3>Tetris</h3>
           <a className="link" href="https://github.com/vincentktieu101/Tetris" target="_blank">
             Github
           </a>

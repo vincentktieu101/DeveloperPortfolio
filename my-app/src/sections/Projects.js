@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <div id="projects">
       <Container>
-        <h1><b>PROJECTS</b></h1>
+        <h1><b>PERSONAL PROJECTS</b></h1>
         <br />
         {projects.slice(0, projectsViewing)}
         {

@@ -1,21 +1,32 @@
 import React from "react"
-import TetrisDesktop from "../images/tetris-desktop.png"
+import FreeFromClassDesktop from "../images/freefromclass-desktop.png"
+import FreeFromClassMobile from "../images/freefromclass-mobile.png"
 
-export default function Tetris() {
+export default function FreeFromClass() {
   return (
       <div className="project-item">
         <div className="vl" />
         <div>
-          <h2>Tetris</h2>
-          <a className="link" href="https://github.com/vincentktieu101/Tetris" target="_blank">
+          <h2>FreeFromClass</h2>
+          <a className="link" href="https://cs48-s20-s2-t2-prod.herokuapp.com/" target="_blank">
+            Website
+          </a>
+          {" "}|{" "}
+          <a className="link" href="https://github.com/ucsb-cs48-s20/project-s2-t2-free" target="_blank">
             Github
           </a>
           <br />
           <br />
           <img 
             className="project-img"
-            src={TetrisDesktop}
+            src={FreeFromClassDesktop}
             alt="project-img" 
+          />
+          {" "}
+          <img 
+            className="project-img"
+            src={FreeFromClassMobile}
+            alt="project-img"
           />
           <br />
           <br />

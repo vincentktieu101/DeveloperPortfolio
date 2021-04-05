@@ -1,20 +1,20 @@
 import React from "react"
-import TetrisDesktop from "../images/tetris-desktop.png"
+import SnakeDesktop from "../images/snake-desktop.png"
 
-export default function Tetris() {
+export default function MusicMap() {
   return (
       <div className="project-item">
         <div className="vl" />
         <div>
-          <h2>Tetris</h2>
-          <a className="link" href="https://github.com/vincentktieu101/Tetris" target="_blank">
+          <h2>Snake</h2>
+          <a className="link" href="https://github.com/vincentktieu101/MusicMap" target="_blank">
             Github
           </a>
           <br />
           <br />
           <img 
             className="project-img"
-            src={TetrisDesktop}
+            src={SnakeDesktop}
             alt="project-img" 
           />
           <br />

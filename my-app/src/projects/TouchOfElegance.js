@@ -3,18 +3,17 @@ import TouchOfEleganceDesktop from "../images/touchofelegance-desktop.png"
 import TouchOfEleganceMobile from "../images/touchofelegance-mobile.png"
 import TouchOfEleganceMobile2 from "../images/touchofelegance-mobile-2.png"
 
-export default function MusicMap() {
+export default function TouchOfElegance() {
   return (
-    <div>
       <div className="project-item">
         <div className="vl" />
         <div>
           <h2>Touch Of Elegance Website</h2>
-          <a className="link" href="https://touchofelegance.netlify.app/">
+          <a className="link" href="https://touchofelegance.netlify.app/" target="_blank">
             Website
           </a>
           {" "}|{" "}
-          <a className="link" href="https://github.com/vincentktieu101/TouchOfElegance">
+          <a className="link" href="https://github.com/vincentktieu101/TouchOfElegance" target="_blank">
             Github
           </a>
           <br />
@@ -43,8 +42,5 @@ export default function MusicMap() {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-    </div>
   )
 }

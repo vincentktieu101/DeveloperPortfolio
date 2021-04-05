@@ -1,18 +1,17 @@
 import React from "react"
 import ReactCRAStarterCodeDesktop from "../images/reactcrastartercode-desktop.png"
 
-export default function MusicMap() {
+export default function ReactCRAStarterCode() {
   return (
-    <div>
       <div className="project-item">
         <div className="vl" />
         <div>
           <h2>ReactCRAStarterCode</h2>
-          <a className="link" href="https://react-cra-starter-code.herokuapp.com/">
+          <a className="link" href="https://react-cra-starter-code.herokuapp.com/" target="_blank">
             Website
           </a>
           {" "}|{" "}
-          <a className="link" href="https://github.com/vincentktieu101/ReactCRAStarterCode">
+          <a className="link" href="https://github.com/vincentktieu101/ReactCRAStarterCode" target="_blank">
             Github
           </a>
           <br />
@@ -29,8 +28,5 @@ export default function MusicMap() {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-    </div>
   )
 }

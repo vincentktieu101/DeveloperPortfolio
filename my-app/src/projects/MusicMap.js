@@ -4,16 +4,15 @@ import MusicMapMobile from "../images/musicmap-mobile.png"
 
 export default function MusicMap() {
   return (
-    <div>
       <div className="project-item">
         <div className="vl" />
         <div>
           <h2>MusicMap</h2>
-          <a className="link" href="https://vincentktieu101.github.io/MusicMap/">
+          <a className="link" href="https://vincentktieu101.github.io/MusicMap/" target="_blank">
             Website
           </a>
           {" "}|{" "}
-          <a className="link" href="https://github.com/vincentktieu101/MusicMap">
+          <a className="link" href="https://github.com/vincentktieu101/MusicMap" target="_blank">
             Github
           </a>
           <br />
@@ -36,8 +35,5 @@ export default function MusicMap() {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-    </div>
   )
 }

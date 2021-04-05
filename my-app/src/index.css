@@ -51,6 +51,7 @@ h4 {
 
 .nav-bar {
   position: fixed;
+  z-index: 1;
   width: 100%;
   background-color: rgb(236, 236, 236, 0.85);
   padding: 10px 0;
@@ -80,9 +81,10 @@ h4 {
 }
 
 #cover {
-  height: 90vh;
+  height: 80vh;
   padding: 10vh;
-  background-image: url("./images/brick.jpeg");
+  background-image: url("./images/lightbulbs.jpeg");
+  opacity: 0.8;
   background-position: bottom;
   background-size: cover;
 }
@@ -104,6 +106,7 @@ h4 {
   flex-direction: row;
   flex-wrap: nowrap;
   min-height: 40vh;
+  margin-bottom: 30px;
 }
 
 .vl {

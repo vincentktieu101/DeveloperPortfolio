@@ -4,9 +4,9 @@ import Container from "@material-ui/core/Container"
 export default function Cover() {
   return (
     <div id="cover">
-      <Container>
+      {/* <Container>
         <div>This is my Cover Section</div>
-      </Container>
+      </Container> */}
     </div>
   )
 }

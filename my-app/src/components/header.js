@@ -1,42 +1,28 @@
-import * as React from "react"
-import PropTypes from "prop-types"
+import React from "react"
 import { Link } from "gatsby"
+import Container from "@material-ui/core/Container"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+export default function NavBar() {
+  return (
+    <header className="nav-bar">
+      <Container>
+        <div className="links">
+          <Link to="/" className="brand link">
+            <h3 className="brand-name"><b>VINCENT'S</b></h3>
+            <div className="brand-under">Developer Portfolio</div>
+          </Link>
+          <div>
+            <Link to="/about" className="link">
+              <b>ABOUT</b>
+            </Link>
+            {" "}
+            <Link to="/projects" className="link">
+              <b>PROJECTS</b>
+            </Link>
+          </div>
+        </div>
+      </Container>
+    </header>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  );
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

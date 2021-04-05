@@ -1,5 +1,7 @@
 import React from "react"
 import FreeFromClassDesktop from "../images/freefromclass-desktop.png"
+import FreeFromClassMobile2 from "../images/freefromclass-mobile2.png"
+import FreeFromClassMobile3 from "../images/freefromclass-mobile3.png"
 import FreeFromClassMobile from "../images/freefromclass-mobile.png"
 
 export default function FreeFromClass({handleModal}) {
@@ -31,6 +33,22 @@ export default function FreeFromClass({handleModal}) {
           <img
             className="project-img"
             src={FreeFromClassDesktop}
+            alt="project-img"
+          />
+        </button>
+        {" "}
+        <button onClick={() => handleModal(FreeFromClassMobile3)}>
+          <img
+            className="project-img"
+            src={FreeFromClassMobile3}
+            alt="project-img"
+          />
+        </button>
+        {" "}
+        <button onClick={() => handleModal(FreeFromClassMobile2)}>
+          <img
+            className="project-img"
+            src={FreeFromClassMobile2}
             alt="project-img"
           />
         </button>

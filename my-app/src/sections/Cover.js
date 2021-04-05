@@ -9,8 +9,8 @@ export default function Cover() {
       <div className="cover-text">
         <h2>I'm VINCENT TIEU,</h2>
         <div className="cover-animated-title">
-          <h3 className="line">Software Developer</h3>
-          <h3 className="line">Full-Stack Web Developer</h3>
+          <h4 className="line">Software Developer</h4>
+          <h4 className="line">Full-Stack Web Developer</h4>
         </div>
       </div>
     </div>

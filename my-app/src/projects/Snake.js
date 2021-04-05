@@ -1,5 +1,6 @@
 import React from "react"
 import SnakeDesktop from "../images/snake-desktop.png"
+import SnakeDesktop2 from "../images/snake-desktop2.png"
 
 export default function Snake({handleModal}) {
   return (
@@ -19,6 +20,10 @@ export default function Snake({handleModal}) {
         <br />
         <button onClick={() => handleModal(SnakeDesktop)}>
           <img className="project-img" src={SnakeDesktop} alt="project-img" />
+        </button>
+        {" "}
+        <button onClick={() => handleModal(SnakeDesktop2)}>
+          <img className="project-img" src={SnakeDesktop2} alt="project-img" />
         </button>
         <br />
         <br />

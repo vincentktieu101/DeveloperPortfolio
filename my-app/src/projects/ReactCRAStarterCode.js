@@ -1,5 +1,6 @@
 import React from "react"
 import ReactCRAStarterCodeDesktop from "../images/reactcrastartercode-desktop.png"
+import ReactCRAStarterCodeMobile from "../images/reactcrastartercode-mobile.png"
 
 export default function ReactCRAStarterCode({handleModal}) {
   return (
@@ -30,6 +31,14 @@ export default function ReactCRAStarterCode({handleModal}) {
           <img
             className="project-img"
             src={ReactCRAStarterCodeDesktop}
+            alt="project-img"
+          />
+        </button>
+        {" "}
+        <button onClick={() => handleModal(ReactCRAStarterCodeMobile)}>
+          <img
+            className="project-img"
+            src={ReactCRAStarterCodeMobile}
             alt="project-img"
           />
         </button>

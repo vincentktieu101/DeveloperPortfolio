@@ -55,7 +55,6 @@ export default function TouchOfElegance({ handleModal }) {
         <br />
         <div className="project-desc">
           <div>March, 2021 - Present</div>
-          <br />
           <div>
             This was my first time doing freelance work and I wrote the website
             from scratch in React GatsbyJS. The previous website that my aunt

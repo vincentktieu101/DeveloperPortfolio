@@ -45,10 +45,9 @@ export default function ReactCRAStarterCode({ handleModal }) {
         <br />
         <br />
         <div className="project-desc">
-          <div>April, 2021</div>
-          <br />
+          <div>April, 2021 - Present</div>
           <div>
-            In my Spring of my junior year at UCSB, I became an Undergraduate
+            In Spring of my junior year at UCSB, I became an Undergraduate
             Learning Assistant (ULA) for CS148 (Computer Science Project), in
             which students learn how to develop an application. Since most
             students wanted to create a React application, I wrote some starter

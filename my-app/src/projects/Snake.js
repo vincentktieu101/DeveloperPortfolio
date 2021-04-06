@@ -38,7 +38,6 @@ export default function Snake({ handleModal }) {
         <br />
         <div className="project-desc">
           <div>December 2019</div>
-          <br />
           <div>
             I developed this project while I was still an Electrical Engineering
             major. This project has a special place in my heart because it
@@ -47,8 +46,9 @@ export default function Snake({ handleModal }) {
             to be an easy. Every now and again when I need inspiration, I boot
             up the game and enjoy this project I created.
           </div>
+          <br />
           <div>
-            I also wrote a mini programming guide that you can checkout
+            I wrote this app in Python and Pygame. I also wrote a mini programming guide that you can checkout
             <a
               href="https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit?usp=sharing"
               className="link"
@@ -58,7 +58,7 @@ export default function Snake({ handleModal }) {
               {" "}
               here
             </a>
-            .
+            . I even designed an 8-bit music theme for the game!
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function About() {
             <hr />
             <br />
             <div>
-              Hi! I'm Vincent Tieu, a <b>software engineer</b> and{" "}
+              Hi! I'm <b>Vincent Tieu</b>, a <b>software engineer</b> and{" "}
               <b>full-stack web developer</b>, based in <b>Los Angeles</b>. I am
               passionate about programming, whether that means starting a web
               project from stratch (like this online portfolio!) or developing

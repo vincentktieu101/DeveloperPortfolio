@@ -80,7 +80,7 @@ export default function Projects() {
         <h1>PERSONAL PROJECTS</h1>
         <br />
         {projects.slice(0, projectsViewing)}
-        {projects.length >= projectsViewing && (
+        {projects.length > projectsViewing && (
           <Button
             variant="contained"
             color="primary"

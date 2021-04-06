@@ -29,10 +29,9 @@ export default function Tetris({ handleModal }) {
         <br />
         <div className="project-desc">
           <div>January 2020</div>
-          <br />
           <div>
-            Wanting to learn algorithms and OOP, I created a Tetris clone from
-            scatch using Pygame. I designed the game board, wrote the game rules
+            Wanting to learn more about algorithms and OOP, I created a Tetris clone from
+            scatch using Python and Pygame. I designed the game board, wrote the game rules
             which included algorithms for row clearing, shape swapping, and
             shape rotaton. There is also difficulty settings that users can
             tweak.

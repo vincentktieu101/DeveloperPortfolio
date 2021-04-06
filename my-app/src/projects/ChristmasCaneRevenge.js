@@ -6,7 +6,7 @@ export default function ChristmasCaneRevenge({handleModal}) {
     <div className="project-item">
       <div className="vl" />
       <div>
-        <h3>Snake</h3>
+        <h3>Christmas Cane Revenge</h3>
         Links:{" "}
         <a
           className="link"

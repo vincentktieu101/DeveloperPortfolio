@@ -8,7 +8,7 @@ export default function Snake({handleModal}) {
       <div className="vl" />
       <div>
         <h3>Snake</h3>
-        Links{" "}
+        Links:{" "}
         <a
           className="link"
           href="https://github.com/vincentktieu101/Snake"
@@ -29,7 +29,7 @@ export default function Snake({handleModal}) {
         <br />
         <br />
         <div className="project-desc">
-          https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit?usp=sharing
+          {/* https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit?usp=sharing */}
         </div>
       </div>
     </div>

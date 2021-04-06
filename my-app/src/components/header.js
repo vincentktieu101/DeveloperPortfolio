@@ -6,38 +6,46 @@ export default function NavBar() {
   const [navShrink, setNavShrink] = useState(false)
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (window.pageYOffset < "10") {
         setNavShrink(true)
       } else {
         setNavShrink(false)
       }
-    });
-  }, []);
+    })
+  }, [])
 
   return (
     <header className="nav-bar">
       <Container>
         <div className="nav-items">
           <Link to="/" className="brand nav-link">
-            {
-              navShrink ? (
-                <React.Fragment>
-                  <h4 className="brand-name">VINCENT'S</h4>
-                  <div className="brand-under">Developer Portfolio</div>
-                </React.Fragment>
-              ) : (
-                <React.Fragment>
-                  <h5 style={{color: "black"}}>VINCENT'S DEVELOPER PORTFOLIO</h5>
-                </React.Fragment>
-              )
-            }
+            {navShrink ? (
+              <React.Fragment>
+                <h4 className="brand-name">VINCENT'S</h4>
+                <div className="brand-under">Developer Portfolio</div>
+              </React.Fragment>
+            ) : (
+              <React.Fragment>
+                <h5 style={{ color: "black" }}>
+                  VINCENT'S DEVELOPER PORTFOLIO
+                </h5>
+              </React.Fragment>
+            )}
           </Link>
           <div>
-            <Link to="/#about" className="nav-link" style={{ margin: "0 10px" }}>
+            <Link
+              to="/#about"
+              className="nav-link"
+              style={{ margin: "0 10px" }}
+            >
               <b>ABOUT</b>
             </Link>
-            <Link to="/#projects" className="nav-link" style={{ margin: "0 10px" }}>
+            <Link
+              to="/#projects"
+              className="nav-link"
+              style={{ margin: "0 10px" }}
+            >
               <b>PROJECTS</b>
             </Link>
           </div>

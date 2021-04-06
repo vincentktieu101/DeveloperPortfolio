@@ -33,7 +33,22 @@ const Layout = ({ children }) => {
             <div>
               © {new Date().getFullYear()}, Built with
               {` `}
-              <a href="https://www.gatsbyjs.com">Gatsby</a>
+              <a 
+                href="https://www.gatsbyjs.com"
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+              >Gatsby</a>. Check out the
+              source code{" "}
+              <a 
+                href="https://github.com/vincentktieu101/DeveloperPortfolio"
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                here
+              </a>
+              .
               <br />
               <br />
               <br />

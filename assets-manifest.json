@@ -1,0 +1,22 @@
+{
+  "main.js": "render-page.js",
+  "render-page.js.map": "render-page.js.map",
+  "static/christmascanerevenge-desktop.png": "static/christmascanerevenge-desktop-2518b1ae173c350547c0e65314f587b9.png",
+  "static/freefromclass-desktop.png": "static/freefromclass-desktop-21614d632e4c0ac2efd0884f05268604.png",
+  "static/freefromclass-mobile.png": "static/freefromclass-mobile-461bd0cf448f952500de906b8d83b71e.png",
+  "static/freefromclass-mobile2.png": "static/freefromclass-mobile2-0609fa0e4fc234319690d8d5892cc9e0.png",
+  "static/freefromclass-mobile3.png": "static/freefromclass-mobile3-c0280b5f92cd07d33ee761c4824094cf.png",
+  "static/musicmap-desktop.png": "static/musicmap-desktop-cbcb3f845f1880d2b93b329d1f56f639.png",
+  "static/musicmap-mobile.png": "static/musicmap-mobile-44bbf1eb18266ad1d4e96380f865a7c3.png",
+  "static/reactcrastartercode-desktop.png": "static/reactcrastartercode-desktop-5acb56af5343bc7ddc4d14c89792b36c.png",
+  "static/reactcrastartercode-mobile.png": "static/reactcrastartercode-mobile-9d0b7eb1f994cdb6a6034830c3f64414.png",
+  "static/snake-desktop.png": "static/snake-desktop-55d62fe38aadee0920cd8d2387b817cc.png",
+  "static/snake-desktop2.png": "static/snake-desktop2-2521167edcd692a797eb7af5fc5ff12a.png",
+  "static/tetris-desktop.png": "static/tetris-desktop-df287e3abc0cbb8ba8a1d4425f5c7612.png",
+  "static/tetris-desktop2.png": "static/tetris-desktop2-c802185523b01414843a4c500b87a281.png",
+  "static/touchofelegance-desktop.png": "static/touchofelegance-desktop-aae618c619b5030c4d59af97277d2576.png",
+  "static/touchofelegance-mobile-2.png": "static/touchofelegance-mobile-2-f7da5e7aba13973480e93400ebe4cab7.png",
+  "static/touchofelegance-mobile.png": "static/touchofelegance-mobile-c0f48d25f14263fa07f873718c6ea841.png",
+  "static/ucsb-birdseyeview.jpg": "static/ucsb-birdseyeview-fe373b995bd8342b4f27fc424dfc4665.jpg",
+  "static/vincent-headshot.png": "static/vincent-headshot-da114125a3086ac32b418d68e4100075.png"
+}

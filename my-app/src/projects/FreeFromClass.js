@@ -10,6 +10,7 @@ export default function FreeFromClass({handleModal}) {
       <div className="vl" />
       <div>
         <h3>FreeFromClass</h3>
+        Links:{" "}
         <a
           className="link"
           href="https://cs48-s20-s2-t2-prod.herokuapp.com/"

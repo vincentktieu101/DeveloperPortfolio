@@ -1,47 +1,25 @@
 import React from "react"
-import MusicMapDesktop from "../images/projects/musicmap-desktop.png"
-import MusicMapMobile from "../images/projects/musicmap-mobile.png"
+import ChristmasCaneRevengeDesktop from "../images/projects/christmascanerevenge-desktop.png"
 
-export default function MusicMap({handleModal}) {
+export default function ChristmasCaneRevenge({handleModal}) {
   return (
     <div className="project-item">
       <div className="vl" />
       <div>
-        <h3>MusicMap</h3>
+        <h3>Snake</h3>
         Links:{" "}
         <a
           className="link"
-          href="https://vincentktieu101.github.io/MusicMap/"
+          href="https://scratch.mit.edu/projects/195203068/"
           target="_blank"
           rel="noreferrer"
         >
-          Website
-        </a>{" "}
-        |{" "}
-        <a
-          className="link"
-          href="https://github.com/vincentktieu101/MusicMap"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Github
+          Scratch URL
         </a>
         <br />
         <br />
-        <button onClick={() => handleModal(MusicMapDesktop)}>
-          <img
-            className="project-img"
-            src={MusicMapDesktop}
-            alt="project-img"
-          />
-        </button>
-        {" "}
-        <button onClick={() => handleModal(MusicMapMobile)}>
-          <img 
-            className="project-img"
-            src={MusicMapMobile}
-            alt="project-img" 
-          />
+        <button onClick={() => handleModal(ChristmasCaneRevengeDesktop)}>
+          <img className="project-img" src={ChristmasCaneRevengeDesktop} alt="project-img" />
         </button>
         <br />
         <br />

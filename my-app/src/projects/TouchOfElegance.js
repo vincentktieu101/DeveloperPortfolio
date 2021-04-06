@@ -9,6 +9,7 @@ export default function TouchOfElegance({handleModal}) {
       <div className="vl" />
       <div>
         <h3>Touch Of Elegance Website</h3>
+        Links:{" "}
         <a
           className="link"
           href="https://touchofelegance.netlify.app/"

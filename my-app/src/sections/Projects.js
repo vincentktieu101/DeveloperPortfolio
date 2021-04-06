@@ -11,6 +11,7 @@ import MusicMap from "../projects/MusicMap"
 import FreeFromClass from "../projects/FreeFromClass"
 import Tetris from "../projects/Tetris"
 import Snake from "../projects/Snake"
+import ChristmasCaneRevenge from "../projects/ChristmasCaneRevenge"
 
 import VincentHeadShot from "../images/vincent-headshot.png"
 
@@ -50,6 +51,7 @@ export default function Projects() {
     <FreeFromClass key={3} handleModal={handleModal} />,
     <Tetris key={4} handleModal={handleModal} />,
     <Snake key={5} handleModal={handleModal} />,
+    <ChristmasCaneRevenge key={6} handleModal={handleModal} />,
   ]
 
   return (

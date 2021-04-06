@@ -8,6 +8,7 @@ export default function Snake({handleModal}) {
       <div className="vl" />
       <div>
         <h3>Snake</h3>
+        Links{" "}
         <a
           className="link"
           href="https://github.com/vincentktieu101/Snake"
@@ -28,13 +29,7 @@ export default function Snake({handleModal}) {
         <br />
         <br />
         <div className="project-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit?usp=sharing
         </div>
       </div>
     </div>

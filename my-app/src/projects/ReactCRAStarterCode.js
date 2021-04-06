@@ -8,6 +8,7 @@ export default function ReactCRAStarterCode({handleModal}) {
       <div className="vl" />
       <div>
         <h3>ReactCRAStarterCode</h3>
+        Links:{" "}
         <a
           className="link"
           href="https://react-cra-starter-code.herokuapp.com/"

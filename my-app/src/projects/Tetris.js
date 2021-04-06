@@ -8,6 +8,7 @@ export default function Tetris({handleModal}) {
       <div className="vl" />
       <div>
         <h3>Tetris</h3>
+        Links:{" "}
         <a
           className="link"
           href="https://github.com/vincentktieu101/Tetris"

@@ -14,10 +14,10 @@ export default function NavBar() {
             <div className="brand-under">Developer Portfolio</div>
           </Link>
           <div>
-            <Link to="/about" className="link">
+            <Link to="/#about" className="link" style={{margin: "0 10px"}}>
               <b>ABOUT</b>
-            </Link>{" "}
-            <Link to="/projects" className="link">
+            </Link>
+            <Link to="/#projects" className="link" style={{margin: "0 10px"}}>
               <b>PROJECTS</b>
             </Link>
           </div>

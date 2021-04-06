@@ -46,13 +46,16 @@ export default function MusicMap({handleModal}) {
         <br />
         <br />
         <div className="project-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <div>March 2021</div>
+          <div>
+            MusicMap is my solution for organizing 5000+ music genres and
+            500,000+ songs into a user friendly interface.
+            The app features an easy-to-navigate map of genres that users can
+            tap to plays an audio sample in that genre. Other things 
+            that users can do in the app is refresh the map, search the genre
+            in the app, search for a genre on Spotify, go on genre shuffle mode,
+            and skip to the next audio sample.
+          </div>
         </div>
       </div>
     </div>

@@ -56,13 +56,15 @@ export default function TouchOfElegance({handleModal}) {
         <br />
         <br />
         <div className="project-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <div>March, 2021 - Present</div>
+          <div>
+            This was my first time doing freelance work and I wrote
+            the website from scratch in React GatsbyJS. The previous
+            website that my aunt and uncle had for their shop was
+            really outdated and I wanted to help them build a new one.
+            The website includes some photos, a contact form (using
+            EmailJS), and a menu that can be reached through a QR code.
+          </div>
         </div>
       </div>
     </div>

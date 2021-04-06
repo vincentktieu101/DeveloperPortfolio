@@ -2,7 +2,7 @@ import React from "react"
 import TetrisDesktop from "../images/projects/tetris-desktop.png"
 import TetrisDesktop2 from "../images/projects/tetris-desktop2.png"
 
-export default function Tetris({handleModal}) {
+export default function Tetris({ handleModal }) {
   return (
     <div className="project-item">
       <div className="vl" />
@@ -20,30 +20,23 @@ export default function Tetris({handleModal}) {
         <br />
         <br />
         <button onClick={() => handleModal(TetrisDesktop)}>
-          <img 
-            className="project-img"
-            src={TetrisDesktop}
-            alt="project-img" 
-          />
-        </button>
-        {" "}
+          <img className="project-img" src={TetrisDesktop} alt="project-img" />
+        </button>{" "}
         <button onClick={() => handleModal(TetrisDesktop2)}>
-          <img 
-            className="project-img"
-            src={TetrisDesktop2}
-            alt="project-img" 
-          />
+          <img className="project-img" src={TetrisDesktop2} alt="project-img" />
         </button>
         <br />
         <br />
         <div className="project-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <div>January 2020</div>
+          <br />
+          <div>
+            Wanting to learn algorithms and OOP, I created a Tetris clone from
+            scatch using Pygame. I designed the game board, wrote the game rules
+            which included algorithms for row clearing, shape swapping, and
+            shape rotaton. There is also difficulty settings that users can
+            tweak.
+          </div>
         </div>
       </div>
     </div>

@@ -35,12 +35,12 @@ export default function Projects() {
     image: VincentHeadShot,
   })
 
-  const handleModal = (image) => {
-    setModal({image: image, open: true})
+  const handleModal = image => {
+    setModal({ image: image, open: true })
   }
 
   const handleClose = () => {
-    setModal({...modal, open: false})
+    setModal({ ...modal, open: false })
   }
 
   const [projectsViewing, setProjectsViewing] = useState(3)
@@ -69,7 +69,7 @@ export default function Projects() {
         }}
       >
         <div className={classes.paper}>
-          <img 
+          <img
             src={modal.image}
             alt="modal popup"
             className="project-modal-img"

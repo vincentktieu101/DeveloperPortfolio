@@ -1,7 +1,7 @@
 import React from "react"
 import ChristmasCaneRevengeDesktop from "../images/projects/christmascanerevenge-desktop.png"
 
-export default function ChristmasCaneRevenge({handleModal}) {
+export default function ChristmasCaneRevenge({ handleModal }) {
   return (
     <div className="project-item">
       <div className="vl" />
@@ -19,18 +19,20 @@ export default function ChristmasCaneRevenge({handleModal}) {
         <br />
         <br />
         <button onClick={() => handleModal(ChristmasCaneRevengeDesktop)}>
-          <img className="project-img" src={ChristmasCaneRevengeDesktop} alt="project-img" />
+          <img
+            className="project-img"
+            src={ChristmasCaneRevengeDesktop}
+            alt="project-img"
+          />
         </button>
         <br />
         <br />
         <div className="project-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <div>December 2017</div>
+          <div>
+            This is a little bonus project for scrolling to the end :). I wrote
+            this bad boy before taking a real programming class!
+          </div>
         </div>
       </div>
     </div>

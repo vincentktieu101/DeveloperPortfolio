@@ -2,7 +2,7 @@ import React from "react"
 import ReactCRAStarterCodeDesktop from "../images/projects/reactcrastartercode-desktop.png"
 import ReactCRAStarterCodeMobile from "../images/projects/reactcrastartercode-mobile.png"
 
-export default function ReactCRAStarterCode({handleModal}) {
+export default function ReactCRAStarterCode({ handleModal }) {
   return (
     <div className="project-item">
       <div className="vl" />
@@ -34,8 +34,7 @@ export default function ReactCRAStarterCode({handleModal}) {
             src={ReactCRAStarterCodeDesktop}
             alt="project-img"
           />
-        </button>
-        {" "}
+        </button>{" "}
         <button onClick={() => handleModal(ReactCRAStarterCodeMobile)}>
           <img
             className="project-img"
@@ -47,12 +46,15 @@ export default function ReactCRAStarterCode({handleModal}) {
         <br />
         <div className="project-desc">
           <div>April, 2021</div>
+          <br />
           <div>
-            In my Spring of my junior year at UCSB, I became an Undergraduate Learning Assistant (ULA) 
-            for CS148 (Computer Science Project), in which students learn how to develop an application.
-            Since most students wanted to create a React application, I wrote some starter code in 
-            CRA (CreateReactApp) React along with Google OAuth. I also wrote a mini guide on how to
-            use React/Google OAuth on the Github repo.
+            In my Spring of my junior year at UCSB, I became an Undergraduate
+            Learning Assistant (ULA) for CS148 (Computer Science Project), in
+            which students learn how to develop an application. Since most
+            students wanted to create a React application, I wrote some starter
+            code in CRA (CreateReactApp) React along with Google OAuth. I also
+            wrote a mini guide on how to use React/Google OAuth on the Github
+            repo.
           </div>
         </div>
       </div>

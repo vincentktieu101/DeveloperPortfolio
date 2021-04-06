@@ -2,7 +2,7 @@ import React from "react"
 import MusicMapDesktop from "../images/projects/musicmap-desktop.png"
 import MusicMapMobile from "../images/projects/musicmap-mobile.png"
 
-export default function MusicMap({handleModal}) {
+export default function MusicMap({ handleModal }) {
   return (
     <div className="project-item">
       <div className="vl" />
@@ -34,14 +34,9 @@ export default function MusicMap({handleModal}) {
             src={MusicMapDesktop}
             alt="project-img"
           />
-        </button>
-        {" "}
+        </button>{" "}
         <button onClick={() => handleModal(MusicMapMobile)}>
-          <img 
-            className="project-img"
-            src={MusicMapMobile}
-            alt="project-img" 
-          />
+          <img className="project-img" src={MusicMapMobile} alt="project-img" />
         </button>
         <br />
         <br />
@@ -49,12 +44,12 @@ export default function MusicMap({handleModal}) {
           <div>March 2021</div>
           <div>
             MusicMap is my solution for organizing 5000+ music genres and
-            500,000+ songs into a user friendly interface.
-            The app features an easy-to-navigate map of genres that users can
-            tap to plays an audio sample in that genre. Other things 
-            that users can do in the app is refresh the map, search the genre
-            in the app, search for a genre on Spotify, go on genre shuffle mode,
-            and skip to the next audio sample.
+            500,000+ songs into a user friendly interface. The app features an
+            easy-to-navigate map of genres that users can tap to plays an audio
+            sample in that genre. Other things that users can do in the app is
+            refresh the map, search the genre in the app, search for a genre on
+            Spotify, go on genre shuffle mode, and skip to the next audio
+            sample. MusicMap is developed for both desktop and mobile!
           </div>
         </div>
       </div>

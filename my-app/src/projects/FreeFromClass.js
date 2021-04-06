@@ -4,7 +4,7 @@ import FreeFromClassMobile2 from "../images/projects/freefromclass-mobile2.png"
 import FreeFromClassMobile3 from "../images/projects/freefromclass-mobile3.png"
 import FreeFromClassMobile from "../images/projects/freefromclass-mobile.png"
 
-export default function FreeFromClass({handleModal}) {
+export default function FreeFromClass({ handleModal }) {
   return (
     <div className="project-item">
       <div className="vl" />
@@ -36,24 +36,21 @@ export default function FreeFromClass({handleModal}) {
             src={FreeFromClassDesktop}
             alt="project-img"
           />
-        </button>
-        {" "}
+        </button>{" "}
         <button onClick={() => handleModal(FreeFromClassMobile3)}>
           <img
             className="project-img"
             src={FreeFromClassMobile3}
             alt="project-img"
           />
-        </button>
-        {" "}
+        </button>{" "}
         <button onClick={() => handleModal(FreeFromClassMobile2)}>
           <img
             className="project-img"
             src={FreeFromClassMobile2}
             alt="project-img"
           />
-        </button>
-        {" "}
+        </button>{" "}
         <button onClick={() => handleModal(FreeFromClassMobile)}>
           <img
             className="project-img"
@@ -64,13 +61,16 @@ export default function FreeFromClass({handleModal}) {
         <br />
         <br />
         <div className="project-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <div>March 2020 - May 2020</div>
+          <br />
+          <div>
+            FreeFromClass was a class project for CS48. This was my introduction
+            into web development where I worked in a team of 4 to develop an app
+            from scratch to deployment. Through this app, I learned everything
+            from React NextJS, Auth0, MongoDB, Cypress testing, and Heroku. I
+            also learned lots of frontend skills, adjusting this app for mobile
+            as well as desktop.
+          </div>
         </div>
       </div>
     </div>

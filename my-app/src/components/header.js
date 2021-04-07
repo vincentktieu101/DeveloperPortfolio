@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import Container from "@material-ui/core/Container"
+import IconButton from "@material-ui/core/IconButton"
+import MenuIcon from "@material-ui/icons/Menu"
 
 export default function NavBar() {
   const [navShrink, setNavShrink] = useState(true)
@@ -33,7 +35,7 @@ export default function NavBar() {
               </React.Fragment>
             )}
           </Link>
-          <div>
+          <div className="nav-no-collaspe">
             <Link
               to="/#about"
               className="nav-link"
@@ -48,6 +50,11 @@ export default function NavBar() {
             >
               <b>PROJECTS</b>
             </Link>
+          </div>
+          <div className="nav-on-collaspe">
+            <IconButton>
+              <MenuIcon fontSize="large" />
+            </IconButton>
           </div>
         </div>
       </Container>

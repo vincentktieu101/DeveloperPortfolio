@@ -93,6 +93,18 @@ button {
   color: #007bff;
 }
 
+@media (max-width: 700px) {
+  .nav-no-collaspe {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .nav-on-collaspe {
+    display: none;
+  }
+}
+
 .brand {
   font-family: "Oswald";
   line-height: 1.2;

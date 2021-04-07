@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Container from "@material-ui/core/Container"
 
 export default function NavBar() {
-  const [navShrink, setNavShrink] = useState(false)
+  const [navShrink, setNavShrink] = useState(true)
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

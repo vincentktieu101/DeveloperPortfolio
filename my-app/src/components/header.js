@@ -10,7 +10,7 @@ import ListItem from "@material-ui/core/ListItem"
 import ListItemIcon from "@material-ui/core/ListItemIcon"
 import HomeIcon from "@material-ui/icons/Home"
 import MenuBookIcon from "@material-ui/icons/MenuBook"
-import CodeIcon from '@material-ui/icons/Code';
+import CodeIcon from "@material-ui/icons/Code"
 
 export default function NavBar() {
   const [navShrink, setNavShrink] = useState(true)
@@ -29,7 +29,6 @@ export default function NavBar() {
   const list = (
     <div
       style={{ width: "250px" }}
-      role="presentation"
       onClick={() => setState(false)}
       onKeyDown={() => setState(false)}
     >
@@ -81,12 +80,8 @@ export default function NavBar() {
               </React.Fragment>
             )}
           </Link>
-          <div className="nav-no-collaspe">
-            <Link
-              to="/"
-              className="nav-link"
-              style={{ margin: "0 10px" }}
-            >
+          <div className="nav-no-collapse">
+            <Link to="/" className="nav-link" style={{ margin: "0 10px" }}>
               <b>HOME</b>
             </Link>
             <Link
@@ -104,7 +99,7 @@ export default function NavBar() {
               <b>PROJECTS</b>
             </Link>
           </div>
-          <div className="nav-on-collaspe">
+          <div className="nav-on-collapse">
             <IconButton onClick={() => setState(true)}>
               <MenuIcon
                 fontSize="large"

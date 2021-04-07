@@ -70,6 +70,10 @@ button {
   opacity: 0.3;
 }
 
+hr {
+  width: 500px;
+}
+
 /* 
 ------------- NAVBAR -------------
 */
@@ -99,13 +103,13 @@ button {
 }
 
 @media (max-width: 700px) {
-  .nav-no-collaspe {
+  .nav-no-collapse {
     display: none;
   }
 }
 
 @media (min-width: 700px) {
-  .nav-on-collaspe {
+  .nav-on-collapse {
     display: none;
   }
 }
@@ -207,12 +211,12 @@ button {
 
 .cover-animated-title {
   height: 40px;
-  padding: 5px 0;
+  padding: 4px 0;
   overflow: hidden;
 }
 
 .line {
-  line-height: 45px;
+  line-height: 50px;
 }
 
 .line:first-child {
@@ -227,10 +231,10 @@ button {
     margin-top: 0px;
   }
   50% {
-    margin-top: -48px;
+    margin-top: -50px;
   }
   80% {
-    margin-top: -48px;
+    margin-top: -50px;
   }
   100% {
     margin-top: 0px;

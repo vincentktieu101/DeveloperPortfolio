@@ -24,10 +24,10 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div>
+    <React.Fragment>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
-        <main>{children}</main>
+        {children}
         <footer id="footer">
           <Container>
             <div>
@@ -58,7 +58,7 @@ const Layout = ({ children }) => {
           </Container>
         </footer>
       </div>
-    </div>
+    </React.Fragment>
   )
 }
 

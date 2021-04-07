@@ -78,15 +78,24 @@ export default function Projects() {
       </Modal>
       <Container>
         <h1>PERSONAL PROJECTS</h1>
+        <hr align="left" />
+        <br />
         <br />
         {projects.slice(0, projectsViewing)}
-        {projects.length > projectsViewing && (
+        {projects.length > projectsViewing ? (
           <Button
             variant="contained"
             color="primary"
             onClick={() => setProjectsViewing(projectsViewing + 2)}
           >
             See More Projects
+          </Button>
+        ) : (
+          <Button
+            variant="contained"
+            onClick={() => setProjectsViewing(3)}
+          >
+            Collapse Projects
           </Button>
         )}
       </Container>

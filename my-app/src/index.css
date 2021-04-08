@@ -59,15 +59,16 @@ h6 {
   text-decoration: underline;
 }
 
+.link-no-styles {
+  color: black;
+  text-decoration: none;
+}
+
 button {
   padding: 0;
   margin: 0;
   border: 0px;
   background-color: rgb(255, 255, 255, 0);
-}
-
-.opaque-85 {
-  opacity: 0.3;
 }
 
 hr {
@@ -245,12 +246,12 @@ hr {
 #experience,
 #projects,
 #contact {
-  min-height: 50vh;
+  min-height: 30vh;
   padding-top: 10vh;
 }
 
 #footer {
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 /* 
@@ -339,4 +340,19 @@ button:focus {
   .project-desc {
     width: 600px;
   }
+}
+
+/* 
+------------- CONTACT -------------
+*/
+
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contact-buttons > * {
+  margin-right: 5px;
+  margin-bottom: 5px;
 }

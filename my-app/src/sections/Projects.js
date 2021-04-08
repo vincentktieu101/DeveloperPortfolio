@@ -80,7 +80,6 @@ export default function Projects() {
         <h1>PERSONAL PROJECTS</h1>
         <hr align="left" />
         <br />
-        <br />
         {projects.slice(0, projectsViewing)}
         {projects.length > projectsViewing ? (
           <Button
@@ -88,14 +87,14 @@ export default function Projects() {
             color="primary"
             onClick={() => setProjectsViewing(projectsViewing + 2)}
           >
-            See More Projects
+            <h6>See More Projects</h6>
           </Button>
         ) : (
           <Button
             variant="contained"
             onClick={() => setProjectsViewing(3)}
           >
-            Collapse Projects
+            <h6>Collapse Projects</h6>
           </Button>
         )}
       </Container>

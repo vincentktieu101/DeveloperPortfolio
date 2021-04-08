@@ -5,9 +5,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Cover from "../sections/Cover"
 import About from "../sections/About"
+import Contact from "../sections/Contact"
 // import Experience from "../sections/Experience"
 import Projects from "../sections/Projects"
-// import Contact from "../sections/Contact"
 
 export default function IndexPage() {
   return (
@@ -17,7 +17,7 @@ export default function IndexPage() {
       <About />
       {/* <Experience /> */}
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
     </Layout>
   )
 }

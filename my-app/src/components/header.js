@@ -11,6 +11,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon"
 import HomeIcon from "@material-ui/icons/Home"
 import MenuBookIcon from "@material-ui/icons/MenuBook"
 import CodeIcon from "@material-ui/icons/Code"
+import ContactMailIcon from '@material-ui/icons/ContactMail'
 
 export default function NavBar() {
   const [navShrink, setNavShrink] = useState(true)
@@ -57,6 +58,14 @@ export default function NavBar() {
             <b>PROJECTS</b>
           </ListItem>
         </Link>
+        <Link to="/#contact" className="nav-link" style={{ color: "black" }}>
+          <ListItem button>
+            <ListItemIcon>
+              <ContactMailIcon />
+            </ListItemIcon>
+            <b>CONTACT</b>
+          </ListItem>
+        </Link>
         <Divider />
       </List>
     </div>
@@ -97,6 +106,13 @@ export default function NavBar() {
               style={{ margin: "0 10px" }}
             >
               <b>PROJECTS</b>
+            </Link>
+            <Link
+              to="/#contact"
+              className="nav-link"
+              style={{ margin: "0 10px" }}
+            >
+              <b>CONTACT</b>
             </Link>
           </div>
           <div className="nav-on-collapse">

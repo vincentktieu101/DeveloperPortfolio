@@ -8,6 +8,7 @@ import Divider from "@material-ui/core/Divider"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemIcon from "@material-ui/core/ListItemIcon"
+import ListItemText from "@material-ui/core/ListItemText"
 import HomeIcon from "@material-ui/icons/Home"
 import MenuBookIcon from "@material-ui/icons/MenuBook"
 import CodeIcon from "@material-ui/icons/Code"
@@ -29,17 +30,20 @@ export default function NavBar() {
 
   const list = (
     <div
+      role="presentation"
       style={{ width: "250px" }}
       onClick={() => setState(false)}
       onKeyDown={() => setState(false)}
     >
       <List>
         <Link to="/" className="nav-link" style={{ color: "black" }}>
-          <ListItem button>
+          <ListItem button key={"Home"}>
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <b>HOME</b>
+            <ListItemText>
+              <b>HOME</b>
+            </ListItemText>
           </ListItem>
         </Link>
         <Link to="/#about" className="nav-link" style={{ color: "black" }}>
@@ -47,7 +51,9 @@ export default function NavBar() {
             <ListItemIcon>
               <MenuBookIcon />
             </ListItemIcon>
-            <b>ABOUT</b>
+            <ListItemText>
+              <b>ABOUT</b>
+            </ListItemText>
           </ListItem>
         </Link>
         <Link to="/#projects" className="nav-link" style={{ color: "black" }}>
@@ -55,7 +61,9 @@ export default function NavBar() {
             <ListItemIcon>
               <CodeIcon />
             </ListItemIcon>
-            <b>PROJECTS</b>
+            <ListItemText>
+              <b>PROJECTS</b>
+            </ListItemText>
           </ListItem>
         </Link>
         <Link to="/#contact" className="nav-link" style={{ color: "black" }}>
@@ -63,7 +71,9 @@ export default function NavBar() {
             <ListItemIcon>
               <ContactMailIcon />
             </ListItemIcon>
-            <b>CONTACT</b>
+            <ListItemText>
+              <b>CONTACT</b>
+            </ListItemText>
           </ListItem>
         </Link>
         <Divider />

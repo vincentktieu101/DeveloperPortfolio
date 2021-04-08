@@ -4,7 +4,8 @@ import Button from "@material-ui/core/Button"
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import PostAddIcon from '@material-ui/icons/PostAdd'
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import MailOutlineIcon from '@material-ui/icons/MailOutline'
+import Resume from "../static/s21.2.pdf"
 
 export default function Contact() {
   return (
@@ -24,11 +25,11 @@ export default function Contact() {
               <h6><LinkedInIcon />{" "}LinkedIn</h6>
             </Button>
           </a>
-          <a href="https://google.com" className="link-no-styles" target="_blank" rel="noreferrer">
-            <Button variant="contained" color="primary">
+          <div>
+            <Button variant="contained" color="primary" onClick={() => window.open(Resume)}>
               <h6><PostAddIcon />{" "}Resume</h6>
             </Button>
-          </a>
+          </div>
           <a href="mailto:vincentktieu101@gmail.com" className="link-no-styles" target="_blank" rel="noreferrer">
             <Button variant="contained" color="primary">
               <h6><MailOutlineIcon />{" "}Email Me</h6>

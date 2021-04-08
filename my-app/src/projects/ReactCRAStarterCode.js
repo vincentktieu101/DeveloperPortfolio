@@ -51,7 +51,7 @@ export default function ReactCRAStarterCode({ handleModal }) {
             Learning Assistant (ULA) for CS148 (Computer Science Project), in
             which students learn how to develop an application. Since most
             students wanted to create a React application, I wrote some starter
-            code in CRA (CreateReactApp) React along with Google OAuth. I also
+            code in React CRA (CreateReactApp) along with Google OAuth. I also
             wrote a mini guide on how to use React/Google OAuth on the Github
             repo.
           </div>

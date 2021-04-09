@@ -93,10 +93,7 @@ export default function Projects() {
             <h6>See More Projects</h6>
           </Button>
         ) : (
-          <Button
-            variant="contained"
-            onClick={() => setProjectsViewing(3)}
-          >
+          <Button variant="contained" onClick={() => setProjectsViewing(3)}>
             <h6>Collapse Projects</h6>
           </Button>
         )}

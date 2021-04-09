@@ -12,7 +12,7 @@ import ListItemText from "@material-ui/core/ListItemText"
 import HomeIcon from "@material-ui/icons/Home"
 import MenuBookIcon from "@material-ui/icons/MenuBook"
 import CodeIcon from "@material-ui/icons/Code"
-import ContactMailIcon from '@material-ui/icons/ContactMail'
+import ContactMailIcon from "@material-ui/icons/ContactMail"
 
 export default function NavBar() {
   const [navShrink, setNavShrink] = useState(true)

@@ -23,39 +23,30 @@ export default function Contact() {
           <h6>
             <PhoneIcon fontSize="small" /> Phone - (626) 537-5590
           </h6>
-          <h6>
-            <MailOutlineIcon fontSize="small" /> Email -{" "}
-            <a
-              href="mailto:vincentktieu101@gmail.com"
-              className="link-no-styles"
-              target="_blank"
-              rel="noreferrer"
-            >
-              vincentktieu101@gmail.com
-            </a>
-          </h6>
-          <h6>
-            <GitHubIcon fontSize="small" /> Github -{" "}
-            <a
-              href="https://github.com/vincentktieu101"
-              className="link-no-styles"
-              target="_blank"
-              rel="noreferrer"
-            >
-              https://github.com/vincentktieu101
-            </a>
-          </h6>
-          <h6>
-            <LinkedInIcon fontSize="small" /> LinkedIn -{" "}
-            <a
-              href="mailto:vincentktieu101@gmail.com"
-              className="link-no-styles"
-              target="_blank"
-              rel="noreferrer"
-            >
-              https://www.linkedin.com/in/vincentktieu/
-            </a>
-          </h6>
+          <a
+            href="mailto:vincentktieu101@gmail.com"
+            className="link-no-styles"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h6><MailOutlineIcon fontSize="small" /> Email - vincentktieu101@gmail.com</h6>
+          </a>
+          <a
+            href="https://github.com/vincentktieu101"
+            className="link-no-styles"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h6><GitHubIcon fontSize="small" /> Github - https://github.com/vincentktieu101</h6>
+          </a>
+          <a
+            href="mailto:vincentktieu101@gmail.com"
+            className="link-no-styles"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h6><LinkedInIcon fontSize="small" /> LinkedIn - https://www.linkedin.com/in/vincentktieu/</h6>
+          </a>
         </div>
         <br />
         <div className="contact-buttons">
@@ -107,10 +98,6 @@ export default function Contact() {
             </Button>
           </a>
         </div>
-        {/* <br />
-        <div>Currently living at Rosemead, Los Angeles</div>
-        <div>Call Me at (626) 537-5590</div>
-        <div>Email Me at vincentktieu101@gmail.com</div> */}
       </Container>
     </div>
   )

@@ -24,8 +24,8 @@ export default function About() {
             <div>
               I'm currently a 3rd year <b>Computer Science</b> major at{" "}
               <b>UC Santa Barbara</b>, (already taken / currently taking)
-              classes in Operating Systems, Compiliers, Databases, Artificial
-              Intellegence, Web Development, Networking, etc.
+              classes in Operating Systems, Compilers, Databases, Artificial
+              Intellegence, Web Development, HCI, Networking, etc.
             </div>
             <br />
             <div>

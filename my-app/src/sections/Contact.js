@@ -3,6 +3,7 @@ import Container from "@material-ui/core/Container"
 import HomeIcon from "@material-ui/icons/Home"
 import PhoneIcon from "@material-ui/icons/Phone"
 import Button from "@material-ui/core/Button"
+import IconButton from "@material-ui/core/IconButton"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import PostAddIcon from "@material-ui/icons/PostAdd"
@@ -18,85 +19,56 @@ export default function Contact() {
         <br />
         <div>
           <h6>
-            <HomeIcon fontSize="small" /> Address - Rosemead, Los Angeles
+            <a
+            href="https://www.google.com/maps/place/Rosemead,+CA/@34.064641,-118.1168945,13z/data=!3m1!4b1!4m5!3m4!1s0x80c2d074766c77b1:0xa0351d489643887c!8m2!3d34.0805651!4d-118.072846"
+              className="link-no-styles"
+              target="_blank"
+              rel="noreferrer"
+            ><IconButton color="primary"><HomeIcon fontSize="small" /></IconButton> Address - Rosemead, Los Angeles</a>
           </h6>
           <h6>
-            <PhoneIcon fontSize="small" /> Phone - (626) 537-5590
+            <a
+            href="https://www.google.com/search?q=6265375590&source=hp&ei=LttzYIS5Icvb-gSCrYiYCA&iflsig=AINFCbYAAAAAYHPpPhPl2um35fphoMiN7ljN2XEbmanf&oq=6265375590&gs_lcp=Cgdnd3Mtd2l6EAM6AggAOg4ILhCxA
+            xCDARDHARCjAjoICAAQsQMQgwE6CAguELEDEIMBOgUIABCxAzoFCC4QsQM6CwguELEDEIMBEJMCOg4ILhCxAxCDARDHARCvAToICC4QxwEQrwE6BAgAEB46BwgAEMkDEB46BggAEAUQHlD8BlioJWCnJ2gCcAB4AIABdYgBqQmSAQM2LjaYAQCgAQGqA
+            Qdnd3Mtd2l6sAEA&sclient=gws-wiz&ved=0ahUKEwiEiMyZ_ffvAhXLrZ4KHYIWAoMQ4dUDCAg&uact=5"
+              className="link-no-styles"
+              target="_blank"
+              rel="noreferrer"
+            ><IconButton color="primary"><PhoneIcon fontSize="small" /></IconButton> Phone - (626) 537-5590</a>
           </h6>
-          <a
-            href="mailto:vincentktieu101@gmail.com"
-            className="link-no-styles"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h6><MailOutlineIcon fontSize="small" /> Email - vincentktieu101@gmail.com</h6>
-          </a>
-          <a
-            href="https://github.com/vincentktieu101"
-            className="link-no-styles"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h6><GitHubIcon fontSize="small" /> Github - https://github.com/vincentktieu101</h6>
-          </a>
-          <a
-            href="mailto:vincentktieu101@gmail.com"
-            className="link-no-styles"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h6><LinkedInIcon fontSize="small" /> LinkedIn - https://www.linkedin.com/in/vincentktieu/</h6>
-          </a>
-        </div>
-        <br />
-        <div className="contact-buttons">
-          <div>
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={() => window.open(Resume)}
+          <h6>
+            <a
+              href="mailto:vincentktieu101@gmail.com"
+              className="link-no-styles"
+              target="_blank"
+              rel="noreferrer"
             >
-              <h6>
-                <PostAddIcon /> Resume
-              </h6>
-            </Button>
-          </div>
-          <a
-            href="mailto:vincentktieu101@gmail.com"
-            className="link-no-styles"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button variant="contained" color="primary">
-              <h6>
-                <MailOutlineIcon /> Email Me
-              </h6>
-            </Button>
-          </a>
-          <a
-            href="https://github.com/vincentktieu101"
-            className="link-no-styles"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button variant="contained" color="primary">
-              <h6>
-                <GitHubIcon /> GitHub
-              </h6>
-            </Button>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/vincentktieu/"
-            className="link-no-styles"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button variant="contained" color="primary">
-              <h6>
-                <LinkedInIcon /> LinkedIn
-              </h6>
-            </Button>
-          </a>
+              <IconButton color="primary"><MailOutlineIcon fontSize="small" /></IconButton> Email - vincentktieu101@gmail.com
+            </a>
+          </h6>
+          <h6>
+            <a
+              href="https://github.com/vincentktieu101"
+              className="link-no-styles"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconButton color="primary"><GitHubIcon fontSize="small" /></IconButton> Github - https://github.com/vincentktieu101
+            </a>
+          </h6>
+          <h6>
+            <a
+              href="mailto:vincentktieu101@gmail.com"
+              className="link-no-styles"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconButton color="primary"><LinkedInIcon fontSize="small" /></IconButton> LinkedIn - https://www.linkedin.com/in/vincentktieu/
+            </a>
+          </h6>
+          <h6>
+            <IconButton color="primary" onClick={() => window.open(Resume)}><PostAddIcon fontSize="small" /></IconButton> Resume
+          </h6>
         </div>
       </Container>
     </div>

@@ -1,8 +1,8 @@
 import React from "react"
 import "../index.css"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import Cover from "../sections/Cover"
 import About from "../sections/About"
 import Contact from "../sections/Contact"

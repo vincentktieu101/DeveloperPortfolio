@@ -3,6 +3,7 @@ import MusicMapDesktop from "../images/projects/musicmap-desktop.png"
 import MusicMapMobile from "../images/projects/musicmap-mobile.png"
 
 export default function MusicMap({ handleModal }) {
+
   return (
     <div className="project-item">
       <div className="vl" />

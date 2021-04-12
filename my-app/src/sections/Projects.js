@@ -13,8 +13,6 @@ import Tetris from "../projects/Tetris"
 import Snake from "../projects/Snake"
 import ChristmasCaneRevenge from "../projects/ChristmasCaneRevenge"
 
-import VincentHeadShot from "../images/vincent-headshot.png"
-
 const useStyles = makeStyles(theme => ({
   modal: {
     display: "flex",
@@ -31,11 +29,13 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
+export const ModalContext = React.createContext()
+
 export default function Projects() {
   const classes = useStyles()
   const [modal, setModal] = useState({
     open: false,
-    image: VincentHeadShot,
+    image: null,
   })
 
   const handleModal = image => {
@@ -47,14 +47,15 @@ export default function Projects() {
   }
 
   const [projectsViewing, setProjectsViewing] = useState(3)
+
   const projects = [
-    <ReactCRAStarterCode key={0} handleModal={handleModal} />,
-    <TouchOfElegance key={1} handleModal={handleModal} />,
-    <MusicMap key={2} handleModal={handleModal} />,
-    <FreeFromClass key={3} handleModal={handleModal} />,
-    <Tetris key={4} handleModal={handleModal} />,
-    <Snake key={5} handleModal={handleModal} />,
-    <ChristmasCaneRevenge key={6} handleModal={handleModal} />,
+    ReactCRAStarterCode,
+    TouchOfElegance,
+    MusicMap,
+    FreeFromClass,
+    Tetris,
+    Snake,
+    ChristmasCaneRevenge,
   ]
 
   return (
@@ -83,7 +84,11 @@ export default function Projects() {
         <h1>PERSONAL PROJECTS</h1>
         <hr align="left" />
         <br />
-        {projects.slice(0, projectsViewing)}
+        <ModalContext.Provider value={handleModal}>
+          {projects.slice(0, projectsViewing).map((Component, i) => {
+            return <Component key={i} handleModal={handleModal} />
+          })}
+        </ModalContext.Provider>
         {projects.length > projectsViewing ? (
           <Button
             variant="contained"

@@ -1,8 +1,11 @@
-import React from "react"
+import React, { useContext } from "react"
 import ReactCRAStarterCodeDesktop from "../images/projects/reactcrastartercode-desktop.png"
 import ReactCRAStarterCodeMobile from "../images/projects/reactcrastartercode-mobile.png"
+import { ModalContext } from "../sections/Projects"
 
-export default function ReactCRAStarterCode({ handleModal }) {
+export default function ReactCRAStarterCode() {
+  const handleModal = useContext(ModalContext)
+
   return (
     <div className="project-item">
       <div className="vl" />

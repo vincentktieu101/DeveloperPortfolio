@@ -14,8 +14,7 @@ export default function ChristmasCaneRevenge() {
     <React.Fragment>
       <div>December 2017</div>
       <div>
-        This is a little bonus project for scrolling to the end :). I wrote
-        this bad boy before ever taking a real programming class!
+        This is a little bonus project for scrolling to the end :)
       </div>
     </React.Fragment>
   )

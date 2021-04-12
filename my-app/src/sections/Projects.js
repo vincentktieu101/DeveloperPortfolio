@@ -34,12 +34,13 @@ export const ModalContext = React.createContext()
 export default function Projects() {
   const classes = useStyles()
   const [modal, setModal] = useState({
-    open: false,
     image: null,
+    linksLine: null,
+    open: false,
   })
 
-  const handleModal = image => {
-    setModal({ image: image, open: true })
+  const handleModal = (image, linksLine) => {
+    setModal({ image: image, linksLine: linksLine, open: true })
   }
 
   const handleClose = () => {
@@ -78,9 +79,12 @@ export default function Projects() {
             alt="modal popup"
             className="project-modal-img"
           />
+          <br />
+          <br />
+          <div style={{textAlign: "center"}}>{modal.linksLine}</div>
         </div>
       </Modal>
-      
+
       <Container>
         <h1>PERSONAL PROJECTS</h1>
         <hr align="left" />

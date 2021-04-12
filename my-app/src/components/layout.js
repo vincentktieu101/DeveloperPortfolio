@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Container from "@material-ui/core/Container"
 
-import Header from "./header"
+import Header from "./Header"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

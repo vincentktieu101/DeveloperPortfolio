@@ -80,6 +80,7 @@ export default function Projects() {
           />
         </div>
       </Modal>
+      
       <Container>
         <h1>PERSONAL PROJECTS</h1>
         <hr align="left" />

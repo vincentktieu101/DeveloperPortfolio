@@ -1,68 +1,46 @@
 import React from "react"
 import SnakeDesktop from "../images/projects/snake-desktop.png"
 import SnakeDesktop2 from "../images/projects/snake-desktop2.png"
+import Project from "../components/Project"
 
-export default function Snake({ handleModal }) {
-  return (
-    <div className="project-item">
-      <div className="vl" />
+export default function Snake() {
+  const title = "Snake"
+  const links = {
+    "Github": "https://github.com/vincentktieu101/Snake",
+  }
+  const images = [
+    SnakeDesktop,
+    SnakeDesktop2,
+  ]
+  const description = (
+    <React.Fragment>
+      <div>December 2019</div>
+      <br />
       <div>
-        <h3>Snake</h3>
-        Links:{" "}
-        <a
-          className="link"
-          href="https://github.com/vincentktieu101/Snake"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Github
-        </a>{" "}
-        |{" "}
+        I developed this project while I was still an Electrical Engineering
+        major. This project has a special place in my heart because it
+        helped me gain the confidence I needed to switch majors, especially
+        since I knew that the path of a Computer Science major wasn't going
+        to be an easy. Every now and again when I need inspiration, I boot
+        up the game and enjoy this project I created.
+      </div>
+      <br />
+      <div>
+        I wrote this app in Python and Pygame. I also wrote a mini
+        programming guide that you can checkout
         <a
           href="https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit?usp=sharing"
           className="link"
           target="_blank"
           rel="noreferrer"
         >
-          Programming Guide
+          {" "}
+          here
         </a>
-        <br />
-        <br />
-        <button onClick={() => handleModal(SnakeDesktop)}>
-          <img className="project-img" src={SnakeDesktop} alt="project-img" />
-        </button>{" "}
-        <button onClick={() => handleModal(SnakeDesktop2)}>
-          <img className="project-img" src={SnakeDesktop2} alt="project-img" />
-        </button>
-        <br />
-        <br />
-        <div className="project-desc">
-          <div>December 2019</div>
-          <div>
-            I developed this project while I was still an Electrical Engineering
-            major. This project has a special place in my heart because it
-            helped me gain the confidence I needed to switch majors, especially
-            since I knew that the path of a Computer Science major wasn't going
-            to be an easy. Every now and again when I need inspiration, I boot
-            up the game and enjoy this project I created.
-          </div>
-          <br />
-          <div>
-            I wrote this app in Python and Pygame. I also wrote a mini
-            programming guide that you can checkout
-            <a
-              href="https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit?usp=sharing"
-              className="link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              here
-            </a>
-            . I even designed an 8-bit music theme for the game!
-          </div>
-        </div>
+        . I even designed an 8-bit music theme for the game!
       </div>
-    </div>
+    </React.Fragment>
   )
+
+  return <Project title={title} links={links} images={images} description={description} />
 }

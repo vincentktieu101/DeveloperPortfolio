@@ -77,6 +77,10 @@ button {
   }
 }
 
+.cursor-hover:hover {
+  cursor: pointer;
+}
+
 /* 
 ------------- NAVBAR -------------
 */

@@ -8,23 +8,21 @@ export default function Project(props) {
   const linksDescription = (
     <Fragment>
       Links:{" "}
-      {
-        Object.keys(links).map((link, i) => {
-          return (
-            <React.Fragment key={i}>
-              <a
-                className="link"
-                href={links[link]}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {link}
-              </a>
-              {i !== (Object.keys(links).length - 1) ? " | " : ""}
-            </React.Fragment>
-          )
-        })
-      }
+      {Object.keys(links).map((link, i) => {
+        return (
+          <React.Fragment key={i}>
+            <a
+              className="link"
+              href={links[link]}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {link}
+            </a>
+            {i !== Object.keys(links).length - 1 ? " | " : ""}
+          </React.Fragment>
+        )
+      })}
     </Fragment>
   )
 
@@ -36,23 +34,20 @@ export default function Project(props) {
         {linksDescription}
         <br />
         <br />
-        {
-          images.map((image, i) => {
-            return (
-              <Fragment key={i}>
-                <button onClick={() => handleModal(image, linksDescription)}>
-                  <img
-                    key={i}
-                    className="project-img"
-                    src={image}
-                    alt="project-img"
-                  />
-                </button>
-                {" "}
-              </Fragment>
-            )
-          })
-        }
+        {images.map((image, i) => {
+          return (
+            <Fragment key={i}>
+              <button onClick={() => handleModal(image, linksDescription)}>
+                <img
+                  key={i}
+                  className="project-img"
+                  src={image}
+                  alt="project-img"
+                />
+              </button>{" "}
+            </Fragment>
+          )
+        })}
         <br />
         <br />
         <div className="project-desc">{description}</div>

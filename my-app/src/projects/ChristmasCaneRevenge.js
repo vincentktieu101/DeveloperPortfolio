@@ -7,17 +7,20 @@ export default function ChristmasCaneRevenge() {
   const links = {
     "Scratch URL": "https://scratch.mit.edu/projects/195203068/",
   }
-  const images = [
-    ChristmasCaneRevengeDesktop,
-  ]
+  const images = [ChristmasCaneRevengeDesktop]
   const description = (
     <React.Fragment>
       <div>December 2017</div>
-      <div>
-        This is a little bonus project for scrolling to the end :)
-      </div>
+      <div>This is a little bonus project for scrolling to the end :)</div>
     </React.Fragment>
   )
 
-  return <Project title={title} links={links} images={images} description={description} />
+  return (
+    <Project
+      title={title}
+      links={links}
+      images={images}
+      description={description}
+    />
+  )
 }

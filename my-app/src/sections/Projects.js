@@ -81,7 +81,7 @@ export default function Projects() {
           />
           <br />
           <br />
-          <div style={{textAlign: "center"}}>{modal.linksLine}</div>
+          <div style={{ textAlign: "center" }}>{modal.linksLine}</div>
         </div>
       </Modal>
 

@@ -4,6 +4,9 @@ import Button from "@material-ui/core/Button"
 import Modal from "@material-ui/core/Modal"
 import { makeStyles } from "@material-ui/core/styles"
 import Backdrop from "@material-ui/core/Backdrop"
+import IconButton from "@material-ui/core/IconButton"
+import NavigateNextIcon from '@material-ui/icons/NavigateNext'
+import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 
 import ReactCRAStarterCode from "../projects/ReactCRAStarterCode"
 import TouchOfElegance from "../projects/TouchOfElegance"
@@ -21,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center",
   },
   paper: {
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: "white",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
     maxWidth: "100%",
@@ -35,13 +38,15 @@ export const ModalContext = React.createContext()
 export default function Projects() {
   const classes = useStyles()
   const [modal, setModal] = useState({
-    image: null,
+    images: [],
+    imageIndex: 0,
     linksLine: null,
     open: false,
   })
 
-  const handleModal = (image, linksLine) => {
-    setModal({ image: image, linksLine: linksLine, open: true })
+  const handleModal = (images, imageIndex, linksLine) => {
+    setModal({ images: images, imageIndex: imageIndex, linksLine: linksLine, open: true })
+    console.log(imageIndex)
   }
 
   const handleClose = () => {
@@ -77,13 +82,23 @@ export default function Projects() {
       >
         <div className={classes.paper}>
           <img
-            src={modal.image}
+            src={modal.images[modal.imageIndex]}
             alt="modal popup"
             className="project-modal-img"
           />
           <br />
           <br />
-          <div style={{ textAlign: "center" }}>{modal.linksLine}</div>
+          <div style={{ textAlign: "center" }}>
+            <IconButton onClick={() => handleModal(modal.images, (modal.imageIndex - 1) % (modal.images).length, modal.linksLine)}>
+              <NavigateBeforeIcon />
+            </IconButton>
+            {" "}
+            {modal.linksLine}
+            {" "}
+            <IconButton onClick={() => handleModal(modal.images, (modal.imageIndex + 1) % (modal.images).length, modal.linksLine)}>
+              <NavigateNextIcon />
+            </IconButton>
+          </div>
         </div>
       </Modal>
 

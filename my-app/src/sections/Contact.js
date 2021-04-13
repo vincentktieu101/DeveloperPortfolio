@@ -73,7 +73,7 @@ export default function Contact() {
           </h6>
           <h6>
             <a
-              href="mailto:vincentktieu101@gmail.com"
+              href="https://www.linkedin.com/in/vincentktieu/"
               className="link-no-styles"
               target="_blank"
               rel="noreferrer"

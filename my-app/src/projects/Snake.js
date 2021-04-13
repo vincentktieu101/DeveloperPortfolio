@@ -11,7 +11,7 @@ export default function Snake() {
   const images = [SnakeDesktop, SnakeDesktop2]
   const description = (
     <React.Fragment>
-      <div>December 2019</div>
+      <div>December 2018</div>
       <br />
       <div>
         I developed this project while I was still an Electrical Engineering

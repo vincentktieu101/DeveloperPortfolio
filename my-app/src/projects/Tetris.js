@@ -11,7 +11,7 @@ export default function Tetris() {
   const images = [TetrisDesktop, TetrisDesktop2]
   const description = (
     <React.Fragment>
-      <div>January 2020</div>
+      <div>January 2019</div>
       <br />
       <div>
         Wanting to learn more about algorithms and OOP, I created a Tetris clone

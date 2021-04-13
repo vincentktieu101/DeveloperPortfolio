@@ -9,6 +9,7 @@ import ReactCRAStarterCode from "../projects/ReactCRAStarterCode"
 import TouchOfElegance from "../projects/TouchOfElegance"
 import MusicMap from "../projects/MusicMap"
 import FreeFromClass from "../projects/FreeFromClass"
+import LineTrackingCar from "../projects/LineTrackingCar"
 import Tetris from "../projects/Tetris"
 import Snake from "../projects/Snake"
 import ChristmasCaneRevenge from "../projects/ChristmasCaneRevenge"
@@ -54,6 +55,7 @@ export default function Projects() {
     TouchOfElegance,
     MusicMap,
     FreeFromClass,
+    LineTrackingCar,
     Tetris,
     Snake,
     ChristmasCaneRevenge,

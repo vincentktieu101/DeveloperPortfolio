@@ -81,7 +81,7 @@ export default function Projects() {
         }}
       >
         <div className={classes.paper}>
-          <div class="flex-space-between">
+          <div class="flex-space-around">
             <img
               src={modal.images[modal.imageIndex]}
               alt="modal popup"
@@ -115,8 +115,8 @@ export default function Projects() {
       </Modal>
 
       <Container>
-        <h1>PERSONAL PROJECTS</h1>
-        <hr align="left" />
+        <h1 className="text-center">PERSONAL PROJECTS</h1>
+        <hr />
         <br />
         <ModalContext.Provider value={handleModal}>
           {projects.slice(0, projectsViewing).map((Component, i) => {

@@ -81,9 +81,14 @@ button {
   cursor: pointer;
 }
 
-.flex-space-between {
+.flex-space-around {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center
 }
 
 /* 

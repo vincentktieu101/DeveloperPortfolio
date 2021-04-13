@@ -24,7 +24,7 @@ export default function Snake() {
       <br />
       <div>
         I wrote this app in Python and Pygame. I also wrote a mini programming
-        guide that you can checkout
+        guide that you can check out
         <a
           href="https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit?usp=sharing"
           className="link"

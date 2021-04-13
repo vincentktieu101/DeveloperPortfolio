@@ -8,7 +8,7 @@ export default function About() {
       <Container>
         <div className="about-content">
           <div className="about-text">
-            <h1>ABOUT ME</h1>
+            <h1 className="text-center">ABOUT ME</h1>
             <hr />
             <br />
             <div>

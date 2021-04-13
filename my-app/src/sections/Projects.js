@@ -26,10 +26,10 @@ const useStyles = makeStyles(theme => ({
   paper: {
     backgroundColor: "white",
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    padding: theme.spacing(2, 2, 3),
     maxWidth: "100%",
     maxHeight: "100%",
-    margin: "20px",
+    margin: "10px",
   },
 }))
 
@@ -81,14 +81,15 @@ export default function Projects() {
         }}
       >
         <div className={classes.paper}>
-          <img
-            src={modal.images[modal.imageIndex]}
-            alt="modal popup"
-            className="project-modal-img"
-          />
+          <div class="flex-space-between">
+            <img
+              src={modal.images[modal.imageIndex]}
+              alt="modal popup"
+              className="project-modal-img"
+            />
+          </div>
           <br />
-          <br />
-          <div style={{ textAlign: "center" }}>
+          <div className="desktop-render" style={{ textAlign: "center" }}>
             <IconButton onClick={() => handleModal(modal.images, (modal.imageIndex - 1) % (modal.images).length, modal.linksLine)}>
               <NavigateBeforeIcon />
             </IconButton>
@@ -98,6 +99,17 @@ export default function Projects() {
             <IconButton onClick={() => handleModal(modal.images, (modal.imageIndex + 1) % (modal.images).length, modal.linksLine)}>
               <NavigateNextIcon />
             </IconButton>
+          </div>
+          <div className="mobile-render" style={{ textAlign: "center" }}>
+            <div>{modal.linksLine}</div>
+            <div>
+              <IconButton onClick={() => handleModal(modal.images, (modal.imageIndex - 1) % (modal.images).length, modal.linksLine)}>
+                <NavigateBeforeIcon />
+              </IconButton>
+              <IconButton onClick={() => handleModal(modal.images, (modal.imageIndex + 1) % (modal.images).length, modal.linksLine)}>
+                <NavigateNextIcon />
+              </IconButton>
+            </div>
           </div>
         </div>
       </Modal>

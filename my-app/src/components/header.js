@@ -99,7 +99,7 @@ export default function NavBar() {
               </React.Fragment>
             )}
           </Link>
-          <div className="nav-no-collapse">
+          <div className="desktop-render">
             <Link to="/" className="nav-link" style={{ margin: "0 10px" }}>
               <b>HOME</b>
             </Link>
@@ -125,11 +125,10 @@ export default function NavBar() {
               <b>CONTACT</b>
             </Link>
           </div>
-          <div className="nav-on-collapse">
+          <div className="mobile-render">
             <IconButton onClick={() => setState(true)}>
               <MenuIcon
                 fontSize="large"
-                style={{ margin: "0", padding: "0" }}
               />
             </IconButton>
             <Drawer

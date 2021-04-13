@@ -81,6 +81,11 @@ button {
   cursor: pointer;
 }
 
+.flex-space-between {
+  display: flex;
+  justify-content: center;
+}
+
 /* 
 ------------- NAVBAR -------------
 */
@@ -110,13 +115,13 @@ button {
 }
 
 @media (max-width: 700px) {
-  .nav-no-collapse {
+  .desktop-render {
     display: none;
   }
 }
 
 @media (min-width: 700px) {
-  .nav-on-collapse {
+  .mobile-render {
     display: none;
   }
 }

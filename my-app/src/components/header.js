@@ -127,9 +127,7 @@ export default function NavBar() {
           </div>
           <div className="mobile-render">
             <IconButton onClick={() => setState(true)}>
-              <MenuIcon
-                fontSize="large"
-              />
+              <MenuIcon fontSize="large" />
             </IconButton>
             <Drawer
               anchor={"right"}

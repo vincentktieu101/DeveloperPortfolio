@@ -8,11 +8,16 @@ import Project from "../components/Project"
 export default function ReactGoogleAuthStarter() {
   const title = "ReactGoogleAuthStarter"
   const links = {
-    "Website": "https://react-google-auth-starter.herokuapp.com/",
-    "Github": "https://github.com/vincentktieu101/ReactGoogleAuthStarter",
+    Website: "https://react-google-auth-starter.herokuapp.com/",
+    Github: "https://github.com/vincentktieu101/ReactGoogleAuthStarter",
     "YouTube Tutorial": "https://youtu.be/XZceEXlYC1w",
   }
-  const images = [ReactCRAStarterCodeTutorial, ReactCRAStarterCodeMobile1, ReactCRAStarterCodeMobile2, ReactCRAStarterCodeMobile3]
+  const images = [
+    ReactCRAStarterCodeTutorial,
+    ReactCRAStarterCodeMobile1,
+    ReactCRAStarterCodeMobile2,
+    ReactCRAStarterCodeMobile3,
+  ]
   const description = (
     <React.Fragment>
       <div>April, 2021 - Present</div>
@@ -23,7 +28,8 @@ export default function ReactGoogleAuthStarter() {
         learn how to develop an application. Since most students wanted to
         create a React application, I wrote some starter code in React CRA
         (CreateReactApp) along with Google OAuth. I also filmed a mini guide on
-        how to use React/Google OAuth on YouTube as well as wrote a Github Readme.
+        how to use React/Google OAuth on YouTube as well as wrote a Github
+        Readme.
       </div>
     </React.Fragment>
   )

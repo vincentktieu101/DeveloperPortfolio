@@ -1,5 +1,6 @@
 import React from "react"
 import "../index.css"
+import { SnackbarProvider } from "notistack"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
@@ -11,13 +12,15 @@ import Projects from "../sections/Projects"
 
 export default function IndexPage() {
   return (
-    <Layout>
-      <SEO title="Home" />
-      <Cover />
-      <About />
-      {/* <Experience /> */}
-      <Projects />
-      <Contact />
-    </Layout>
+    <SnackbarProvider maxSnack={3}>
+      <Layout>
+        <SEO title="Home" />
+        <Cover />
+        <About />
+        {/* <Experience /> */}
+        <Projects />
+        <Contact />
+      </Layout>
+    </SnackbarProvider>
   )
 }

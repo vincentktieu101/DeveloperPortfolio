@@ -5,8 +5,8 @@ import Modal from "@material-ui/core/Modal"
 import { makeStyles } from "@material-ui/core/styles"
 import Backdrop from "@material-ui/core/Backdrop"
 import IconButton from "@material-ui/core/IconButton"
-import NavigateNextIcon from '@material-ui/icons/NavigateNext'
-import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+import NavigateNextIcon from "@material-ui/icons/NavigateNext"
+import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore"
 
 import ReactCRAStarterCode from "../projects/ReactCRAStarterCode"
 import TouchOfElegance from "../projects/TouchOfElegance"
@@ -45,7 +45,12 @@ export default function Projects() {
   })
 
   const handleModal = (images, imageIndex, linksLine) => {
-    setModal({ images: images, imageIndex: imageIndex, linksLine: linksLine, open: true })
+    setModal({
+      images: images,
+      imageIndex: imageIndex,
+      linksLine: linksLine,
+      open: true,
+    })
     console.log(imageIndex)
   }
 
@@ -90,23 +95,53 @@ export default function Projects() {
           </div>
           <br />
           <div className="desktop-render" style={{ textAlign: "center" }}>
-            <IconButton onClick={() => handleModal(modal.images, (modal.imageIndex - 1) % (modal.images).length, modal.linksLine)}>
+            <IconButton
+              onClick={() =>
+                handleModal(
+                  modal.images,
+                  (modal.imageIndex - 1) % modal.images.length,
+                  modal.linksLine
+                )
+              }
+            >
               <NavigateBeforeIcon />
-            </IconButton>
-            {" "}
-            {modal.linksLine}
-            {" "}
-            <IconButton onClick={() => handleModal(modal.images, (modal.imageIndex + 1) % (modal.images).length, modal.linksLine)}>
+            </IconButton>{" "}
+            {modal.linksLine}{" "}
+            <IconButton
+              onClick={() =>
+                handleModal(
+                  modal.images,
+                  (modal.imageIndex + 1) % modal.images.length,
+                  modal.linksLine
+                )
+              }
+            >
               <NavigateNextIcon />
             </IconButton>
           </div>
           <div className="mobile-render" style={{ textAlign: "center" }}>
             <div>{modal.linksLine}</div>
             <div>
-              <IconButton onClick={() => handleModal(modal.images, (modal.imageIndex - 1) % (modal.images).length, modal.linksLine)}>
+              <IconButton
+                onClick={() =>
+                  handleModal(
+                    modal.images,
+                    (modal.imageIndex - 1) % modal.images.length,
+                    modal.linksLine
+                  )
+                }
+              >
                 <NavigateBeforeIcon />
               </IconButton>
-              <IconButton onClick={() => handleModal(modal.images, (modal.imageIndex + 1) % (modal.images).length, modal.linksLine)}>
+              <IconButton
+                onClick={() =>
+                  handleModal(
+                    modal.images,
+                    (modal.imageIndex + 1) % modal.images.length,
+                    modal.linksLine
+                  )
+                }
+              >
                 <NavigateNextIcon />
               </IconButton>
             </div>

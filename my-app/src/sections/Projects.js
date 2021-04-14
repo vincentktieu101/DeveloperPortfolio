@@ -97,11 +97,10 @@ export default function Projects() {
           <div className="desktop-render">
             <IconButton
               onClick={() =>
-                handleModal(
-                  modal.images,
-                  (modal.imageIndex - 1) % modal.images.length,
-                  modal.linksLine
-                )
+                setModal({
+                  ...modal,
+                  imageIndex: (modal.imageIndex - 1) % modal.images.length
+                })
               }
             >
               <NavigateBeforeIcon />
@@ -109,11 +108,10 @@ export default function Projects() {
             {modal.linksLine}{" "}
             <IconButton
               onClick={() =>
-                handleModal(
-                  modal.images,
-                  (modal.imageIndex + 1) % modal.images.length,
-                  modal.linksLine
-                )
+                setModal({
+                  ...modal,
+                  imageIndex: (modal.imageIndex + 1) % modal.images.length
+                })
               }
             >
               <NavigateNextIcon />
@@ -124,22 +122,20 @@ export default function Projects() {
             <div>
               <IconButton
                 onClick={() =>
-                  handleModal(
-                    modal.images,
-                    (modal.imageIndex - 1) % modal.images.length,
-                    modal.linksLine
-                  )
+                  setModal({
+                    ...modal,
+                    imageIndex: (modal.imageIndex - 1) % modal.images.length
+                  })
                 }
               >
                 <NavigateBeforeIcon />
               </IconButton>
               <IconButton
                 onClick={() =>
-                  handleModal(
-                    modal.images,
-                    (modal.imageIndex + 1) % modal.images.length,
-                    modal.linksLine
-                  )
+                  setModal({
+                    ...modal,
+                    imageIndex: (modal.imageIndex + 1) % modal.images.length
+                  })
                 }
               >
                 <NavigateNextIcon />
@@ -155,7 +151,7 @@ export default function Projects() {
         <br />
         <ModalContext.Provider value={handleModal}>
           {projects.slice(0, projectsViewing).map((Component, i) => {
-            return <Component key={i} handleModal={handleModal} />
+            return <Component key={i} />
           })}
         </ModalContext.Provider>
         {projects.length > projectsViewing ? (

@@ -21,7 +21,7 @@ export default function ContactForm() {
     }
 
     if (contactForm.contact === "") {
-      enqueueSnackbar("Contact Info Missing", { "variant": "error" })
+      enqueueSnackbar("Contact Info Missing", { variant: "error" })
       return
     }
 
@@ -35,7 +35,7 @@ export default function ContactForm() {
         "Vincentktieu101Gmail",
         "VincentktieuContactForm",
         contactForm,
-        "user_zSfjegoCh9d1rl8s1eCa9",
+        "user_zSfjegoCh9d1rl8s1eCa9"
       )
       .then(
         response => {

@@ -37,7 +37,7 @@ export default function Project(props) {
         {images.map((image, i) => {
           return (
             <Fragment key={i}>
-              <button onClick={() => handleModal(images, i, linksDescription)}>
+              <button onClick={() => handleModal(images, i, linksDescription)} className={i !== 0 && "desktop-render"}>
                 <img
                   key={i}
                   className="project-img"

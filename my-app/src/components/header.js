@@ -126,7 +126,7 @@ export default function NavBar() {
             </Link>
           </div>
           <div className="mobile-render">
-            <IconButton onClick={() => setState(true)}>
+            <IconButton onClick={() => setState(true)} style={{ margin: "0", padding: "0" }}>
               <MenuIcon fontSize="large" />
             </IconButton>
             <Drawer

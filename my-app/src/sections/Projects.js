@@ -30,6 +30,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: "100%",
     maxHeight: "100%",
     margin: "10px",
+    textAlign: "center",
   },
 }))
 
@@ -85,15 +86,15 @@ export default function Projects() {
         }}
       >
         <div className={classes.paper}>
-          {/* <div className="flex-space-around"> */}
+          <div>
             <img
               src={modal.images[modal.imageIndex]}
               alt="modal popup"
               className="project-modal-img"
             />
-          {/* </div> */}
+          </div>
           <br />
-          <div className="desktop-render" style={{ textAlign: "center" }}>
+          <div className="desktop-render">
             <IconButton
               onClick={() =>
                 handleModal(
@@ -118,7 +119,7 @@ export default function Projects() {
               <NavigateNextIcon />
             </IconButton>
           </div>
-          <div className="mobile-render" style={{ textAlign: "center" }}>
+          <div className="mobile-render">
             <div>{modal.linksLine}</div>
             <div>
               <IconButton

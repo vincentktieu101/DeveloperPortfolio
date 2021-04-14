@@ -51,7 +51,6 @@ export default function Projects() {
       linksLine: linksLine,
       open: true,
     })
-    console.log(imageIndex)
   }
 
   const handleClose = () => {
@@ -86,13 +85,13 @@ export default function Projects() {
         }}
       >
         <div className={classes.paper}>
-          <div class="flex-space-around">
+          {/* <div className="flex-space-around"> */}
             <img
               src={modal.images[modal.imageIndex]}
               alt="modal popup"
               className="project-modal-img"
             />
-          </div>
+          {/* </div> */}
           <br />
           <div className="desktop-render" style={{ textAlign: "center" }}>
             <IconButton

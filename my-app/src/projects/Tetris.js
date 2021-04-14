@@ -8,11 +8,10 @@ export default function Tetris() {
   const links = {
     Github: "https://github.com/vincentktieu101/Tetris",
   }
+  const date = "January 2019"
   const images = [TetrisDesktop, TetrisDesktop2]
   const description = (
     <React.Fragment>
-      <div>January 2019</div>
-      <br />
       <div>
         Wanting to learn more about algorithms and OOP, I created a Tetris clone
         from scatch using Python and Pygame. I designed the game board, wrote
@@ -27,6 +26,7 @@ export default function Tetris() {
     <Project
       title={title}
       links={links}
+      date={date}
       images={images}
       description={description}
     />

@@ -12,6 +12,7 @@ export default function ReactGoogleAuthStarter() {
     Github: "https://github.com/vincentktieu101/ReactGoogleAuthStarter",
     "YouTube Tutorial": "https://youtu.be/XZceEXlYC1w",
   }
+  const date = "April, 2021 - Present"
   const images = [
     ReactCRAStarterCodeTutorial,
     ReactCRAStarterCodeMobile1,
@@ -20,8 +21,6 @@ export default function ReactGoogleAuthStarter() {
   ]
   const description = (
     <React.Fragment>
-      <div>April, 2021 - Present</div>
-      <br />
       <div>
         In Spring of my junior year at UCSB, I became an Undergraduate Learning
         Assistant (ULA) for CS148 (Computer Science Project), in which students
@@ -38,6 +37,7 @@ export default function ReactGoogleAuthStarter() {
     <Project
       title={title}
       links={links}
+      date={date}
       images={images}
       description={description}
     />

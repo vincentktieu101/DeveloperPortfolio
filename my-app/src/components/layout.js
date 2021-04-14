@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
               >
                 Gatsby
               </a>
-              . Check out the source code{" "}
+              . Check source code{" "}
               <a
                 href="https://github.com/vincentktieu101/DeveloperPortfolio"
                 className="link"
@@ -44,9 +44,6 @@ const Layout = ({ children }) => {
                 here
               </a>
               .
-              <br />
-              <br />
-              <br />
             </div>
           </Container>
         </footer>

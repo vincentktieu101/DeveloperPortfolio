@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div id="about">
       <Container>
-        <div className="about-content">
+        <div className="flex-space-around">
           <div className="about-text">
             <h1 className="text-center">ABOUT ME</h1>
             <hr />
@@ -41,6 +41,7 @@ export default function About() {
               src={UCSBBirdEyesView}
               className="about-skills"
             />
+            <br />
             <div style={{ color: "rgb(87, 86, 86)", margin: "5px 0px" }}>
               View of my University, UC Santa Barbara
             </div>

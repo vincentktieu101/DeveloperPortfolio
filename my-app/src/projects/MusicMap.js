@@ -9,11 +9,10 @@ export default function MusicMap() {
     Website: "https://vincentktieu101.github.io/MusicMap/",
     Github: "https://github.com/vincentktieu101/MusicMap",
   }
+  const date = "March 2021"
   const images = [MusicMapDesktop, MusicMapMobile]
   const description = (
     <React.Fragment>
-      <div>March 2021</div>
-      <br />
       <div>
         MusicMap is my solution for organizing 5000+ music genres and 500,000+
         songs into a user friendly interface. The app features an
@@ -30,6 +29,7 @@ export default function MusicMap() {
     <Project
       title={title}
       links={links}
+      date={date}
       images={images}
       description={description}
     />

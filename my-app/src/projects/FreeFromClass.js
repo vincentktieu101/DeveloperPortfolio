@@ -11,6 +11,7 @@ export default function FreeFromClass() {
     Website: "https://cs48-s20-s2-t2-prod.herokuapp.com/",
     Github: "https://github.com/ucsb-cs48-s20/project-s2-t2-free",
   }
+  const date = "March 2020 - May 2020"
   const images = [
     FreeFromClassDesktop,
     FreeFromClassMobile2,
@@ -19,8 +20,6 @@ export default function FreeFromClass() {
   ]
   const description = (
     <React.Fragment>
-      <div>March 2020 - May 2020</div>
-      <br />
       <div>
         FreeFromClass was a class project for CS48. This was my introduction
         into web development where I worked in a team of 4 to develop an app
@@ -36,6 +35,7 @@ export default function FreeFromClass() {
     <Project
       title={title}
       links={links}
+      date={date}
       images={images}
       description={description}
     />

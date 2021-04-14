@@ -88,6 +88,12 @@ button {
   flex-wrap: wrap;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .text-center {
   text-align: center
 }
@@ -268,19 +274,12 @@ button {
 }
 
 #footer {
-  padding-top: 5vh;
+  padding: 5vh 0;
 }
 
 /* 
 ------------- ABOUT ME -------------
 */
-
-.about-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 
 .about-text {
   width: 100%;

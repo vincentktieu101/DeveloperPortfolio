@@ -39,7 +39,7 @@ export default function ContactForm() {
       )
       .then(
         response => {
-          enqueueSnackbar("Message Sent!", { variant: "success" })
+          enqueueSnackbar("Message Sent! I'll answer back shortly :)", { variant: "success" })
         },
         err => {
           enqueueSnackbar("Try Again", { variant: "error" })
@@ -74,7 +74,7 @@ export default function ContactForm() {
         }}
       />
       <TextField
-        label="Write Anything You'd Like!"
+        label="Send Me A Message!"
         variant="outlined"
         multiline
         rows={3}

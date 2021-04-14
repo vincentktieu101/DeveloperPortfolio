@@ -7,10 +7,10 @@ export default function ChristmasCaneRevenge() {
   const links = {
     "Scratch URL": "https://scratch.mit.edu/projects/195203068/",
   }
+  const date = "December 2017"
   const images = [ChristmasCaneRevengeDesktop]
   const description = (
     <React.Fragment>
-      <div>December 2017</div>
       <div>This is a little bonus project for scrolling to the end :)</div>
     </React.Fragment>
   )
@@ -19,6 +19,7 @@ export default function ChristmasCaneRevenge() {
     <Project
       title={title}
       links={links}
+      date={date}
       images={images}
       description={description}
     />

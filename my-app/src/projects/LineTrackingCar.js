@@ -9,11 +9,10 @@ export default function LineTrackingCar() {
     YouTube:
       "https://www.youtube.com/watch?v=SqduUmIUFV4&ab_channel=VincentTieu",
   }
+  const date = "January 2019 - March 2019"
   const images = [LineTrackingCarImage, LineTrackingCarDesktop]
   const description = (
     <React.Fragment>
-      <div>January 2019 - March 2019</div>
-      <br />
       <div>
         The Line Tracking Car was a project from a ECE project class that I
         took. The project required me to learn breadboarding as well as tweak
@@ -26,6 +25,7 @@ export default function LineTrackingCar() {
     <Project
       title={title}
       links={links}
+      date={date}
       images={images}
       description={description}
     />

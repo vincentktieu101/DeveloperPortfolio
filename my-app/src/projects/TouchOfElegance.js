@@ -10,6 +10,7 @@ export default function TouchOfElegance() {
     Website: "https://touchofelegance.netlify.app/",
     Github: "https://github.com/vincentktieu101/TouchOfElegance",
   }
+  const date = "March, 2021 - Present"
   const images = [
     TouchOfEleganceDesktop,
     TouchOfEleganceMobile,
@@ -17,8 +18,6 @@ export default function TouchOfElegance() {
   ]
   const description = (
     <React.Fragment>
-      <div>March, 2021 - Present</div>
-      <br />
       <div>
         This was my first time doing freelance work and I wrote the website from
         scratch in React GatsbyJS. The previous website that my aunt had for her
@@ -33,6 +32,7 @@ export default function TouchOfElegance() {
     <Project
       title={title}
       links={links}
+      date={date}
       images={images}
       description={description}
     />

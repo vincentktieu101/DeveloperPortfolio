@@ -2,7 +2,7 @@ import React, { useContext, Fragment } from "react"
 import { ModalContext } from "../sections/Projects"
 
 export default function Project(props) {
-  const { title, links, images, description } = props
+  const { title, links, date, images, description } = props
   const handleModal = useContext(ModalContext)
 
   const linksDescription = (
@@ -31,13 +31,16 @@ export default function Project(props) {
       <div className="vl" />
       <div>
         <h3>{title}</h3>
-        {linksDescription}
-        <br />
+        <div style={{marginBottom: "10px"}}>{date}</div>
+        <div>{linksDescription}</div>
         <br />
         {images.map((image, i) => {
           return (
             <Fragment key={i}>
-              <button onClick={() => handleModal(images, i, linksDescription)} className={i !== 0 && "desktop-render"}>
+              <button
+                onClick={() => handleModal(images, i, linksDescription)}
+                className={i !== 0 && "desktop-render"}
+              >
                 <img
                   key={i}
                   className="project-img"

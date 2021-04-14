@@ -8,11 +8,10 @@ export default function Snake() {
   const links = {
     Github: "https://github.com/vincentktieu101/Snake",
   }
+  const date = "December 2018"
   const images = [SnakeDesktop, SnakeDesktop2]
   const description = (
     <React.Fragment>
-      <div>December 2018</div>
-      <br />
       <div>
         I developed this project while I was still an Electrical Engineering
         major. This project has a special place in my heart because it helped me
@@ -43,6 +42,7 @@ export default function Snake() {
     <Project
       title={title}
       links={links}
+      date={date}
       images={images}
       description={description}
     />

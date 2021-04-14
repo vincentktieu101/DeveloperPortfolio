@@ -99,7 +99,7 @@ export default function Projects() {
               onClick={() =>
                 setModal({
                   ...modal,
-                  imageIndex: (modal.imageIndex - 1) % modal.images.length
+                  imageIndex: (modal.imageIndex - 1) % modal.images.length,
                 })
               }
             >
@@ -110,7 +110,7 @@ export default function Projects() {
               onClick={() =>
                 setModal({
                   ...modal,
-                  imageIndex: (modal.imageIndex + 1) % modal.images.length
+                  imageIndex: (modal.imageIndex + 1) % modal.images.length,
                 })
               }
             >
@@ -124,7 +124,7 @@ export default function Projects() {
                 onClick={() =>
                   setModal({
                     ...modal,
-                    imageIndex: (modal.imageIndex - 1) % modal.images.length
+                    imageIndex: (modal.imageIndex - 1) % modal.images.length,
                   })
                 }
               >
@@ -134,7 +134,7 @@ export default function Projects() {
                 onClick={() =>
                   setModal({
                     ...modal,
-                    imageIndex: (modal.imageIndex + 1) % modal.images.length
+                    imageIndex: (modal.imageIndex + 1) % modal.images.length,
                   })
                 }
               >
@@ -146,7 +146,15 @@ export default function Projects() {
       </Modal>
 
       <Container>
-        <h1 className="text-center">PERSONAL PROJECTS</h1>
+        <h1 className="text-center">
+          <span role="img" aria-label="emoji" className="desktop-render">
+            🚀
+          </span>{" "}
+          PERSONAL PROJECTS{" "}
+          <span role="img" aria-label="emoji" className="desktop-render">
+            🌕
+          </span>
+        </h1>
         <hr />
         <br />
         <ModalContext.Provider value={handleModal}>
@@ -154,19 +162,21 @@ export default function Projects() {
             return <Component key={i} />
           })}
         </ModalContext.Provider>
-        {projects.length > projectsViewing ? (
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={() => setProjectsViewing(projectsViewing + 2)}
-          >
-            <h6>See More Projects</h6>
-          </Button>
-        ) : (
-          <Button variant="contained" onClick={() => setProjectsViewing(3)}>
-            <h6>Collapse Projects</h6>
-          </Button>
-        )}
+        <div style={{ textAlign: "center" }}>
+          {projects.length > projectsViewing ? (
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => setProjectsViewing(projectsViewing + 2)}
+            >
+              <h6>See More Projects</h6>
+            </Button>
+          ) : (
+            <Button variant="contained" onClick={() => setProjectsViewing(3)}>
+              <h6>Collapse Projects</h6>
+            </Button>
+          )}
+        </div>
       </Container>
     </div>
   )

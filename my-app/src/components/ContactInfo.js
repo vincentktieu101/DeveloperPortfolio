@@ -10,7 +10,10 @@ import Resume from "../static/s21.2.pdf"
 
 export default function ContactInfo() {
   return (
-    <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
+    <div>
+      <h1 className="text-center">MORE INFO</h1>
+      <hr style={{ width: "360px" }} />
+      <br />
       <h6>
         <a
           href="https://www.google.com/maps/place/Rosemead,+CA/@34.064641,-118.1168945,13z/data=!3m1!4b1!4m5!3m4!1s0x80c2d074766c77b1:0xa0351d489643887c!8m2!3d34.0805651!4d-118.072846"
@@ -79,16 +82,17 @@ export default function ContactInfo() {
         </a>
       </h6>
       <h6>
-        <div
-          role="presentation"
-          onClick={() => window.open(Resume)}
-          className="cursor-hover"
+        <a
+          href={Resume}
+          className="link-no-styles"
+          target="_blank"
+          rel="noreferrer"
         >
           <IconButton color="primary">
             <PostAddIcon fontSize="small" />
           </IconButton>{" "}
           Resume
-        </div>
+        </a>
       </h6>
     </div>
   )

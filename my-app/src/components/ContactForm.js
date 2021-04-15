@@ -39,7 +39,9 @@ export default function ContactForm() {
       )
       .then(
         response => {
-          enqueueSnackbar("Message Sent! I'll answer back shortly :)", { variant: "success" })
+          enqueueSnackbar("Message Sent! I'll answer back shortly :)", {
+            variant: "success",
+          })
         },
         err => {
           enqueueSnackbar("Try Again", { variant: "error" })

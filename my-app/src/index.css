@@ -72,6 +72,10 @@ button {
   background-color: rgb(255, 255, 255, 0);
 }
 
+hr {
+  max-width: 100%;
+}
+
 @media (min-width: 700px) {
   hr {
     width: 500px;

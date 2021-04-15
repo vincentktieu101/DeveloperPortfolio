@@ -31,7 +31,7 @@ export default function Project(props) {
       <div className="vl" />
       <div>
         <h3>{title}</h3>
-        <div style={{marginBottom: "10px"}}>{date}</div>
+        <div style={{ marginBottom: "10px" }}>{date}</div>
         <div>{linksDescription}</div>
         <br />
         {images.map((image, i) => {

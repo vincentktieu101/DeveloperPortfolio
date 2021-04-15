@@ -54,46 +54,51 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={submitForm}>
-      <TextField
-        label="Name"
-        variant="outlined"
-        style={{ width: "100%", marginBottom: "5px" }}
-        value={contactForm.name}
-        onChange={e => {
-          setContactForm({ ...contactForm, name: e.target.value })
-        }}
-      />
-      <TextField
-        label="Contact Info"
-        variant="outlined"
-        style={{ width: "100%", marginBottom: "5px" }}
-        value={contactForm.contact}
-        onChange={e => {
-          setContactForm({ ...contactForm, contact: e.target.value })
-        }}
-      />
-      <TextField
-        label="Send Me A Message!"
-        variant="outlined"
-        multiline
-        rows={3}
-        style={{ width: "100%", marginBottom: "5px" }}
-        value={contactForm.message}
-        onChange={e => {
-          setContactForm({ ...contactForm, message: e.target.value })
-        }}
-      />
-      <Button
-        variant="contained"
-        color="primary"
-        style={{ width: "100%", marginBottom: "5px" }}
-        type="submit"
-      >
-        Submit
-      </Button>
+    <div>
+      <h1 className="text-center">CONTACT ME</h1>
+      <hr />
       <br />
-      <br />
-    </form>
+      <form onSubmit={submitForm}>
+        <TextField
+          label="Name"
+          variant="outlined"
+          style={{ width: "100%", marginBottom: "5px" }}
+          value={contactForm.name}
+          onChange={e => {
+            setContactForm({ ...contactForm, name: e.target.value })
+          }}
+        />
+        <TextField
+          label="Contact Info"
+          variant="outlined"
+          style={{ width: "100%", marginBottom: "5px" }}
+          value={contactForm.contact}
+          onChange={e => {
+            setContactForm({ ...contactForm, contact: e.target.value })
+          }}
+        />
+        <TextField
+          label="Send Me A Message!"
+          variant="outlined"
+          multiline
+          rows={3}
+          style={{ width: "100%", marginBottom: "5px" }}
+          value={contactForm.message}
+          onChange={e => {
+            setContactForm({ ...contactForm, message: e.target.value })
+          }}
+        />
+        <Button
+          variant="contained"
+          color="primary"
+          style={{ width: "100%", marginBottom: "5px" }}
+          type="submit"
+        >
+          Submit
+        </Button>
+        <br />
+        <br />
+      </form>
+    </div>
   )
 }

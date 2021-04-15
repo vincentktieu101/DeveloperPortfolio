@@ -358,6 +358,12 @@ button:focus {
   }
 }
 
+@media (max-width: 700px) {
+  .mobile-center {
+    text-align: center;
+  }
+}
+
 /* 
 ------------- CONTACT -------------
 */

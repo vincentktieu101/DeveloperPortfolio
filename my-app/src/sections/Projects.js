@@ -162,7 +162,7 @@ export default function Projects() {
             return <Component key={i} />
           })}
         </ModalContext.Provider>
-        <div style={{ textAlign: "center" }}>
+        <div className="mobile-center">
           {projects.length > projectsViewing ? (
             <Button
               variant="contained"

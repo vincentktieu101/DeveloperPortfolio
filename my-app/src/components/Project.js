@@ -39,7 +39,7 @@ export default function Project(props) {
             <Fragment key={i}>
               <button
                 onClick={() => handleModal(images, i, linksDescription)}
-                className={i !== 0 && "desktop-render"}
+                className={i !== 0 ? "desktop-render" : ""}
               >
                 <img
                   key={i}

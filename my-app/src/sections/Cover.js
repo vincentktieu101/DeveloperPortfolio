@@ -3,7 +3,7 @@ import VincentHeadshot from "../images/vincent-headshot.png"
 
 export default function Cover() {
   return (
-    <div id="cover">
+    <div id="cover" className="fade-in">
       <div className="cover-background" />
       <img className="cover-content" src={VincentHeadshot} alt="Vincent Tieu" />
       <div className="cover-text">

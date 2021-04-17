@@ -11,7 +11,7 @@ import Resume from "../static/s21.2.pdf"
 export default function ContactInfo() {
   return (
     <div>
-      <h1 className="text-center">MORE INFO</h1>
+      <h1 className="text-center fade-in">MORE INFO</h1>
       <hr style={{ width: "360px" }} />
       <br />
       <h6>

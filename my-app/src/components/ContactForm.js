@@ -57,7 +57,7 @@ export default function ContactForm() {
 
   return (
     <div>
-      <h1 className="text-center">CONTACT ME</h1>
+      <h1 className="text-center fade-in">CONTACT ME</h1>
       <hr />
       <br />
       <form onSubmit={submitForm}>

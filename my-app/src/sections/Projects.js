@@ -146,7 +146,7 @@ export default function Projects() {
       </Modal>
 
       <Container>
-        <h1 className="text-center">
+        <h1 className="text-center fade-in">
           <span role="img" aria-label="emoji" className="desktop-render">
             🚀
           </span>{" "}
@@ -159,7 +159,7 @@ export default function Projects() {
         <br />
         <ModalContext.Provider value={handleModal}>
           {projects.slice(0, projectsViewing).map((Component, i) => {
-            return <Component key={i} />
+            return <div className={i < 3 ? "fade-in" : "fade-appear"}><Component key={i} /></div>
           })}
         </ModalContext.Provider>
         <div className="mobile-center">

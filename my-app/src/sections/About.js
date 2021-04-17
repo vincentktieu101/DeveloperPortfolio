@@ -7,7 +7,7 @@ export default function About() {
     <div id="about">
       <Container>
         <div className="flex-space-around">
-          <div className="about-text">
+          <div className="about-text fade-in">
             <h1 className="text-center">ABOUT ME</h1>
             <hr />
             <br />
@@ -35,7 +35,7 @@ export default function About() {
             </div>
             <br />
           </div>
-          <div>
+          <div className="fade-in">
             <img
               alt="UC Santa Barbara"
               src={UCSBBirdEyesView}

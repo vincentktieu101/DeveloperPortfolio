@@ -9,27 +9,10 @@ import About from "../sections/About"
 import Contact from "../sections/Contact"
 // import Experience from "../sections/Experience"
 import Projects from "../sections/Projects"
+import initFaders from "../utils/init-faders"
 
 export default function IndexPage() {
-  useEffect(() => {
-    const faders = document.querySelectorAll('.fade-in')
-    const appearOptions = {
-      threshold: 0.4
-    }
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-          return;
-        } else {
-          entry.target.classList.add("appear");
-          appearOnScroll.unobserve(entry.target);
-        }
-      })
-    }, appearOptions)
-    faders.forEach(faders => {
-      appearOnScroll.observe(faders);
-    })
-  }, [])
+  useEffect(initFaders, [])
 
   return (
     <SnackbarProvider maxSnack={3}>

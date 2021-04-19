@@ -99,7 +99,7 @@ export default function Projects() {
               onClick={() =>
                 setModal({
                   ...modal,
-                  imageIndex: (modal.imageIndex - 1) % modal.images.length,
+                  imageIndex: modal.imageIndex === 0 ? (modal.images.length - 1) : (modal.imageIndex - 1),
                 })
               }
             >
@@ -124,7 +124,7 @@ export default function Projects() {
                 onClick={() =>
                   setModal({
                     ...modal,
-                    imageIndex: (modal.imageIndex - 1) % modal.images.length,
+                    imageIndex: modal.imageIndex === 0 ? (modal.images.length - 1) : (modal.imageIndex - 1),
                   })
                 }
               >

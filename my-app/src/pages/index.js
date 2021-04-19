@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import "../index.css"
+import "../styles/index.css"
 import { SnackbarProvider } from "notistack"
 
 import Layout from "../components/Layout"

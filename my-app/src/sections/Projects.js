@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Container from "@material-ui/core/Container"
 import Button from "@material-ui/core/Button"
 import Modal from "@material-ui/core/Modal"
@@ -7,6 +7,8 @@ import Backdrop from "@material-ui/core/Backdrop"
 import IconButton from "@material-ui/core/IconButton"
 import NavigateNextIcon from "@material-ui/icons/NavigateNext"
 import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore"
+import initVl from "../utils/init-vl"
+import initFaders from "../utils/init-faders"
 
 import ReactCRAStarterCode from "../projects/ReactCRAStarterCode"
 import TouchOfElegance from "../projects/TouchOfElegance"
@@ -70,6 +72,11 @@ export default function Projects() {
     Snake,
     ChristmasCaneRevenge,
   ]
+
+  useEffect(() => {
+    initVl();
+    initFaders();
+  }, [projectsViewing])
 
   return (
     <div id="projects">
@@ -158,12 +165,12 @@ export default function Projects() {
         <hr />
         <br />
         <ModalContext.Provider value={handleModal}>
-          {projects.slice(0, 3).map((Component, i) => {
+          {projects.slice(0, projectsViewing).map((Component, i) => {
             return <div className="fade-in" key={i}><Component /></div>
           })}
-          {projects.slice(3, projectsViewing).map((Component, i) => {
+          {/* {projects.slice(3, projectsViewing).map((Component, i) => {
             return <div className={projectsViewing < i ? "hidden" : "fade-appear"} key={i}><Component /></div>
-          })}
+          })} */}
         </ModalContext.Provider>
         <div className="mobile-center">
           {projects.length > projectsViewing ? (

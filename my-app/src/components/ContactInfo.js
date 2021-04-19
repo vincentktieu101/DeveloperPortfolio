@@ -11,7 +11,15 @@ import Resume from "../static/s21.2.pdf"
 export default function ContactInfo() {
   return (
     <div style={{marginBottom: "10vh"}}>
-      <h1 className="text-center fade-in">MORE INFO</h1>
+      <h1 className="text-center fade-in">MORE INFO{" "}
+        <span
+          className="emoji-shake"
+        >
+          <span role="img" aria-label="emoji" className="hover-shake">
+            ✨
+          </span>
+        </span>
+      </h1>
       <hr style={{ width: "360px" }} />
       <br />
       <h6>
@@ -83,7 +91,7 @@ export default function ContactInfo() {
       </h6>
       <h6>
         <a
-          href={Resume}
+          href={"https://drive.google.com/file/d/1YiDagH1fr3_DTEwY4Bn6db0H0g1UE6vV/view?usp=sharing"}
           className="link-no-styles"
           target="_blank"
           rel="noreferrer"

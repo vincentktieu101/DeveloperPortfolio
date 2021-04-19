@@ -15,25 +15,42 @@ import CodeIcon from "@material-ui/icons/Code"
 import ContactMailIcon from "@material-ui/icons/ContactMail"
 
 export default function NavBar() {
+  const [drawer, setDrawer] = useState()
   const [navShrink, setNavShrink] = useState(true)
-  const [state, setState] = useState()
+  const [currentSection, setCurrentSection] = useState("cover")
 
   useEffect(() => {
+    const about = document.getElementById("about")
+    const projects = document.getElementById("projects")
+    const contact = document.getElementById("contact")
+
     window.addEventListener("scroll", () => {
       if (window.pageYOffset < "10") {
         setNavShrink(true)
       } else {
         setNavShrink(false)
       }
+
+      if (window.pageYOffset >= contact.offsetTop - 200) {
+        setCurrentSection("contact")
+      } else if (window.pageYOffset >= projects.offsetTop - 200) {
+        setCurrentSection("projects")
+      } else if (window.pageYOffset >= about.offsetTop - 200) {
+        setCurrentSection("about")
+      } else {
+        setCurrentSection("cover")
+      }
+      
+      console.log(currentSection)
     })
-  }, [])
+  }, [currentSection])
 
   const list = (
     <div
       role="presentation"
       style={{ width: "250px" }}
-      onClick={() => setState(false)}
-      onKeyDown={() => setState(false)}
+      onClick={() => setDrawer(false)}
+      onKeyDown={() => setDrawer(false)}
     >
       <List>
         <Link to="/" className="nav-link" style={{ color: "black" }}>
@@ -100,26 +117,29 @@ export default function NavBar() {
             )}
           </Link>
           <div className="desktop-render">
-            <Link to="/" className="nav-link" style={{ margin: "0 10px" }}>
+            <Link 
+              to="/"
+              className={currentSection === "cover" ? "link" : "nav-link"}
+              style={{ margin: "0 10px" }}>
               <b>HOME</b>
             </Link>
             <Link
               to="/#about"
-              className="nav-link"
+              className={currentSection === "about" ? "link" : "nav-link"}
               style={{ margin: "0 10px" }}
             >
               <b>ABOUT</b>
             </Link>
             <Link
               to="/#projects"
-              className="nav-link"
+              className={currentSection === "projects" ? "link" : "nav-link"}
               style={{ margin: "0 10px" }}
             >
               <b>PROJECTS</b>
             </Link>
             <Link
               to="/#contact"
-              className="nav-link"
+              className={currentSection === "contact" ? "link" : "nav-link"}
               style={{ margin: "0 10px" }}
             >
               <b>CONTACT</b>
@@ -127,15 +147,15 @@ export default function NavBar() {
           </div>
           <div className="mobile-render">
             <IconButton
-              onClick={() => setState(true)}
+              onClick={() => setDrawer(true)}
               style={{ margin: "0", padding: "0" }}
             >
               <MenuIcon fontSize="large" />
             </IconButton>
             <Drawer
               anchor={"right"}
-              open={state}
-              onClose={() => setState(false)}
+              open={drawer}
+              onClose={() => setDrawer(false)}
               className="drawer"
             >
               {list}

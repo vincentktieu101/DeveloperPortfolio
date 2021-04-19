@@ -22,18 +22,6 @@
   color: #007bff;
 }
 
-@media (max-width: 700px) {
-  .desktop-render {
-    display: none;
-  }
-}
-
-@media (min-width: 700px) {
-  .mobile-render {
-    display: none;
-  }
-}
-
 .brand {
   font-family: "Oswald";
   line-height: 1.2;

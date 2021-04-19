@@ -158,8 +158,11 @@ export default function Projects() {
         <hr />
         <br />
         <ModalContext.Provider value={handleModal}>
-          {projects.slice(0, projectsViewing).map((Component, i) => {
-            return <div className={i < 3 ? "fade-in" : "fade-appear"} key={i}><Component /></div>
+          {projects.slice(0, 3).map((Component, i) => {
+            return <div className="fade-in" key={i}><Component /></div>
+          })}
+          {projects.slice(3, projectsViewing).map((Component, i) => {
+            return <div className={projectsViewing < i ? "hidden" : "fade-appear"} key={i}><Component /></div>
           })}
         </ModalContext.Provider>
         <div className="mobile-center">

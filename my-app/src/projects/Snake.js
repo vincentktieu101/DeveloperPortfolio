@@ -7,6 +7,7 @@ export default function Snake() {
   const title = "Snake"
   const links = {
     Github: "https://github.com/vincentktieu101/Snake",
+    Guide: "https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit"
   }
   const date = "December 2018"
   const images = [SnakeDesktop, SnakeDesktop2]

@@ -127,6 +127,10 @@ hr {
    }
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 /* 
 ------------- NAVBAR -------------
 */

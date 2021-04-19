@@ -56,8 +56,13 @@ export default function ContactForm() {
   }
 
   return (
-    <div>
-      <h1 className="text-center fade-in">CONTACT ME</h1>
+    <div style={{marginBottom: "10vh"}}>
+      <h1 className="text-center fade-in">
+        CONTACT ME{" "}
+        <span role="img" aria-label="emoji" className="desktop-render emoji-shake">
+          👋
+        </span>
+      </h1>
       <hr />
       <br />
       <form onSubmit={submitForm}>
@@ -98,7 +103,6 @@ export default function ContactForm() {
         >
           Submit
         </Button>
-        <br />
         <br />
       </form>
     </div>

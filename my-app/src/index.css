@@ -128,7 +128,7 @@ hr {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 /* 
@@ -444,4 +444,36 @@ button:focus {
 .contact-buttons > * {
   margin-right: 5px;
   margin-bottom: 5px;
+}
+
+.hover-shake:hover {
+  animation: shake ease 500ms;
+}
+
+@media (min-width: 700px) {
+  .emoji-shake {
+    display: inline-block;
+  }
+
+  .emoji-shake.appear {
+    animation: shake ease 1s;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

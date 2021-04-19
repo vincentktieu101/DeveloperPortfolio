@@ -1,5 +1,5 @@
 export default function initFaders() {
-  const faders = document.querySelectorAll('.fade-in')
+  const interesectors = document.querySelectorAll('.fade-in')
   const appearOptions = {
     threshold: 0.4
   }
@@ -13,7 +13,7 @@ export default function initFaders() {
       }
     })
   }, appearOptions)
-  faders.forEach(faders => {
-    appearOnScroll.observe(faders);
+  interesectors.forEach(interesectors => {
+    appearOnScroll.observe(interesectors);
   })
 }

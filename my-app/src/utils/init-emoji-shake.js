@@ -1,5 +1,5 @@
-export default function initVl() {
-  const intersectors = document.querySelectorAll('.vl')
+export default function initShakers() {
+  const intersectors = document.querySelectorAll('.emoji-shake')
   const appearOptions = {
     threshold: 0.6
   }
@@ -7,9 +7,7 @@ export default function initVl() {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
         entry.target.classList.remove("appear");
-        entry.target.classList.add("disappear");
       } else {
-        entry.target.classList.remove("disappear");
         entry.target.classList.add("appear");
       }
     })

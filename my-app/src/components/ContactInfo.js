@@ -10,7 +10,7 @@ import Resume from "../static/s21.2.pdf"
 
 export default function ContactInfo() {
   return (
-    <div>
+    <div style={{marginBottom: "10vh"}}>
       <h1 className="text-center fade-in">MORE INFO</h1>
       <hr style={{ width: "360px" }} />
       <br />
@@ -21,7 +21,7 @@ export default function ContactInfo() {
           target="_blank"
           rel="noreferrer"
         >
-          <IconButton color="primary">
+          <IconButton color="primary" className="hover-shake">
             <HomeIcon fontSize="small" />
           </IconButton>{" "}
           Rosemead, Los Angeles
@@ -36,7 +36,7 @@ export default function ContactInfo() {
           target="_blank"
           rel="noreferrer"
         >
-          <IconButton color="primary">
+          <IconButton color="primary" className="hover-shake">
             <PhoneIcon fontSize="small" />
           </IconButton>{" "}
           (626) 537-5590
@@ -49,7 +49,7 @@ export default function ContactInfo() {
           target="_blank"
           rel="noreferrer"
         >
-          <IconButton color="primary">
+          <IconButton color="primary" className="hover-shake">
             <MailOutlineIcon fontSize="small" />
           </IconButton>{" "}
           vincentktieu101@gmail.com
@@ -62,7 +62,7 @@ export default function ContactInfo() {
           target="_blank"
           rel="noreferrer"
         >
-          <IconButton color="primary">
+          <IconButton color="primary" className="hover-shake">
             <GitHubIcon fontSize="small" />
           </IconButton>{" "}
           https://github.com/vincentktieu101
@@ -76,7 +76,7 @@ export default function ContactInfo() {
           rel="noreferrer"
         >
           <IconButton color="primary">
-            <LinkedInIcon fontSize="small" />
+            <LinkedInIcon fontSize="small" className="hover-shake" />
           </IconButton>{" "}
           https://www.linkedin.com/in/vincentktieu/
         </a>
@@ -88,7 +88,7 @@ export default function ContactInfo() {
           target="_blank"
           rel="noreferrer"
         >
-          <IconButton color="primary">
+          <IconButton color="primary" className="hover-shake">
             <PostAddIcon fontSize="small" />
           </IconButton>{" "}
           Resume

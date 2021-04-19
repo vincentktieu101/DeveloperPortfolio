@@ -154,7 +154,7 @@ export default function Projects() {
 
       <Container>
         <h1 className="text-center fade-in">
-          <span role="img" aria-label="emoji" className="desktop-render">
+          <span role="img" aria-label="emoji" className="desktop-render emoji-shake hover-shake">
             🚀
           </span>{" "}
           PERSONAL PROJECTS{" "}

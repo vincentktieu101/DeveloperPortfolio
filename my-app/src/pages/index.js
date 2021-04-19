@@ -10,11 +10,12 @@ import Contact from "../sections/Contact"
 // import Experience from "../sections/Experience"
 import Projects from "../sections/Projects"
 import initFaders from "../utils/init-faders"
-import initVl from "../utils/init-vl"
+import initEmojiShake from "../utils/init-emoji-shake"
 
 export default function IndexPage() {
   useEffect(() => {
     initFaders();
+    initEmojiShake();
   }, [])
 
   return (

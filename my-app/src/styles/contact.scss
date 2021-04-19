@@ -1,0 +1,10 @@
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contact-buttons > * {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}

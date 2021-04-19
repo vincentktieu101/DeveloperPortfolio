@@ -1,0 +1,92 @@
+.project-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-height: 40vh;
+  margin-bottom: 30px;
+}
+
+.vl {
+  visibility: hidden;
+}
+
+@media (min-width: 700px) {
+  .vl {
+    visibility: visible;
+    border-left: 3px solid black;
+    height: 400px;
+    margin-right: 20px;
+  }
+
+  .vl.appear {
+    animation: enlargeVl ease 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .vl.disappear {
+    animation: reduceVl ease 1000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes enlargeVl {
+    0% {
+      border-left: 3px solid black;
+      margin-right: 20px;
+    }
+    100% {
+      border-left: 6px solid black;
+      margin-right: 25px; 
+    }
+  }
+
+  @keyframes reduceVl {
+    0% {
+      border-left: 6px solid black;
+      margin-right: 25px;
+    }
+    100% {
+      border-left: 3px solid black;
+      margin-right: 20px;
+    }
+  }
+}
+
+.project-modal-img {
+  max-height: 600px;
+  max-width: 100%;
+  width: auto;
+  border: 1px solid rgb(228, 228, 228);
+}
+
+.project-img {
+  max-height: 360px;
+  max-width: 100%;
+  width: auto;
+  border: 1px solid rgb(228, 228, 228);
+  transition: transform .4s;
+}
+
+.project-img:hover,
+button:focus {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.project-desc {
+  width: 100%;
+  line-height: 1.5;
+}
+
+@media (min-width: 700px) {
+  .project-desc {
+    width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .mobile-center {
+    text-align: center;
+  }
+}

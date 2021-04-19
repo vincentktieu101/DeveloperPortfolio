@@ -1,0 +1,51 @@
+.nav-bar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  padding: 10px 0;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+@media (max-width: 700px) {
+  .desktop-render {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .mobile-render {
+    display: none;
+  }
+}
+
+.brand {
+  font-family: "Oswald";
+  line-height: 1.2;
+}
+
+.brand-name {
+  color: black;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.brand-under {
+  color: rgb(87, 86, 86);
+  font-size: 21px;
+}

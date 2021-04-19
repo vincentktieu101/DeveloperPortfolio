@@ -1,0 +1,19 @@
+.about-text {
+  width: 100%;
+  margin-right: 10px;
+  line-height: 1.5;
+}
+
+@media(min-width: 800px) {
+  .about-text {
+    width: 480px;
+  }
+}
+
+.about-skills {
+  height: 440px;
+  max-width: 100%;
+  width: auto;
+  margin-top: 30px;
+  opacity: 0.8;
+}

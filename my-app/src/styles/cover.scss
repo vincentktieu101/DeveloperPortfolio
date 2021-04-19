@@ -1,0 +1,94 @@
+.cover-background {
+  position: absolute;
+  z-index: -1;
+  height: 80vh;
+  padding: 10vh;
+  background-image: url("../images/lightbulbs.jpeg");
+  opacity: 0.8;
+  background-position: left;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.cover-content {
+  z-index: 0;
+  height: 700px;
+  margin-top: 180px;
+}
+
+@media (min-width: 800px) {
+  .cover-content {
+    height: 780px;
+    margin-right: 500px;
+    margin-bottom: 60px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .cover-content {
+    height: 780px;
+    margin-right: 680px;
+    margin-bottom: 60px;
+    margin-top: 0px;
+  }
+}
+
+.cover-text {
+  position: absolute;
+  z-index: 1;
+  line-height: 0.9;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: -200px;
+}
+
+@media (min-width: 800px) {
+  .cover-text {
+    margin-left: 350px;
+    margin-top: -150px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .cover-text {
+    margin-left: 550px;
+    margin-top: -150px;
+  }
+}
+
+.cover-animated-title {
+  height: 40px;
+  padding: 4px 0;
+  overflow: hidden;
+}
+
+.line {
+  line-height: 50px;
+}
+
+.line:first-child {
+  animation: animated-title 8s infinite;
+}
+
+@keyframes animated-title {
+  0% {
+    margin-top: 0px;
+  }
+  30% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: -50px;
+  }
+  80% {
+    margin-top: -50px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}

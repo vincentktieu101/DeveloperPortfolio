@@ -111,22 +111,6 @@ hr {
   opacity: 1;
 }
 
-.fade-appear {
-  opacity: 0;
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-   }
-}
-
 .hidden {
   display: none;
 }
@@ -277,10 +261,10 @@ hr {
 }
 
 .line:first-child {
-  animation: a 8s infinite;
+  animation: animated-title 8s infinite;
 }
 
-@keyframes a {
+@keyframes animated-title {
   0% {
     margin-top: 0px;
   }
@@ -303,11 +287,17 @@ hr {
 #projects,
 #contact {
   min-height: 30vh;
+}
+
+#about,
+#experience,
+#projects,
+#contact {
   padding-top: 10vh;
 }
 
 #footer {
-  padding: 5vh 0;
+  padding-bottom: 5vh;
 }
 
 /* 
@@ -451,11 +441,15 @@ button:focus {
 }
 
 @media (min-width: 700px) {
-  .emoji-shake {
+  .emoji-shake, .hover-shake {
     display: inline-block;
   }
 
   .emoji-shake.appear {
+    animation: shake ease 1s;
+  }
+
+  .emoji-shake.appear:hover {
     animation: shake ease 1s;
   }
 }

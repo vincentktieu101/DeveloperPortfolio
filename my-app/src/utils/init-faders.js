@@ -1,19 +1,23 @@
 export default function initFaders() {
-  const interesectors = document.querySelectorAll('.fade-in')
+  const intersectors = document.querySelectorAll(".fade-in")
   const appearOptions = {
-    threshold: 0.4
+    threshold: 0.4,
   }
-  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+  const appearOnScroll = new IntersectionObserver(function (
+    entries,
+    appearOnScroll
+  ) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
-        return;
+        return
       } else {
-        entry.target.classList.add("appear");
-        appearOnScroll.unobserve(entry.target);
+        entry.target.classList.add("appear")
+        appearOnScroll.unobserve(entry.target)
       }
     })
-  }, appearOptions)
-  interesectors.forEach(interesectors => {
-    appearOnScroll.observe(interesectors);
+  },
+  appearOptions)
+  intersectors.forEach(intersectors => {
+    appearOnScroll.observe(intersectors)
   })
 }

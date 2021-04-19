@@ -14,8 +14,8 @@ import initEmojiShake from "../utils/init-emoji-shake"
 
 export default function IndexPage() {
   useEffect(() => {
-    initFaders();
-    initEmojiShake();
+    initFaders()
+    initEmojiShake()
   }, [])
 
   return (

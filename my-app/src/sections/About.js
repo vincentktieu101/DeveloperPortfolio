@@ -8,7 +8,18 @@ export default function About() {
       <Container>
         <div className="flex-space-around">
           <div className="about-text fade-in">
-            <h1 className="text-center">ABOUT ME</h1>
+            <h1 className="text-center">
+              ABOUT ME{" "}
+              <span
+                role="img"
+                aria-label="emoji"
+                className="desktop-render emoji-shake"
+              >
+                <span role="img" aria-label="emoji" className="hover-shake">
+                  📚
+                </span>
+              </span>
+            </h1>
             <hr />
             <br />
             <div>

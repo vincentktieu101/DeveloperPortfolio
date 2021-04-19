@@ -59,8 +59,14 @@ export default function ContactForm() {
     <div style={{marginBottom: "10vh"}}>
       <h1 className="text-center fade-in">
         CONTACT ME{" "}
-        <span role="img" aria-label="emoji" className="desktop-render emoji-shake">
-          👋
+        <span
+          role="img"
+          aria-label="emoji"
+          className="desktop-render emoji-shake"
+        >
+          <span role="img" aria-label="emoji" className="hover-shake">
+            👋
+          </span>
         </span>
       </h1>
       <hr />

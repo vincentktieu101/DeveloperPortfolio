@@ -74,8 +74,8 @@ export default function Projects() {
   ]
 
   useEffect(() => {
-    initVl();
-    initFaders();
+    initVl()
+    initFaders()
   }, [projectsViewing])
 
   return (
@@ -106,7 +106,10 @@ export default function Projects() {
               onClick={() =>
                 setModal({
                   ...modal,
-                  imageIndex: modal.imageIndex === 0 ? (modal.images.length - 1) : (modal.imageIndex - 1),
+                  imageIndex:
+                    modal.imageIndex === 0
+                      ? modal.images.length - 1
+                      : modal.imageIndex - 1,
                 })
               }
             >
@@ -131,7 +134,10 @@ export default function Projects() {
                 onClick={() =>
                   setModal({
                     ...modal,
-                    imageIndex: modal.imageIndex === 0 ? (modal.images.length - 1) : (modal.imageIndex - 1),
+                    imageIndex:
+                      modal.imageIndex === 0
+                        ? modal.images.length - 1
+                        : modal.imageIndex - 1,
                   })
                 }
               >
@@ -154,8 +160,14 @@ export default function Projects() {
 
       <Container>
         <h1 className="text-center fade-in">
-          <span role="img" aria-label="emoji" className="desktop-render emoji-shake hover-shake">
-            🚀
+          <span
+            role="img"
+            aria-label="emoji"
+            className="desktop-render emoji-shake"
+          >
+            <span role="img" aria-label="emoji" className="hover-shake">
+              🚀
+            </span>
           </span>{" "}
           PERSONAL PROJECTS{" "}
           <span role="img" aria-label="emoji" className="desktop-render">
@@ -166,11 +178,12 @@ export default function Projects() {
         <br />
         <ModalContext.Provider value={handleModal}>
           {projects.slice(0, projectsViewing).map((Component, i) => {
-            return <div className="fade-in" key={i}><Component /></div>
+            return (
+              <div className="fade-in" key={i}>
+                <Component />
+              </div>
+            )
           })}
-          {/* {projects.slice(3, projectsViewing).map((Component, i) => {
-            return <div className={projectsViewing < i ? "hidden" : "fade-appear"} key={i}><Component /></div>
-          })} */}
         </ModalContext.Provider>
         <div className="mobile-center">
           {projects.length > projectsViewing ? (

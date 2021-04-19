@@ -9,15 +9,7 @@ import NavigateNextIcon from "@material-ui/icons/NavigateNext"
 import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore"
 import initVl from "../utils/init-vl"
 import initFaders from "../utils/init-faders"
-
-import ReactCRAStarterCode from "../projects/ReactCRAStarterCode"
-import TouchOfElegance from "../projects/TouchOfElegance"
-import MusicMap from "../projects/MusicMap"
-import FreeFromClass from "../projects/FreeFromClass"
-import LineTrackingCar from "../projects/LineTrackingCar"
-import Tetris from "../projects/Tetris"
-import Snake from "../projects/Snake"
-import ChristmasCaneRevenge from "../projects/ChristmasCaneRevenge"
+import getAllProjects from "../projects"
 
 const useStyles = makeStyles(theme => ({
   modal: {
@@ -62,16 +54,7 @@ export default function Projects() {
 
   const [projectsViewing, setProjectsViewing] = useState(3)
 
-  const projects = [
-    ReactCRAStarterCode,
-    TouchOfElegance,
-    MusicMap,
-    FreeFromClass,
-    LineTrackingCar,
-    Tetris,
-    Snake,
-    ChristmasCaneRevenge,
-  ]
+  const projects = getAllProjects()
 
   useEffect(() => {
     initVl()
@@ -161,8 +144,6 @@ export default function Projects() {
       <Container>
         <h1 className="text-center fade-in">
           <span
-            role="img"
-            aria-label="emoji"
             className="desktop-render emoji-shake"
           >
             <span role="img" aria-label="emoji" className="hover-shake">

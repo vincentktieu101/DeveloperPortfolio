@@ -11,8 +11,6 @@ export default function About() {
             <h1 className="text-center">
               ABOUT ME{" "}
               <span
-                role="img"
-                aria-label="emoji"
                 className="desktop-render emoji-shake"
               >
                 <span role="img" aria-label="emoji" className="hover-shake">

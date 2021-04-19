@@ -60,8 +60,6 @@ export default function ContactForm() {
       <h1 className="text-center fade-in">
         CONTACT ME{" "}
         <span
-          role="img"
-          aria-label="emoji"
           className="desktop-render emoji-shake"
         >
           <span role="img" aria-label="emoji" className="hover-shake">

@@ -82,10 +82,6 @@ hr {
   }
 }
 
-.cursor-hover:hover {
-  cursor: pointer;
-}
-
 .flex-space-around {
   display: flex;
   justify-content: space-around;
@@ -102,17 +98,25 @@ hr {
   text-align: center
 }
 
+.hidden {
+  display: none;
+}
+
+/* 
+------------- ANIMATIONS -------------
+*/
+
 .fade-in {
   opacity: 0;
-  transition: opacity 250ms ease-in;
 }
 
 .fade-in.appear {
+  transition: 250ms ease-in;
   opacity: 1;
 }
 
-.hidden {
-  display: none;
+.hover-shake:hover {
+  animation: shake ease 500ms;
 }
 
 /* 
@@ -186,6 +190,28 @@ hr {
   align-items: center;
   overflow: hidden;
 }
+
+#about,
+#experience,
+#projects,
+#contact {
+  min-height: 30vh;
+}
+
+#about,
+#experience,
+#projects,
+#contact {
+  padding-top: 10vh;
+}
+
+#footer {
+  padding-bottom: 5vh;
+}
+
+/* 
+------------- COVER -------------
+*/
 
 .cover-background {
   position: absolute;
@@ -280,24 +306,6 @@ hr {
   100% {
     margin-top: 0px;
   }
-}
-
-#about,
-#experience,
-#projects,
-#contact {
-  min-height: 30vh;
-}
-
-#about,
-#experience,
-#projects,
-#contact {
-  padding-top: 10vh;
-}
-
-#footer {
-  padding-bottom: 5vh;
 }
 
 /* 
@@ -434,10 +442,6 @@ button:focus {
 .contact-buttons > * {
   margin-right: 5px;
   margin-bottom: 5px;
-}
-
-.hover-shake:hover {
-  animation: shake ease 500ms;
 }
 
 @media (min-width: 700px) {

@@ -10,9 +10,7 @@ export default function About() {
           <div className="about-text fade-in">
             <h1 className="text-center">
               ABOUT ME{" "}
-              <span
-                className="emoji-shake"
-              >
+              <span className="emoji-shake">
                 <span role="img" aria-label="emoji" className="hover-shake">
                   📚
                 </span>

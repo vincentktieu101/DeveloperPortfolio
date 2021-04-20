@@ -143,17 +143,13 @@ export default function Projects() {
 
       <Container>
         <h1 className="text-center fade-in">
-          <span
-            className="emoji-shake"
-          >
+          <span className="emoji-shake">
             <span role="img" aria-label="emoji" className="hover-shake">
               🚀
             </span>
           </span>{" "}
           PERSONAL PROJECTS{" "}
-          <span
-            className="emoji-shake"
-          >
+          <span className="emoji-shake">
             <span role="img" aria-label="emoji" className="hover-shake">
               🌕
             </span>

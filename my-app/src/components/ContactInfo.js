@@ -6,15 +6,14 @@ import GitHubIcon from "@material-ui/icons/GitHub"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import PostAddIcon from "@material-ui/icons/PostAdd"
 import MailOutlineIcon from "@material-ui/icons/MailOutline"
-import Resume from "../static/s21.2.pdf"
+// import Resume from "../static/s21.2.pdf"
 
 export default function ContactInfo() {
   return (
-    <div style={{marginBottom: "10vh"}}>
-      <h1 className="text-center fade-in">MORE INFO{" "}
-        <span
-          className="emoji-shake"
-        >
+    <div id="contact-info">
+      <h1 className="text-center fade-in">
+        MORE INFO{" "}
+        <span className="emoji-shake">
           <span role="img" aria-label="emoji" className="hover-shake">
             ✨
           </span>
@@ -91,7 +90,9 @@ export default function ContactInfo() {
       </h6>
       <h6>
         <a
-          href={"https://drive.google.com/file/d/1YiDagH1fr3_DTEwY4Bn6db0H0g1UE6vV/view?usp=sharing"}
+          href={
+            "https://drive.google.com/file/d/1YiDagH1fr3_DTEwY4Bn6db0H0g1UE6vV/view?usp=sharing"
+          }
           className="link-no-styles"
           target="_blank"
           rel="noreferrer"

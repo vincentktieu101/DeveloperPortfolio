@@ -24,6 +24,28 @@
   padding-top: 10vh;
 }
 
+#contact-info,
+#contact-form {
+  padding-bottom: 10vh
+}
+
+@media (min-width: 700px) {
+  #about,
+  #experience,
+  #projects,
+  #contact {
+    padding-top: 15vh;
+  }
+  
+  #contact-info,
+  #contact-form {
+    padding-bottom: 15vh
+  }
+}
+
 #footer {
-  padding-bottom: 5vh;
+  padding-top: 6vh;
+  padding-bottom: 10vh;
+  background-color: #222222;
+  color: white;
 }

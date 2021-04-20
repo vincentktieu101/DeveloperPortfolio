@@ -40,7 +40,7 @@ export default function NavBar() {
       } else {
         setCurrentSection("cover")
       }
-      
+
       console.log(currentSection)
     })
   }, [currentSection])
@@ -117,10 +117,11 @@ export default function NavBar() {
             )}
           </Link>
           <div className="desktop-render">
-            <Link 
+            <Link
               to="/"
               className={currentSection === "cover" ? "link" : "nav-link"}
-              style={{ margin: "0 10px" }}>
+              style={{ margin: "0 10px" }}
+            >
               <b>HOME</b>
             </Link>
             <Link

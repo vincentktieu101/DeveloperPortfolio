@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Container from "@material-ui/core/Container"
+import Footer from "./Footer"
 
 import Header from "./Header"
 
@@ -21,32 +21,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         {children}
-        <footer id="footer" className="text-center fade-in">
-          <Container>
-            <div>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a
-                href="https://www.gatsbyjs.com"
-                className="link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Gatsby
-              </a>
-              . Check source code{" "}
-              <a
-                href="https://github.com/vincentktieu101/DeveloperPortfolio"
-                className="link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                here
-              </a>
-              .
-            </div>
-          </Container>
-        </footer>
+        <Footer />
       </div>
     </React.Fragment>
   )

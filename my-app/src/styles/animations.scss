@@ -16,7 +16,7 @@
 }
 
 .emoji-shake.appear {
-  animation: shake ease 1s;
+  animation: shake ease 500ms;
 }
 
 @keyframes shake {

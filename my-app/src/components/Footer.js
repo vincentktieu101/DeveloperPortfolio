@@ -5,7 +5,9 @@ export default function Footer() {
   return (
     <footer id="footer" className="text-center fade-in">
       <Container>
-        <h6 style={{paddingBottom: "5px"}}>© {new Date().getFullYear()}, VINCENT'S DEVELOPER PORTFOLIO</h6>
+        <h6 style={{ paddingBottom: "5px" }}>
+          © {new Date().getFullYear()}, VINCENT'S DEVELOPER PORTFOLIO
+        </h6>
         <div>
           Built with
           {` `}
@@ -14,7 +16,7 @@ export default function Footer() {
             target="_blank"
             className="link"
             rel="noreferrer"
-            style={{color: "white"}}
+            style={{ color: "white" }}
           >
             <b>Gatsby</b>
           </a>
@@ -24,7 +26,7 @@ export default function Footer() {
             className="link"
             target="_blank"
             rel="noreferrer"
-            style={{color: "white"}}
+            style={{ color: "white" }}
           >
             <b>here</b>
           </a>

@@ -40,8 +40,6 @@ export default function NavBar() {
       } else {
         setCurrentSection("cover")
       }
-
-      console.log(currentSection)
     })
   }, [currentSection])
 

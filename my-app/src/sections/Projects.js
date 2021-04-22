@@ -7,8 +7,13 @@ import Backdrop from "@material-ui/core/Backdrop"
 import IconButton from "@material-ui/core/IconButton"
 import NavigateNextIcon from "@material-ui/icons/NavigateNext"
 import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore"
+import Fab from "@material-ui/core/Fab"
+import CloseIcon from "@material-ui/icons/Close"
+
+import { useSnackbar } from "notistack"
 import initVl from "../utils/init-vl"
 import initFaders from "../utils/init-faders"
+import initProjectsCollapse from "../utils/init-projects-collapse"
 import getAllProjects from "../projects"
 
 const useStyles = makeStyles(theme => ({
@@ -59,13 +64,14 @@ export default function Projects() {
   useEffect(() => {
     initVl()
     initFaders()
+    initProjectsCollapse()
   }, [projectsViewing])
+
+  const { enqueueSnackbar } = useSnackbar()
 
   return (
     <div id="projects">
       <Modal
-        aria-labelledby="transition-modal-title"
-        aria-describedby="transition-modal-description"
         className={classes.modal}
         open={modal.open}
         onClose={handleClose}
@@ -76,13 +82,11 @@ export default function Projects() {
         }}
       >
         <div className={classes.paper}>
-          <div>
-            <img
-              src={modal.images[modal.imageIndex]}
-              alt="modal popup"
-              className="project-modal-img"
-            />
-          </div>
+          <img
+            src={modal.images[modal.imageIndex]}
+            alt="modal popup"
+            className="project-modal-img"
+          />
           <br />
           <div className="desktop-render">
             <IconButton
@@ -179,6 +183,22 @@ export default function Projects() {
             <Button variant="contained" onClick={() => setProjectsViewing(3)}>
               <h6>Collapse Projects</h6>
             </Button>
+          )}
+        </div>
+        <div id="projects-fab" className="hidden">
+          {projectsViewing > 3 && (
+            <Fab
+              size="large"
+              variant="extended"
+              color="primary"
+              onClick={() => {
+                setProjectsViewing(3)
+                enqueueSnackbar("Collapsed!", { variant: "success" })
+              }}
+            >
+              <CloseIcon style={{ marginRight: "5px" }} />
+              <h6>Collapse Projects</h6>
+            </Fab>
           )}
         </div>
       </Container>

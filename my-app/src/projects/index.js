@@ -1,3 +1,4 @@
+import ChatApp from "./ChatApp"
 import ReactCRAStarterCode from "./ReactCRAStarterCode"
 import TouchOfElegance from "./TouchOfElegance"
 import MusicMap from "./MusicMap"
@@ -8,6 +9,7 @@ import Snake from "./Snake"
 import ChristmasCaneRevenge from "./ChristmasCaneRevenge"
 
 const getAllProjects = () => [
+  ChatApp,
   ReactCRAStarterCode,
   TouchOfElegance,
   MusicMap,

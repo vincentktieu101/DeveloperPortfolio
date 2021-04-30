@@ -68,8 +68,7 @@
   transition: transform .4s;
 }
 
-.project-img:hover,
-button:focus {
+.project-img:hover {
   cursor: pointer;
   transform: scale(0.9);
 }

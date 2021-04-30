@@ -12,7 +12,7 @@ export default function ReactGoogleAuthStarter() {
     Github: "https://github.com/vincentktieu101/ReactGoogleAuthStarter",
     "YouTube Tutorial": "https://youtu.be/XZceEXlYC1w",
   }
-  const date = "April, 2021"
+  const date = "April 2021"
   const images = [
     ReactCRAStarterCodeTutorial,
     ReactCRAStarterCodeMobile1,

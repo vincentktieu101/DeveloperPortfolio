@@ -10,7 +10,7 @@ export default function TouchOfElegance() {
     Website: "https://touchofelegance.netlify.app/",
     Github: "https://github.com/vincentktieu101/TouchOfElegance",
   }
-  const date = "March, 2021 - Present"
+  const date = "March 2021 - Present"
   const images = [
     TouchOfEleganceDesktop,
     TouchOfEleganceMobile,

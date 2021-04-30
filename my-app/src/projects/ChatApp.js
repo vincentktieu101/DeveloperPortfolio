@@ -6,17 +6,17 @@ import Project from "../components/Project"
 export default function ChatApp() {
   const title = "ChatApp"
   const links = {
-    "Website": "https://vincentktieu101-chat.herokuapp.com/",
+    "Website": "https://vincentktieu-chatapp.herokuapp.com/",
     "Github": "https://github.com/vincentktieu101/ChatApp",
   }
   const date = "April 2021"
   const images = [ChatAppDesktop, ChatAppMobile]
   const description = (
     <React.Fragment>
-      <div>Chat Application using NodeJS, Express, and SocketIO!</div>
       <div>
-        Because of SocketIO, the chat application updates for ALL users on the
-        socket without refreshing!!!
+        Fullstack Chat Application using React, NodeJS, Express, SocketIO, and 
+        Google OAuth! Because of SocketIO, the chat application updates 
+        for ALL users on the socket without requiring manual refreshing!!!
       </div>
     </React.Fragment>
   )

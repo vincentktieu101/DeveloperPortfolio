@@ -1,6 +1,7 @@
 import React from "react"
-import ChristmasCaneRevengeDesktop from "../images/projects/christmascanerevenge-desktop.png"
-import Project from "../components/Project"
+import ChristmasCaneRevengeDesktop from "../../images/projects/_2017/christmascanerevenge-desktop.png"
+import Project from "../../components/Project"
+import yearBanner from "../yearBanner"
 
 export default function ChristmasCaneRevenge() {
   const title = "ChristmasCaneRevenge"
@@ -16,12 +17,15 @@ export default function ChristmasCaneRevenge() {
   )
 
   return (
-    <Project
-      title={title}
-      links={links}
-      date={date}
-      images={images}
-      description={description}
-    />
+    <React.Fragment>
+      {yearBanner(2017)}
+      <Project
+        title={title}
+        links={links}
+        date={date}
+        images={images}
+        description={description}
+      />
+    </React.Fragment>
   )
 }

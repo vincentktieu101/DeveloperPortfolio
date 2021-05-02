@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, createContext } from "react"
 import Container from "@material-ui/core/Container"
 import Button from "@material-ui/core/Button"
 import Modal from "@material-ui/core/Modal"
@@ -7,12 +7,9 @@ import CloseIcon from "@material-ui/icons/Close"
 
 import ProjectModalContent from "../components/ProjectModalContent"
 import { useSnackbar } from "notistack"
-import initVl from "../utils/init-vl"
-import initFaders from "../utils/init-faders"
-import initProjectsCollapse from "../utils/init-projects-collapse"
 import getAllProjects from "../projects"
 
-export const ModalContext = React.createContext()
+export const ModalContext = createContext()
 
 export default function Projects() {
   const [modal, setModal] = useState({
@@ -76,10 +73,13 @@ export default function Projects() {
           </span>
         </h1>
         <hr />
-        <br />
         <ModalContext.Provider value={handleModal}>
           {projects.map((Component, i) => {
-            return <div className={i < projectsViewing ? "" : "hidden"}><Component key={i} /></div>
+            return (
+              <div className={i < projectsViewing ? "" : "hidden"}>
+                <Component key={i} />
+              </div>
+            )
           })}
         </ModalContext.Provider>
         <div className="mobile-center">

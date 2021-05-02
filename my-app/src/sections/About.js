@@ -1,6 +1,6 @@
 import React from "react"
 import Container from "@material-ui/core/Container"
-import UCSBBirdEyesView from "../images/ucsb-birdseyeview.jpg"
+import UCSBBirdEyesView from "../images/main/ucsb-birdseyeview.jpg"
 import getResume from "../static/getResume"
 
 export default function About() {

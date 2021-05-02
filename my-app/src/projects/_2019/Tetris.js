@@ -1,7 +1,7 @@
 import React from "react"
-import TetrisDesktop from "../images/projects/tetris-desktop.png"
-import TetrisDesktop2 from "../images/projects/tetris-desktop2.png"
-import Project from "../components/Project"
+import TetrisDesktop from "../../images/projects/_2019/tetris-desktop.png"
+import TetrisDesktop2 from "../../images/projects/_2019/tetris-desktop2.png"
+import Project from "../../components/Project"
 
 export default function Tetris() {
   const title = "Tetris"

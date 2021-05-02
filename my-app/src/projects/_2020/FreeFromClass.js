@@ -1,9 +1,10 @@
 import React from "react"
-import FreeFromClassDesktop from "../images/projects/freefromclass-desktop.png"
-import FreeFromClassMobile2 from "../images/projects/freefromclass-mobile2.png"
-import FreeFromClassMobile3 from "../images/projects/freefromclass-mobile3.png"
-import FreeFromClassMobile from "../images/projects/freefromclass-mobile.png"
-import Project from "../components/Project"
+import FreeFromClassDesktop from "../../images/projects/_2020/freefromclass-desktop.png"
+import FreeFromClassMobile2 from "../../images/projects/_2020/freefromclass-mobile2.png"
+import FreeFromClassMobile3 from "../../images/projects/_2020/freefromclass-mobile3.png"
+import FreeFromClassMobile from "../../images/projects/_2020/freefromclass-mobile.png"
+import Project from "../../components/Project"
+import yearBanner from "../yearBanner"
 
 export default function FreeFromClass() {
   const title = "FreeFromClass"
@@ -32,12 +33,15 @@ export default function FreeFromClass() {
   )
 
   return (
-    <Project
-      title={title}
-      links={links}
-      date={date}
-      images={images}
-      description={description}
-    />
+    <React.Fragment>
+      {yearBanner(2020)}
+      <Project
+        title={title}
+        links={links}
+        date={date}
+        images={images}
+        description={description}
+      />
+    </React.Fragment>
   )
 }

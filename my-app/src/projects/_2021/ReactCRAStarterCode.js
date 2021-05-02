@@ -1,9 +1,9 @@
 import React from "react"
-import ReactCRAStarterCodeTutorial from "../images/projects/reactcrastartercode-tutorial.png"
-import ReactCRAStarterCodeMobile1 from "../images/projects/reactcrastartercode-mobile1.png"
-import ReactCRAStarterCodeMobile2 from "../images/projects/reactcrastartercode-mobile2.png"
-import ReactCRAStarterCodeMobile3 from "../images/projects/reactcrastartercode-mobile3.png"
-import Project from "../components/Project"
+import ReactCRAStarterCodeTutorial from "../../images/projects/_2021/reactcrastartercode-tutorial.png"
+import ReactCRAStarterCodeMobile1 from "../../images/projects/_2021/reactcrastartercode-mobile1.png"
+import ReactCRAStarterCodeMobile2 from "../../images/projects/_2021/reactcrastartercode-mobile2.png"
+import ReactCRAStarterCodeMobile3 from "../../images/projects/_2021/reactcrastartercode-mobile3.png"
+import Project from "../../components/Project"
 
 export default function ReactGoogleAuthStarter() {
   const title = "ReactGoogleAuthStarter"

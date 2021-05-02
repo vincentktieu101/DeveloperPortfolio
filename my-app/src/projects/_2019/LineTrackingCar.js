@@ -1,7 +1,8 @@
 import React from "react"
-import LineTrackingCarImage from "../images/projects/linetrackingcar.jpeg"
-import LineTrackingCarDesktop from "../images/projects/linetrackingcar-desktop.png"
-import Project from "../components/Project"
+import LineTrackingCarImage from "../../images/projects/_2019/linetrackingcar.jpeg"
+import LineTrackingCarDesktop from "../../images/projects/_2019/linetrackingcar-desktop.png"
+import Project from "../../components/Project"
+import yearBanner from "../yearBanner"
 
 export default function LineTrackingCar() {
   const title = "Line Tracking Car"
@@ -22,12 +23,15 @@ export default function LineTrackingCar() {
   )
 
   return (
-    <Project
-      title={title}
-      links={links}
-      date={date}
-      images={images}
-      description={description}
-    />
+    <React.Fragment>
+      {yearBanner(2019)}
+      <Project
+        title={title}
+        links={links}
+        date={date}
+        images={images}
+        description={description}
+      />
+    </React.Fragment>
   )
 }

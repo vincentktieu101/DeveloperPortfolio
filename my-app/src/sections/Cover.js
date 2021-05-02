@@ -1,5 +1,5 @@
 import React from "react"
-import VincentHeadshot from "../images/vincent-headshot.png"
+import VincentHeadshot from "../images/main/vincent-headshot.png"
 
 export default function Cover() {
   return (

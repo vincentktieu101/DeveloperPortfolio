@@ -1,8 +1,8 @@
 import React from "react"
-import TouchOfEleganceDesktop from "../images/projects/touchofelegance-desktop.png"
-import TouchOfEleganceMobile from "../images/projects/touchofelegance-mobile.png"
-import TouchOfEleganceMobile2 from "../images/projects/touchofelegance-mobile-2.png"
-import Project from "../components/Project"
+import TouchOfEleganceDesktop from "../../images/projects/_2021/touchofelegance-desktop.png"
+import TouchOfEleganceMobile from "../../images/projects/_2021/touchofelegance-mobile.png"
+import TouchOfEleganceMobile2 from "../../images/projects/_2021/touchofelegance-mobile-2.png"
+import Project from "../../components/Project"
 
 export default function TouchOfElegance() {
   const title = "Touch Of Elegance"

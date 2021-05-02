@@ -1,7 +1,8 @@
 import React from "react"
-import SnakeDesktop from "../images/projects/snake-desktop.png"
-import SnakeDesktop2 from "../images/projects/snake-desktop2.png"
-import Project from "../components/Project"
+import SnakeDesktop from "../../images/projects/_2018/snake-desktop.png"
+import SnakeDesktop2 from "../../images/projects/_2018/snake-desktop2.png"
+import Project from "../../components/Project"
+import yearBanner from "../yearBanner"
 
 export default function Snake() {
   const title = "Snake"
@@ -41,12 +42,15 @@ export default function Snake() {
   )
 
   return (
-    <Project
-      title={title}
-      links={links}
-      date={date}
-      images={images}
-      description={description}
-    />
+    <React.Fragment>
+      {yearBanner(2018)}
+      <Project
+        title={title}
+        links={links}
+        date={date}
+        images={images}
+        description={description}
+      />
+    </React.Fragment>
   )
 }

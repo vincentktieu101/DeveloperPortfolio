@@ -3,8 +3,7 @@ import { ModalContext } from "../sections/Projects"
 import TodayIcon from "@material-ui/icons/Today"
 import WebIcon from "@material-ui/icons/Web"
 
-export default function Project(props) {
-  const { title, links, date, images, description } = props
+export default function Project({ title, links, date, images, description }) {
   const handleModal = useContext(ModalContext)
 
   const linksComponent = (

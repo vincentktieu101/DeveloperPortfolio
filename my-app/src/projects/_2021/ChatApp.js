@@ -1,7 +1,8 @@
 import React from "react"
-import ChatAppDesktop from "../images/projects/chatapp-desktop.png"
-import ChatAppMobile from "../images/projects/chatapp-mobile.png"
-import Project from "../components/Project"
+import ChatAppDesktop from "../../images/projects/_2021/chatapp-desktop.png"
+import ChatAppMobile from "../../images/projects/_2021/chatapp-mobile.png"
+import Project from "../../components/Project"
+import yearBanner from "../yearBanner"
 
 export default function ChatApp() {
   const title = "ChatApp"
@@ -22,12 +23,15 @@ export default function ChatApp() {
   )
 
   return (
-    <Project
-      title={title}
-      links={links}
-      date={date}
-      images={images}
-      description={description}
-    />
+    <React.Fragment>
+      {yearBanner(2021)}
+      <Project
+        title={title}
+        links={links}
+        date={date}
+        images={images}
+        description={description}
+      />
+    </React.Fragment>
   )
 }

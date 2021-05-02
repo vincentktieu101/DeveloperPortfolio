@@ -1,7 +1,7 @@
 import React from "react"
-import MusicMapDesktop from "../images/projects/musicmap-desktop.png"
-import MusicMapMobile from "../images/projects/musicmap-mobile.png"
-import Project from "../components/Project"
+import MusicMapDesktop from "../../images/projects/_2021/musicmap-desktop.png"
+import MusicMapMobile from "../../images/projects/_2021/musicmap-mobile.png"
+import Project from "../../components/Project"
 
 export default function MusicMap() {
   const title = "MusicMap"

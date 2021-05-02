@@ -1,6 +1,7 @@
 import React from "react"
 import Container from "@material-ui/core/Container"
 import UCSBBirdEyesView from "../images/ucsb-birdseyeview.jpg"
+import getResume from "../static/getResume"
 
 export default function About() {
   return (
@@ -38,7 +39,16 @@ export default function About() {
             <div>
               However, I also enjoy learning outside of the classroom. Here is
               my online portfolio for my personal projects, something I wish I
-              could elaborate more of on my resume.
+              could elaborate more of on my{" "}
+              <a
+                href={getResume()}
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                resume
+              </a>
+              .
             </div>
             <br />
           </div>

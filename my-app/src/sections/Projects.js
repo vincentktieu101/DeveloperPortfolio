@@ -2,53 +2,31 @@ import React, { useState, useEffect } from "react"
 import Container from "@material-ui/core/Container"
 import Button from "@material-ui/core/Button"
 import Modal from "@material-ui/core/Modal"
-import { makeStyles } from "@material-ui/core/styles"
-import Backdrop from "@material-ui/core/Backdrop"
-import IconButton from "@material-ui/core/IconButton"
-import NavigateNextIcon from "@material-ui/icons/NavigateNext"
-import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore"
 import Fab from "@material-ui/core/Fab"
 import CloseIcon from "@material-ui/icons/Close"
 
+import ProjectModalContent from "../components/ProjectModalContent"
 import { useSnackbar } from "notistack"
 import initVl from "../utils/init-vl"
 import initFaders from "../utils/init-faders"
 import initProjectsCollapse from "../utils/init-projects-collapse"
 import getAllProjects from "../projects"
 
-const useStyles = makeStyles(theme => ({
-  modal: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  paper: {
-    backgroundColor: "white",
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 2, 3),
-    maxWidth: "100%",
-    maxHeight: "100%",
-    margin: "10px",
-    textAlign: "center",
-  },
-}))
-
 export const ModalContext = React.createContext()
 
 export default function Projects() {
-  const classes = useStyles()
   const [modal, setModal] = useState({
     images: [],
     imageIndex: 0,
-    linksLine: null,
+    linksComponent: null,
     open: false,
   })
 
-  const handleModal = (images, imageIndex, linksLine) => {
+  const handleModal = (images, imageIndex, linksComponent) => {
     setModal({
       images: images,
       imageIndex: imageIndex,
-      linksLine: linksLine,
+      linksComponent: linksComponent,
       open: true,
     })
   }
@@ -72,77 +50,21 @@ export default function Projects() {
   return (
     <div id="projects">
       <Modal
-        className={classes.modal}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
         open={modal.open}
         onClose={handleClose}
         closeAfterTransition
-        BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 500,
         }}
       >
-        <div className={classes.paper}>
-          <img
-            src={modal.images[modal.imageIndex]}
-            alt="modal popup"
-            className="project-modal-img"
-          />
-          <br />
-          <div className="desktop-render">
-            <IconButton
-              onClick={() =>
-                setModal({
-                  ...modal,
-                  imageIndex:
-                    modal.imageIndex === 0
-                      ? modal.images.length - 1
-                      : modal.imageIndex - 1,
-                })
-              }
-            >
-              <NavigateBeforeIcon />
-            </IconButton>{" "}
-            {modal.linksLine}{" "}
-            <IconButton
-              onClick={() =>
-                setModal({
-                  ...modal,
-                  imageIndex: (modal.imageIndex + 1) % modal.images.length,
-                })
-              }
-            >
-              <NavigateNextIcon />
-            </IconButton>
-          </div>
-          <div className="mobile-render">
-            <div>{modal.linksLine}</div>
-            <div>
-              <IconButton
-                onClick={() =>
-                  setModal({
-                    ...modal,
-                    imageIndex:
-                      modal.imageIndex === 0
-                        ? modal.images.length - 1
-                        : modal.imageIndex - 1,
-                  })
-                }
-              >
-                <NavigateBeforeIcon />
-              </IconButton>
-              <IconButton
-                onClick={() =>
-                  setModal({
-                    ...modal,
-                    imageIndex: (modal.imageIndex + 1) % modal.images.length,
-                  })
-                }
-              >
-                <NavigateNextIcon />
-              </IconButton>
-            </div>
-          </div>
-        </div>
+        <React.Fragment>
+          <ProjectModalContent modal={modal} setModal={setModal} />
+        </React.Fragment>
       </Modal>
 
       <Container>
@@ -163,11 +85,7 @@ export default function Projects() {
         <br />
         <ModalContext.Provider value={handleModal}>
           {projects.slice(0, projectsViewing).map((Component, i) => {
-            return (
-              <div className="fade-in" key={i}>
-                <Component />
-              </div>
-            )
+            return <Component key={i} />
           })}
         </ModalContext.Provider>
         <div className="mobile-center">

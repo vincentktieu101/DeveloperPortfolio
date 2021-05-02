@@ -39,12 +39,6 @@ export default function Projects() {
 
   const projects = getAllProjects()
 
-  useEffect(() => {
-    initVl()
-    initFaders()
-    initProjectsCollapse()
-  }, [projectsViewing])
-
   const { enqueueSnackbar } = useSnackbar()
 
   return (
@@ -84,8 +78,8 @@ export default function Projects() {
         <hr />
         <br />
         <ModalContext.Provider value={handleModal}>
-          {projects.slice(0, projectsViewing).map((Component, i) => {
-            return <Component key={i} />
+          {projects.map((Component, i) => {
+            return <div className={i < projectsViewing ? "" : "hidden"}><Component key={i} /></div>
           })}
         </ModalContext.Provider>
         <div className="mobile-center">

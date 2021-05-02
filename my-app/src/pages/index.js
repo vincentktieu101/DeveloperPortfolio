@@ -11,11 +11,15 @@ import Contact from "../sections/Contact"
 import Projects from "../sections/Projects"
 import initFaders from "../utils/init-faders"
 import initEmojiShake from "../utils/init-emoji-shake"
+import initProjectsCollapse from "../utils/init-projects-collapse"
+import initVl from "../utils/init-vl"
 
 export default function IndexPage() {
   useEffect(() => {
     initFaders()
     initEmojiShake()
+    initVl()
+    initProjectsCollapse()
   }, [])
 
   return (

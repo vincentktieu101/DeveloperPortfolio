@@ -1,8 +1,8 @@
 import React from "react"
-import ReactCRAStarterCodeTutorial from "../../images/projects/_2021/reactcrastartercode-tutorial.png"
-import ReactCRAStarterCodeMobile1 from "../../images/projects/_2021/reactcrastartercode-mobile1.png"
-import ReactCRAStarterCodeMobile2 from "../../images/projects/_2021/reactcrastartercode-mobile2.png"
-import ReactCRAStarterCodeMobile3 from "../../images/projects/_2021/reactcrastartercode-mobile3.png"
+import ReactCRAStarterCodeTutorial from "../../images/projects/2021/reactcrastartercode-tutorial.png"
+import ReactCRAStarterCodeMobile1 from "../../images/projects/2021/reactcrastartercode-mobile1.png"
+import ReactCRAStarterCodeMobile2 from "../../images/projects/2021/reactcrastartercode-mobile2.png"
+import ReactCRAStarterCodeMobile3 from "../../images/projects/2021/reactcrastartercode-mobile3.png"
 import Project from "../../components/Project"
 import getTechIcons from "../getTechIcons"
 

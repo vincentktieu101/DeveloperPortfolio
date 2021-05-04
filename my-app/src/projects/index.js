@@ -1,12 +1,12 @@
-import ChatApp from "./_2021/ChatApp"
-import ReactCRAStarterCode from "./_2021/ReactCRAStarterCode"
-import TouchOfElegance from "./_2021/TouchOfElegance"
-import MusicMap from "./_2021/MusicMap"
-import FreeFromClass from "./_2020/FreeFromClass"
-import LineTrackingCar from "./_2019/LineTrackingCar"
-import Tetris from "./_2019/Tetris"
-import Snake from "./_2018/Snake"
-import ChristmasCaneRevenge from "./_2017/ChristmasCaneRevenge"
+import ChatApp from "./2021/ChatApp"
+import ReactCRAStarterCode from "./2021/ReactCRAStarterCode"
+import TouchOfElegance from "./2021/TouchOfElegance"
+import MusicMap from "./2021/MusicMap"
+import FreeFromClass from "./2020/FreeFromClass"
+import LineTrackingCar from "./2019/LineTrackingCar"
+import Tetris from "./2019/Tetris"
+import Snake from "./2018/Snake"
+import ChristmasCaneRevenge from "./2017/ChristmasCaneRevenge"
 
 const getAllProjects = () => [
   ChatApp,

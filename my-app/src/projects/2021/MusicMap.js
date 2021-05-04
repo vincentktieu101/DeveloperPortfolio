@@ -1,6 +1,6 @@
 import React from "react"
-import MusicMapDesktop from "../../images/projects/_2021/musicmap-desktop.png"
-import MusicMapMobile from "../../images/projects/_2021/musicmap-mobile.png"
+import MusicMapDesktop from "../../images/projects/2021/musicmap-desktop.png"
+import MusicMapMobile from "../../images/projects/2021/musicmap-mobile.png"
 import Project from "../../components/Project"
 import getTechIcons from "../getTechIcons"
 

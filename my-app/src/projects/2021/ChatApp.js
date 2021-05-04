@@ -1,6 +1,6 @@
 import React from "react"
-import ChatAppDesktop from "../../images/projects/_2021/chatapp-desktop.png"
-import ChatAppMobile from "../../images/projects/_2021/chatapp-mobile.png"
+import ChatAppDesktop from "../../images/projects/2021/chatapp-desktop.png"
+import ChatAppMobile from "../../images/projects/2021/chatapp-mobile.png"
 import Project from "../../components/Project"
 import getTechIcons from "../getTechIcons"
 

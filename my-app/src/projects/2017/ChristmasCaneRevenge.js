@@ -1,5 +1,5 @@
 import React from "react"
-import ChristmasCaneRevengeDesktop from "../../images/projects/_2017/christmascanerevenge-desktop.png"
+import ChristmasCaneRevengeDesktop from "../../images/projects/2017/christmascanerevenge-desktop.png"
 import Project from "../../components/Project"
 import getTechIcons from "../getTechIcons"
 

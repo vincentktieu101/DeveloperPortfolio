@@ -34,8 +34,7 @@ export default function Projects() {
   
   const projects = getAllProjects()
 
-  // const [projectsViewing, setProjectsViewing] = useState(3)
-  const [projectsViewing, setProjectsViewing] = useState(projects.length)
+  const [projectsViewing, setProjectsViewing] = useState(3)
 
   const { enqueueSnackbar } = useSnackbar()
 

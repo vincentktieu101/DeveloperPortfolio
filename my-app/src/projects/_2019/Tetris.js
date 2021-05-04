@@ -2,6 +2,7 @@ import React from "react"
 import TetrisDesktop from "../../images/projects/_2019/tetris-desktop.png"
 import TetrisDesktop2 from "../../images/projects/_2019/tetris-desktop2.png"
 import Project from "../../components/Project"
+import getTechIcons from "../getTechIcons"
 
 export default function Tetris() {
   const title = "Tetris"
@@ -21,7 +22,10 @@ export default function Tetris() {
       </div>
     </React.Fragment>
   )
-
+  const icons = {
+    Pygame: true,
+    Python: true,
+  }
   return (
     <Project
       title={title}
@@ -29,6 +33,7 @@ export default function Tetris() {
       date={date}
       images={images}
       description={description}
+      techIcons={getTechIcons(icons)}
     />
   )
 }

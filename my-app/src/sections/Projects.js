@@ -31,10 +31,11 @@ export default function Projects() {
   const handleClose = () => {
     setModal({ ...modal, open: false })
   }
-
-  const [projectsViewing, setProjectsViewing] = useState(3)
-
+  
   const projects = getAllProjects()
+
+  // const [projectsViewing, setProjectsViewing] = useState(3)
+  const [projectsViewing, setProjectsViewing] = useState(projects.length)
 
   const { enqueueSnackbar } = useSnackbar()
 
@@ -60,24 +61,24 @@ export default function Projects() {
 
       <Container>
         <h1 className="text-center fade-in">
-          <span className="emoji-shake">
+          {/* <span className="emoji-shake">
             <span role="img" aria-label="emoji" className="hover-shake">
               🚀
             </span>
-          </span>{" "}
+          </span>{" "} */}
           PERSONAL PROJECTS{" "}
-          <span className="emoji-shake">
+          {/* <span className="emoji-shake">
             <span role="img" aria-label="emoji" className="hover-shake">
               🌕
             </span>
-          </span>
+          </span> */}
         </h1>
         <hr />
         <ModalContext.Provider value={handleModal}>
           {projects.map((Component, i) => {
             return (
-              <div className={i < projectsViewing ? "" : "hidden"}>
-                <Component key={i} />
+              <div key={i} className={i < projectsViewing ? "" : "hidden"}>
+                <Component />
               </div>
             )
           })}

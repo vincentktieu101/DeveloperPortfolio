@@ -4,6 +4,7 @@ import ReactCRAStarterCodeMobile1 from "../../images/projects/_2021/reactcrastar
 import ReactCRAStarterCodeMobile2 from "../../images/projects/_2021/reactcrastartercode-mobile2.png"
 import ReactCRAStarterCodeMobile3 from "../../images/projects/_2021/reactcrastartercode-mobile3.png"
 import Project from "../../components/Project"
+import getTechIcons from "../getTechIcons"
 
 export default function ReactGoogleAuthStarter() {
   const title = "ReactGoogleAuthStarter"
@@ -32,7 +33,13 @@ export default function ReactGoogleAuthStarter() {
       </div>
     </React.Fragment>
   )
-
+  const icons = {
+    ReactJS: true,
+    GoogleDevelopers: true,
+    Heroku: true,
+    ReactBootstrap: true,
+    Javascript: true,
+  }
   return (
     <Project
       title={title}
@@ -40,6 +47,7 @@ export default function ReactGoogleAuthStarter() {
       date={date}
       images={images}
       description={description}
+      techIcons={getTechIcons(icons)}
     />
   )
 }

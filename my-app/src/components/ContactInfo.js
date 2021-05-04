@@ -13,11 +13,11 @@ export default function ContactInfo() {
     <div id="contact-info">
       <h1 className="text-center fade-in">
         MORE INFO{" "}
-        <span className="emoji-shake">
+        {/* <span className="emoji-shake">
           <span role="img" aria-label="emoji" className="hover-shake">
             ✨
           </span>
-        </span>
+        </span> */}
       </h1>
       <hr style={{ width: "360px" }} />
       <br />

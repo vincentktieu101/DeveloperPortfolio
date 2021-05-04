@@ -2,7 +2,7 @@ import React from "react"
 import LineTrackingCarImage from "../../images/projects/_2019/linetrackingcar.jpeg"
 import LineTrackingCarDesktop from "../../images/projects/_2019/linetrackingcar-desktop.png"
 import Project from "../../components/Project"
-import yearBanner from "../yearBanner"
+import getTechIcons from "../getTechIcons"
 
 export default function LineTrackingCar() {
   const title = "Line Tracking Car"
@@ -21,16 +21,20 @@ export default function LineTrackingCar() {
       </div>
     </React.Fragment>
   )
-
+  const icons = {
+    OpenCV: true,
+    Arduino: true,
+    Python: true,
+  }
   return (
     <React.Fragment>
-      {yearBanner(2019)}
       <Project
         title={title}
         links={links}
         date={date}
         images={images}
         description={description}
+        techIcons={getTechIcons(icons)}
       />
     </React.Fragment>
   )

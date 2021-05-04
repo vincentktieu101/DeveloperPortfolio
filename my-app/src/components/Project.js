@@ -3,7 +3,7 @@ import { ModalContext } from "../sections/Projects"
 import TodayIcon from "@material-ui/icons/Today"
 import WebIcon from "@material-ui/icons/Web"
 
-export default function Project({ title, links, date, images, description }) {
+export default function Project({ title, links, date, images, description, techIcons }) {
   const handleModal = useContext(ModalContext)
 
   const linksComponent = (
@@ -29,14 +29,16 @@ export default function Project({ title, links, date, images, description }) {
 
   return (
     <div className="project-item fade-in">
-      <div className="vl" />
+      <div className="project-item-vl" />
       <div>
         <h3>{title}</h3>
-        <div style={{ marginBottom: "5px" }}>
-          <TodayIcon style={{ fontSize: "16px" }} /> {date}
-        </div>
         <div>
-          <WebIcon style={{ fontSize: "16px" }} /> {linksComponent}
+          <div style={{ marginBottom: "5px" }}>
+            <TodayIcon style={{ fontSize: "16px" }} /> {date}
+          </div>
+          <div>
+            <WebIcon style={{ fontSize: "16px" }} /> {linksComponent}
+          </div>
         </div>
         <br />
         {images.map((image, i) => {
@@ -59,7 +61,10 @@ export default function Project({ title, links, date, images, description }) {
         <br />
         <br />
         <div className="project-desc">{description}</div>
+        <br />
+        <div className="project-tech-column">{techIcons}</div>
       </div>
+      {/* <div className="project-tech-column">{techIcons}</div> */}
     </div>
   )
 }

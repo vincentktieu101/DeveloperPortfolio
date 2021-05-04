@@ -59,11 +59,11 @@ export default function ContactForm() {
     <div id="contact-form">
       <h1 className="text-center fade-in">
         CONTACT ME{" "}
-        <span className="emoji-shake">
+        {/* <span className="emoji-shake">
           <span role="img" aria-label="emoji" className="hover-shake">
             👋
           </span>
-        </span>
+        </span> */}
       </h1>
       <hr />
       <br />

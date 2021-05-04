@@ -4,7 +4,7 @@ import FreeFromClassMobile2 from "../../images/projects/_2020/freefromclass-mobi
 import FreeFromClassMobile3 from "../../images/projects/_2020/freefromclass-mobile3.png"
 import FreeFromClassMobile from "../../images/projects/_2020/freefromclass-mobile.png"
 import Project from "../../components/Project"
-import yearBanner from "../yearBanner"
+import getTechIcons from "../getTechIcons"
 
 export default function FreeFromClass() {
   const title = "FreeFromClass"
@@ -31,16 +31,24 @@ export default function FreeFromClass() {
       </div>
     </React.Fragment>
   )
-
+  const icons = {
+    ReactJS: true,
+    NextJS: true,
+    Heroku: true,
+    Cypress: true,
+    Jest: true,
+    ReactBootstrap: true,
+    Javascript: true,
+  }
   return (
     <React.Fragment>
-      {yearBanner(2020)}
       <Project
         title={title}
         links={links}
         date={date}
         images={images}
         description={description}
+        techIcons={getTechIcons(icons)}
       />
     </React.Fragment>
   )

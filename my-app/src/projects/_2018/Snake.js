@@ -2,7 +2,7 @@ import React from "react"
 import SnakeDesktop from "../../images/projects/_2018/snake-desktop.png"
 import SnakeDesktop2 from "../../images/projects/_2018/snake-desktop2.png"
 import Project from "../../components/Project"
-import yearBanner from "../yearBanner"
+import getTechIcons from "../getTechIcons"
 
 export default function Snake() {
   const title = "Snake"
@@ -40,16 +40,19 @@ export default function Snake() {
       </div>
     </React.Fragment>
   )
-
+  const icons = {
+    Pygame: true,
+    Python: true,
+  }
   return (
     <React.Fragment>
-      {yearBanner(2018)}
       <Project
         title={title}
         links={links}
         date={date}
         images={images}
         description={description}
+        techIcons={getTechIcons(icons)}
       />
     </React.Fragment>
   )

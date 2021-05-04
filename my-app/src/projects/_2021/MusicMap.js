@@ -2,6 +2,7 @@ import React from "react"
 import MusicMapDesktop from "../../images/projects/_2021/musicmap-desktop.png"
 import MusicMapMobile from "../../images/projects/_2021/musicmap-mobile.png"
 import Project from "../../components/Project"
+import getTechIcons from "../getTechIcons"
 
 export default function MusicMap() {
   const title = "MusicMap"
@@ -24,7 +25,13 @@ export default function MusicMap() {
       </div>
     </React.Fragment>
   )
-
+  const icons = {
+    ReactJS: true,
+    Netlify: true,
+    Github: true,
+    MaterialUI: true,
+    Javascript: true,
+  }
   return (
     <Project
       title={title}
@@ -32,6 +39,7 @@ export default function MusicMap() {
       date={date}
       images={images}
       description={description}
+      techIcons={getTechIcons(icons)}
     />
   )
 }

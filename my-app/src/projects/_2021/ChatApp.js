@@ -2,7 +2,7 @@ import React from "react"
 import ChatAppDesktop from "../../images/projects/_2021/chatapp-desktop.png"
 import ChatAppMobile from "../../images/projects/_2021/chatapp-mobile.png"
 import Project from "../../components/Project"
-import yearBanner from "../yearBanner"
+import getTechIcons from "../getTechIcons"
 
 export default function ChatApp() {
   const title = "ChatApp"
@@ -21,16 +21,24 @@ export default function ChatApp() {
       </div>
     </React.Fragment>
   )
-
+  const icons = {
+    NodeJS: true,
+    ReactJS: true,
+    SocketIO: true,
+    ExpressJS: true,
+    Heroku: true,
+    MaterialUI: true,
+    Javascript: true,
+  }
   return (
     <React.Fragment>
-      {yearBanner(2021)}
       <Project
         title={title}
         links={links}
         date={date}
         images={images}
         description={description}
+        techIcons={getTechIcons(icons)}
       />
     </React.Fragment>
   )

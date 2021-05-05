@@ -39,6 +39,8 @@ export default function FreeFromClass() {
     Jest: true,
     ReactBootstrap: true,
     Javascript: true,
+    Auth0: true,
+    MongoDB: true,
   }
   return (
     <React.Fragment>

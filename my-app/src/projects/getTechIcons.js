@@ -20,6 +20,8 @@ import Jest from "../images/getTechIcons/jest.svg"
 import MaterialUI from "../images/getTechIcons/materialui.png"
 import ReactBootstrap from "../images/getTechIcons/reactbootstrap.svg"
 import Scratch from "../images/getTechIcons/scratch.svg"
+import Firebase from "../images/getTechIcons/firebase.svg"
+import MongoDB from "../images/getTechIcons/MongoDB.svg"
 
 export default function Icons(iconsList) {
   if (iconsList === undefined) {
@@ -170,6 +172,20 @@ export default function Icons(iconsList) {
     techIcons.push(
       <a href="https://www.javascript.com/" target="_blank" rel="noreferrer" key={16}>
         <img src={Javascript} className="project-tech-icon" alt="" style={{marginBottom: "10px", height: "30px"}} />
+      </a>
+    )
+  }
+  if (iconsList.Firebase) {
+    techIcons.push(
+      <a href="https://firebase.google.com/" target="_blank" rel="noreferrer" key={21}>
+        <img src={Firebase} className="project-tech-icon" alt="" />
+      </a>
+    )
+  }
+  if (iconsList.MongoDB) {
+    techIcons.push(
+      <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer" key={22}>
+        <img src={MongoDB} className="project-tech-icon" alt="" style={{marginBottom: "10px", height: "30px"}} />
       </a>
     )
   }

@@ -56,16 +56,16 @@ export default function ContactForm() {
   }
 
   return (
-    <div id="contact-form">
-      <h1 className="text-center fade-in">
+    <div id="contact-form" className="fade-in">
+      <h1 className="text-center">
         CONTACT ME{" "}
         {/* <span className="emoji-shake">
           <span role="img" aria-label="emoji" className="hover-shake">
             👋
           </span>
         </span> */}
+        <hr />
       </h1>
-      <hr />
       <br />
       <form onSubmit={submitForm}>
         <TextField

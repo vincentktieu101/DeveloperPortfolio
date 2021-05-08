@@ -71,8 +71,8 @@ export default function Projects() {
               🌕
             </span>
           </span> */}
+          <hr />
         </h1>
-        <hr />
         <ModalContext.Provider value={handleModal}>
           {projects.map((Component, i) => {
             return (

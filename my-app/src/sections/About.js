@@ -16,14 +16,14 @@ export default function About() {
                   📚
                 </span>
               </span> */}
-            </h1>
             <hr />
+            </h1>
             <br />
             <div>
               Hi! I'm <b>Vincent Tieu</b>, a <b>software engineer</b> and{" "}
               <b>full-stack web developer</b>, based in <b>Los Angeles</b>. I am
               passionate about programming, whether that means starting a web
-              project from stratch (like this online portfolio!) or developing
+              project from scratch (like this online portfolio!) or developing
               an existing code base. I am a programmer because I enjoy problem
               solving and view programming as a creative medium for achieving my
               goals.
@@ -46,7 +46,7 @@ export default function About() {
                 target="_blank"
                 rel="noreferrer"
               >
-                resume
+                <b>resume</b>
               </a>
               .
             </div>

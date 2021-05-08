@@ -10,16 +10,16 @@ import getResume from "../static/getResume"
 
 export default function ContactInfo() {
   return (
-    <div id="contact-info">
-      <h1 className="text-center fade-in">
+    <div id="contact-info" className="fade-in">
+      <h1 className="text-center">
         MORE INFO{" "}
         {/* <span className="emoji-shake">
           <span role="img" aria-label="emoji" className="hover-shake">
             ✨
           </span>
         </span> */}
+        <hr style={{ width: "360px" }} />
       </h1>
-      <hr style={{ width: "360px" }} />
       <br />
       <h6>
         <a

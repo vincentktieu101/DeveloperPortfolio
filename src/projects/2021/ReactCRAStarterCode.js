@@ -1,25 +1,25 @@
-import React from "react"
-import ReactCRAStarterCodeTutorial from "../../images/projects/2021/reactcrastartercode-tutorial.png"
-import ReactCRAStarterCodeMobile1 from "../../images/projects/2021/reactcrastartercode-mobile1.png"
-import ReactCRAStarterCodeMobile2 from "../../images/projects/2021/reactcrastartercode-mobile2.png"
-import ReactCRAStarterCodeMobile3 from "../../images/projects/2021/reactcrastartercode-mobile3.png"
-import Project from "../../components/Project"
-import getTechIcons from "../getTechIcons"
+import React from "react";
+import ReactCRAStarterCodeTutorial from "../../images/projects/2021/reactcrastartercode-tutorial.png";
+import ReactCRAStarterCodeMobile1 from "../../images/projects/2021/reactcrastartercode-mobile1.png";
+import ReactCRAStarterCodeMobile2 from "../../images/projects/2021/reactcrastartercode-mobile2.png";
+import ReactCRAStarterCodeMobile3 from "../../images/projects/2021/reactcrastartercode-mobile3.png";
+import Project from "../../components/Project";
+import getTechIcons from "../getTechIcons";
 
 export default function ReactGoogleAuthStarter() {
-  const title = "ReactGoogleAuthStarter"
+  const title = "ReactGoogleAuthStarter";
   const links = {
     Website: "https://react-google-auth-starter.herokuapp.com/",
     Github: "https://github.com/vincentktieu101/ReactGoogleAuthStarter",
     "YouTube Tutorial": "https://youtu.be/XZceEXlYC1w",
-  }
-  const date = "April 2021"
+  };
+  const date = "April 2021";
   const images = [
     ReactCRAStarterCodeTutorial,
     ReactCRAStarterCodeMobile1,
     ReactCRAStarterCodeMobile2,
     ReactCRAStarterCodeMobile3,
-  ]
+  ];
   const description = (
     <React.Fragment>
       <div>
@@ -32,14 +32,14 @@ export default function ReactGoogleAuthStarter() {
         Readme.
       </div>
     </React.Fragment>
-  )
+  );
   const icons = {
     ReactJS: true,
     GoogleDevelopers: true,
     Heroku: true,
     ReactBootstrap: true,
     Javascript: true,
-  }
+  };
   return (
     <Project
       title={title}
@@ -49,5 +49,5 @@ export default function ReactGoogleAuthStarter() {
       description={description}
       techIcons={getTechIcons(icons)}
     />
-  )
+  );
 }

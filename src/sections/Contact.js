@@ -1,7 +1,7 @@
-import React from "react"
-import Container from "@material-ui/core/Container"
-import ContactForm from "../components/ContactForm"
-import ContactInfo from "../components/ContactInfo"
+import React from "react";
+import Container from "@material-ui/core/Container";
+import ContactForm from "../components/ContactForm";
+import ContactInfo from "../components/ContactInfo";
 
 export default function Contact() {
   return (
@@ -13,5 +13,5 @@ export default function Contact() {
         </div>
       </Container>
     </div>
-  )
+  );
 }

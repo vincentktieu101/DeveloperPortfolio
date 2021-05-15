@@ -1,11 +1,17 @@
-import React, { useContext, Fragment } from "react"
-import { ModalContext } from "../sections/Projects"
-import TodayIcon from "@material-ui/icons/Today"
-import WebIcon from "@material-ui/icons/Web"
+import React, { useContext, Fragment } from "react";
+import { ModalContext } from "../sections/Projects";
+import TodayIcon from "@material-ui/icons/Today";
+import WebIcon from "@material-ui/icons/Web";
 
-export default function Project({ title, links, date, images, description, techIcons }) {
-  const handleModal = useContext(ModalContext)
-
+export default function Project({
+  title,
+  links,
+  date,
+  images,
+  description,
+  techIcons,
+}) {
+  const handleModal = useContext(ModalContext);
   const linksComponent = (
     <Fragment>
       Links:{" "}
@@ -22,11 +28,10 @@ export default function Project({ title, links, date, images, description, techI
             </a>
             {i !== Object.keys(links).length - 1 ? " | " : ""}
           </React.Fragment>
-        )
+        );
       })}
     </Fragment>
-  )
-
+  );
   return (
     <div className="project-item fade-in">
       <div className="project-item-vl" />
@@ -56,7 +61,7 @@ export default function Project({ title, links, date, images, description, techI
                 />
               </button>{" "}
             </Fragment>
-          )
+          );
         })}
         <br />
         <br />
@@ -66,5 +71,5 @@ export default function Project({ title, links, date, images, description, techI
       </div>
       {/* <div className="project-tech-column">{techIcons}</div> */}
     </div>
-  )
+  );
 }

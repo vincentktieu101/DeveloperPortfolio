@@ -13,13 +13,41 @@
   align-items: center;
 }
 
-.nav-link {
-  color: black;
+.nav-link, .nav-link-disabled {
+  color: #031D44;
   text-decoration: none;
+  display: inline-block;
+  position: relative;
 }
 
-.nav-link:hover {
-  color: #007bff;
+.nav-link-disabled:hover {
+  opacity: 1;
+}
+
+.nav-link::before, .nav-link-disabled::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  top: 20px;
+}
+
+.nav-link::before, .nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+.nav-link-disabled {
+  color: black;
+  opacity: 0.75;
+}
+
+.nav-link-disabled:hover {
+  color: #031D44;
 }
 
 .brand {

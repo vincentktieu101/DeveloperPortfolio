@@ -1,18 +1,18 @@
-import React from "react"
-import SnakeDesktop from "../../images/projects/2018/snake-desktop.png"
-import SnakeDesktop2 from "../../images/projects/2018/snake-desktop2.png"
-import Project from "../../components/Project"
-import getTechIcons from "../getTechIcons"
+import React from "react";
+import SnakeDesktop from "../../images/projects/2018/snake-desktop.png";
+import SnakeDesktop2 from "../../images/projects/2018/snake-desktop2.png";
+import Project from "../../components/Project";
+import getTechIcons from "../getTechIcons";
 
 export default function Snake() {
-  const title = "Snake"
+  const title = "Snake";
   const links = {
     Github: "https://github.com/vincentktieu101/Snake",
     Guide:
       "https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit",
-  }
-  const date = "December 2018"
-  const images = [SnakeDesktop, SnakeDesktop2]
+  };
+  const date = "December 2018";
+  const images = [SnakeDesktop, SnakeDesktop2];
   const description = (
     <React.Fragment>
       <div>
@@ -39,11 +39,11 @@ export default function Snake() {
         . I even designed an 8-bit music theme for the game!
       </div>
     </React.Fragment>
-  )
+  );
   const icons = {
     Pygame: true,
     Python: true,
-  }
+  };
   return (
     <React.Fragment>
       <Project
@@ -55,5 +55,5 @@ export default function Snake() {
         techIcons={getTechIcons(icons)}
       />
     </React.Fragment>
-  )
+  );
 }

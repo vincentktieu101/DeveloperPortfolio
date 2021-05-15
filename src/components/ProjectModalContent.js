@@ -1,10 +1,10 @@
-import React from "react"
-import IconButton from "@material-ui/core/IconButton"
-import NavigateNextIcon from "@material-ui/icons/NavigateNext"
-import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore"
+import React from "react";
+import IconButton from "@material-ui/core/IconButton";
+import NavigateNextIcon from "@material-ui/icons/NavigateNext";
+import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore";
 
 export default function ProjectModalContent(props) {
-  const { modal, setModal } = props
+  const { modal, setModal } = props;
   return (
     <div
       style={{
@@ -75,5 +75,5 @@ export default function ProjectModalContent(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }

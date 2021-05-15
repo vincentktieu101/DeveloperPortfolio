@@ -1,16 +1,16 @@
-import React from "react"
-import TetrisDesktop from "../../images/projects/2019/tetris-desktop.png"
-import TetrisDesktop2 from "../../images/projects/2019/tetris-desktop2.png"
-import Project from "../../components/Project"
-import getTechIcons from "../getTechIcons"
+import React from "react";
+import TetrisDesktop from "../../images/projects/2019/tetris-desktop.png";
+import TetrisDesktop2 from "../../images/projects/2019/tetris-desktop2.png";
+import Project from "../../components/Project";
+import getTechIcons from "../getTechIcons";
 
 export default function Tetris() {
-  const title = "Tetris"
+  const title = "Tetris";
   const links = {
     Github: "https://github.com/vincentktieu101/Tetris",
-  }
-  const date = "January 2019"
-  const images = [TetrisDesktop, TetrisDesktop2]
+  };
+  const date = "January 2019";
+  const images = [TetrisDesktop, TetrisDesktop2];
   const description = (
     <React.Fragment>
       <div>
@@ -21,11 +21,11 @@ export default function Tetris() {
         users can tweak.
       </div>
     </React.Fragment>
-  )
+  );
   const icons = {
     Pygame: true,
     Python: true,
-  }
+  };
   return (
     <Project
       title={title}
@@ -35,5 +35,5 @@ export default function Tetris() {
       description={description}
       techIcons={getTechIcons(icons)}
     />
-  )
+  );
 }

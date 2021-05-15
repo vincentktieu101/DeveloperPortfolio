@@ -1,17 +1,17 @@
-import React from "react"
-import LineTrackingCarImage from "../../images/projects/2019/linetrackingcar.jpeg"
-import LineTrackingCarDesktop from "../../images/projects/2019/linetrackingcar-desktop.png"
-import Project from "../../components/Project"
-import getTechIcons from "../getTechIcons"
+import React from "react";
+import LineTrackingCarImage from "../../images/projects/2019/linetrackingcar.jpeg";
+import LineTrackingCarDesktop from "../../images/projects/2019/linetrackingcar-desktop.png";
+import Project from "../../components/Project";
+import getTechIcons from "../getTechIcons";
 
 export default function LineTrackingCar() {
-  const title = "Line Tracking Car"
+  const title = "Line Tracking Car";
   const links = {
     YouTube:
       "https://www.youtube.com/watch?v=SqduUmIUFV4&ab_channel=VincentTieu",
-  }
-  const date = "January 2019 - March 2019"
-  const images = [LineTrackingCarImage, LineTrackingCarDesktop]
+  };
+  const date = "January 2019 - March 2019";
+  const images = [LineTrackingCarImage, LineTrackingCarDesktop];
   const description = (
     <React.Fragment>
       <div>
@@ -20,12 +20,12 @@ export default function LineTrackingCar() {
         the linear regression algorithm so get the car to turn accordingly.
       </div>
     </React.Fragment>
-  )
+  );
   const icons = {
     OpenCV: true,
     Arduino: true,
     Python: true,
-  }
+  };
   return (
     <React.Fragment>
       <Project
@@ -37,5 +37,5 @@ export default function LineTrackingCar() {
         techIcons={getTechIcons(icons)}
       />
     </React.Fragment>
-  )
+  );
 }

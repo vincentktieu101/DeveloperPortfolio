@@ -1,47 +1,47 @@
-import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
-import Container from "@material-ui/core/Container"
-import IconButton from "@material-ui/core/IconButton"
-import MenuIcon from "@material-ui/icons/Menu"
-import Drawer from "@material-ui/core/Drawer"
-import Divider from "@material-ui/core/Divider"
-import List from "@material-ui/core/List"
-import ListItem from "@material-ui/core/ListItem"
-import ListItemIcon from "@material-ui/core/ListItemIcon"
-import ListItemText from "@material-ui/core/ListItemText"
-import HomeIcon from "@material-ui/icons/Home"
-import MenuBookIcon from "@material-ui/icons/MenuBook"
-import CodeIcon from "@material-ui/icons/Code"
-import ContactMailIcon from "@material-ui/icons/ContactMail"
+import React, { useState, useEffect } from "react";
+import { Link } from "gatsby";
+import Container from "@material-ui/core/Container";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
+import Drawer from "@material-ui/core/Drawer";
+import Divider from "@material-ui/core/Divider";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import HomeIcon from "@material-ui/icons/Home";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
+import CodeIcon from "@material-ui/icons/Code";
+import ContactMailIcon from "@material-ui/icons/ContactMail";
 
 export default function NavBar() {
-  const [drawer, setDrawer] = useState()
-  const [navShrink, setNavShrink] = useState(true)
-  const [currentSection, setCurrentSection] = useState("cover")
+  const [drawer, setDrawer] = useState();
+  const [navShrink, setNavShrink] = useState(true);
+  const [currentSection, setCurrentSection] = useState("cover");
 
   useEffect(() => {
-    const about = document.getElementById("about")
-    const projects = document.getElementById("projects")
-    const contact = document.getElementById("contact")
+    const about = document.getElementById("about");
+    const projects = document.getElementById("projects");
+    const contact = document.getElementById("contact");
 
     window.addEventListener("scroll", () => {
       if (window.pageYOffset < "10") {
-        setNavShrink(true)
+        setNavShrink(true);
       } else {
-        setNavShrink(false)
+        setNavShrink(false);
       }
 
       if (window.pageYOffset >= contact.offsetTop - 200) {
-        setCurrentSection("contact")
+        setCurrentSection("contact");
       } else if (window.pageYOffset >= projects.offsetTop - 200) {
-        setCurrentSection("projects")
+        setCurrentSection("projects");
       } else if (window.pageYOffset >= about.offsetTop - 200) {
-        setCurrentSection("about")
+        setCurrentSection("about");
       } else {
-        setCurrentSection("cover")
+        setCurrentSection("cover");
       }
-    })
-  }, [currentSection])
+    });
+  }, [currentSection]);
 
   const list = (
     <div
@@ -94,13 +94,13 @@ export default function NavBar() {
         <Divider />
       </List>
     </div>
-  )
+  );
 
   return (
     <header className="nav-bar">
       <Container>
         <div className="nav-items">
-          <Link to="/" className="brand nav-link">
+          <Link to="/" className="brand link-no-styles">
             {navShrink ? (
               <React.Fragment>
                 <h4 className="brand-name">VINCENT'S</h4>
@@ -117,28 +117,44 @@ export default function NavBar() {
           <div className="desktop-render">
             <Link
               to="/"
-              className={currentSection === "cover" ? "link" : "nav-link"}
+              className={
+                currentSection === "cover"
+                  ? "nav-link nav-link-ltr"
+                  : "nav-link-disabled nav-link-ltr"
+              }
               style={{ margin: "0 10px" }}
             >
               <b>HOME</b>
             </Link>
             <Link
               to="/#about"
-              className={currentSection === "about" ? "link" : "nav-link"}
+              className={
+                currentSection === "about"
+                  ? "nav-link nav-link-ltr"
+                  : "nav-link-disabled nav-link-ltr"
+              }
               style={{ margin: "0 10px" }}
             >
               <b>ABOUT</b>
             </Link>
             <Link
               to="/#projects"
-              className={currentSection === "projects" ? "link" : "nav-link"}
+              className={
+                currentSection === "projects"
+                  ? "nav-link nav-link-ltr"
+                  : "nav-link-disabled nav-link-ltr"
+              }
               style={{ margin: "0 10px" }}
             >
               <b>PROJECTS</b>
             </Link>
             <Link
               to="/#contact"
-              className={currentSection === "contact" ? "link" : "nav-link"}
+              className={
+                currentSection === "contact"
+                  ? "nav-link nav-link-ltr"
+                  : "nav-link-disabled nav-link-ltr"
+              }
               style={{ margin: "0 10px" }}
             >
               <b>CONTACT</b>
@@ -163,5 +179,5 @@ export default function NavBar() {
         </div>
       </Container>
     </header>
-  )
+  );
 }

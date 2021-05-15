@@ -1,5 +1,5 @@
-import React from "react"
-import VincentHeadshot from "../images/main/vincent-headshot.png"
+import React from "react";
+import VincentHeadshot from "../images/main/vincent-headshot.png";
 
 export default function Cover() {
   return (
@@ -14,5 +14,5 @@ export default function Cover() {
         </div>
       </div>
     </div>
-  )
+  );
 }

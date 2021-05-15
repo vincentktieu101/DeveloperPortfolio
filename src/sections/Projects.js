@@ -1,15 +1,15 @@
-import React, { useState, createContext } from "react"
-import Container from "@material-ui/core/Container"
-import Button from "@material-ui/core/Button"
-import Modal from "@material-ui/core/Modal"
-import Fab from "@material-ui/core/Fab"
-import CloseIcon from "@material-ui/icons/Close"
+import React, { useState, createContext } from "react";
+import Container from "@material-ui/core/Container";
+import Button from "@material-ui/core/Button";
+import Modal from "@material-ui/core/Modal";
+import Fab from "@material-ui/core/Fab";
+import CloseIcon from "@material-ui/icons/Close";
 
-import ProjectModalContent from "../components/ProjectModalContent"
-import { useSnackbar } from "notistack"
-import getAllProjects from "../projects"
+import ProjectModalContent from "../components/ProjectModalContent";
+import { useSnackbar } from "notistack";
+import getAllProjects from "../projects";
 
-export const ModalContext = createContext()
+export const ModalContext = createContext();
 
 export default function Projects() {
   const [modal, setModal] = useState({
@@ -17,26 +17,21 @@ export default function Projects() {
     imageIndex: 0,
     linksComponent: null,
     open: false,
-  })
-
+  });
   const handleModal = (images, imageIndex, linksComponent) => {
     setModal({
       images: images,
       imageIndex: imageIndex,
       linksComponent: linksComponent,
       open: true,
-    })
-  }
-
+    });
+  };
   const handleClose = () => {
-    setModal({ ...modal, open: false })
-  }
-  
-  const projects = getAllProjects()
-
-  const [projectsViewing, setProjectsViewing] = useState(3)
-
-  const { enqueueSnackbar } = useSnackbar()
+    setModal({ ...modal, open: false });
+  };
+  const projects = getAllProjects();
+  const [projectsViewing, setProjectsViewing] = useState(3);
+  const { enqueueSnackbar } = useSnackbar();
 
   return (
     <div id="projects">
@@ -45,6 +40,7 @@ export default function Projects() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          overflowY: "scroll",
         }}
         open={modal.open}
         onClose={handleClose}
@@ -79,7 +75,7 @@ export default function Projects() {
               <div key={i} className={i < projectsViewing ? "" : "hidden"}>
                 <Component />
               </div>
-            )
+            );
           })}
         </ModalContext.Provider>
         <div className="mobile-center">
@@ -104,8 +100,8 @@ export default function Projects() {
               variant="extended"
               color="primary"
               onClick={() => {
-                setProjectsViewing(3)
-                enqueueSnackbar("Collapsed!", { variant: "success" })
+                setProjectsViewing(3);
+                enqueueSnackbar("Collapsed!", { variant: "success" });
               }}
             >
               <CloseIcon style={{ marginRight: "5px" }} />
@@ -115,5 +111,5 @@ export default function Projects() {
         </div>
       </Container>
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import React from "react"
-import Container from "@material-ui/core/Container"
+import React from "react";
+import Container from "@material-ui/core/Container";
 
 export default function Footer() {
   return (
@@ -34,5 +34,5 @@ export default function Footer() {
         </div>
       </Container>
     </footer>
-  )
+  );
 }

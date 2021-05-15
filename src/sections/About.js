@@ -1,7 +1,7 @@
-import React from "react"
-import Container from "@material-ui/core/Container"
-import UCSBBirdEyesView from "../images/main/ucsb-birdseyeview.jpg"
-import getResume from "../static/getResume"
+import React from "react";
+import Container from "@material-ui/core/Container";
+import UCSBBirdEyesView from "../images/main/ucsb-birdseyeview.jpg";
+import getResume from "../static/getResume";
 
 export default function About() {
   return (
@@ -16,7 +16,7 @@ export default function About() {
                   📚
                 </span>
               </span> */}
-            <hr />
+              <hr />
             </h1>
             <br />
             <div>
@@ -66,5 +66,5 @@ export default function About() {
         </div>
       </Container>
     </div>
-  )
+  );
 }

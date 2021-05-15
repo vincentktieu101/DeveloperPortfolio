@@ -1,12 +1,12 @@
-import React from "react"
-import HomeIcon from "@material-ui/icons/Home"
-import PhoneIcon from "@material-ui/icons/Phone"
-import IconButton from "@material-ui/core/IconButton"
-import GitHubIcon from "@material-ui/icons/GitHub"
-import LinkedInIcon from "@material-ui/icons/LinkedIn"
-import PostAddIcon from "@material-ui/icons/PostAdd"
-import MailOutlineIcon from "@material-ui/icons/MailOutline"
-import getResume from "../static/getResume"
+import React from "react";
+import HomeIcon from "@material-ui/icons/Home";
+import PhoneIcon from "@material-ui/icons/Phone";
+import IconButton from "@material-ui/core/IconButton";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import PostAddIcon from "@material-ui/icons/PostAdd";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import getResume from "../static/getResume";
 
 export default function ContactInfo() {
   return (
@@ -102,5 +102,5 @@ export default function ContactInfo() {
         </a>
       </h6>
     </div>
-  )
+  );
 }

@@ -1,17 +1,17 @@
-import React from "react"
-import MusicMapDesktop from "../../images/projects/2021/musicmap-desktop.png"
-import MusicMapMobile from "../../images/projects/2021/musicmap-mobile.png"
-import Project from "../../components/Project"
-import getTechIcons from "../getTechIcons"
+import React from "react";
+import MusicMapDesktop from "../../images/projects/2021/musicmap-desktop.png";
+import MusicMapMobile from "../../images/projects/2021/musicmap-mobile.png";
+import Project from "../../components/Project";
+import getTechIcons from "../getTechIcons";
 
 export default function MusicMap() {
-  const title = "MusicMap"
+  const title = "MusicMap";
   const links = {
     Website: "https://vincentktieu101.github.io/MusicMap/",
     Github: "https://github.com/vincentktieu101/MusicMap",
-  }
-  const date = "March 2021"
-  const images = [MusicMapDesktop, MusicMapMobile]
+  };
+  const date = "March 2021";
+  const images = [MusicMapDesktop, MusicMapMobile];
   const description = (
     <React.Fragment>
       <div>
@@ -24,14 +24,14 @@ export default function MusicMap() {
         MusicMap is developed for both desktop and mobile!
       </div>
     </React.Fragment>
-  )
+  );
   const icons = {
     ReactJS: true,
     Netlify: true,
     Github: true,
     MaterialUI: true,
     Javascript: true,
-  }
+  };
   return (
     <Project
       title={title}
@@ -41,5 +41,5 @@ export default function MusicMap() {
       description={description}
       techIcons={getTechIcons(icons)}
     />
-  )
+  );
 }

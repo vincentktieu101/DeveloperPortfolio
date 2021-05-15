@@ -20,27 +20,8 @@
   }
 
   .project-item-vl.appear {
-    transition: 500ms;
     border-left: 8px solid black;
     margin-right: 55px; 
-  }
-
-  @keyframes enlargeproject-item-vl {
-    100% {
-      border-left: 8px solid black;
-      margin-right: 55px; 
-    }
-  }
-
-  @keyframes reduceproject-item-vl {
-    0% {
-      border-left: 8px solid black;
-      margin-right: 55px;
-    }
-    100% {
-      border-left: 3px solid black;
-      margin-right: 20px;
-    }
   }
 }
 
@@ -89,19 +70,13 @@
 }
 
 .project-tech-icon {
+  transition: 250ms;
   height: 40px;
   margin: 5px;
+  transform: scale(1);
 }
 
 .project-tech-icon:hover {
-  animation: enlargeImg ease 100ms;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes enlargeImg {
-  100% {
-    transform: scale(1.2);
-    z-index: 1;
-  }
+  transform: scale(1.2);
+  z-index: 1;
 }

@@ -25,6 +25,7 @@ export default function LineTrackingCar() {
     OpenCV: true,
     Arduino: true,
     Python: true,
+    Cpp: true,
   };
   return (
     <React.Fragment>

@@ -1,7 +1,7 @@
 export default function initVl() {
   const intersectors = document.querySelectorAll(".project-item-vl");
   const appearOptions = {
-    threshold: 0.4,
+    threshold: 0.6,
   };
   const appearOnScroll = new IntersectionObserver(function (
     entries,

@@ -1,27 +1,28 @@
 import React from "react";
-import NodeJS from "../images/getTechIcons/nodejs.svg";
-import ExpressJS from "../images/getTechIcons/expressjs.svg";
-import ReactJS from "../images/getTechIcons/reactjs.svg";
-import SocketIO from "../images/getTechIcons/socketio.svg";
-import Heroku from "../images/getTechIcons/heroku.svg";
-import Netlify from "../images/getTechIcons/netlify.svg";
-import Github from "../images/getTechIcons/github.svg";
-import Arduino from "../images/getTechIcons/arduino.svg";
-import GoogleDevelopers from "../images/getTechIcons/googledevelopers.svg";
-import OpenCV from "../images/getTechIcons/opencv.svg";
-import GatsbyJS from "../images/getTechIcons/gatsbyjs.svg";
-import NextJS from "../images/getTechIcons/nextjs.svg";
-import Cypress from "../images/getTechIcons/cypress.png";
-import Auth0 from "../images/getTechIcons/auth0.svg";
-import Pygame from "../images/getTechIcons/pygame.gif";
-import Python from "../images/getTechIcons/python.svg";
-import Javascript from "../images/getTechIcons/javascript.svg";
-import Jest from "../images/getTechIcons/jest.svg";
-import MaterialUI from "../images/getTechIcons/materialui.png";
-import ReactBootstrap from "../images/getTechIcons/reactbootstrap.svg";
-import Scratch from "../images/getTechIcons/scratch.svg";
-import Firebase from "../images/getTechIcons/firebase.svg";
-import MongoDB from "../images/getTechIcons/MongoDB.svg";
+import NodeJS from "../images/tech-icons/nodejs.svg";
+import ExpressJS from "../images/tech-icons/expressjs.svg";
+import ReactJS from "../images/tech-icons/reactjs.svg";
+import SocketIO from "../images/tech-icons/socketio.svg";
+import Heroku from "../images/tech-icons/heroku.svg";
+import Netlify from "../images/tech-icons/netlify.svg";
+import Github from "../images/tech-icons/github.svg";
+import Arduino from "../images/tech-icons/arduino.svg";
+import GoogleDevelopers from "../images/tech-icons/googledevelopers.svg";
+import OpenCV from "../images/tech-icons/opencv.svg";
+import GatsbyJS from "../images/tech-icons/gatsbyjs.svg";
+import NextJS from "../images/tech-icons/nextjs.svg";
+import Cypress from "../images/tech-icons/cypress.png";
+import Auth0 from "../images/tech-icons/auth0.svg";
+import Pygame from "../images/tech-icons/pygame.gif";
+import Python from "../images/tech-icons/python.svg";
+import Javascript from "../images/tech-icons/javascript.svg";
+import Jest from "../images/tech-icons/jest.svg";
+import MaterialUI from "../images/tech-icons/materialui.png";
+import ReactBootstrap from "../images/tech-icons/reactbootstrap.svg";
+import Scratch from "../images/tech-icons/scratch.svg";
+import Firebase from "../images/tech-icons/firebase.svg";
+import MongoDB from "../images/tech-icons/MongoDB.svg";
+import Cpp from "../images/tech-icons/c++.svg";
 
 export default function Icons(iconsList) {
   if (iconsList === undefined) {
@@ -272,6 +273,23 @@ export default function Icons(iconsList) {
       >
         <img
           src={MongoDB}
+          className="project-tech-icon"
+          alt=""
+          style={{ marginBottom: "10px", height: "30px" }}
+        />
+      </a>
+    );
+  }
+  if (iconsList.Cpp) {
+    techIcons.push(
+      <a
+        href="https://www.cplusplus.com/"
+        target="_blank"
+        rel="noreferrer"
+        key={23}
+      >
+        <img
+          src={Cpp}
           className="project-tech-icon"
           alt=""
           style={{ marginBottom: "10px", height: "30px" }}

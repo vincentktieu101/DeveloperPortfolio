@@ -12,6 +12,7 @@
 
 @media (min-width: 700px) {
   .project-item-vl {
+    transition: 500ms;
     visibility: visible;
     border-left: 3px solid black;
     height: 400px;
@@ -19,15 +20,9 @@
   }
 
   .project-item-vl.appear {
-    animation: enlargeproject-item-vl ease 500ms;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-
-  .project-item-vl.disappear {
-    animation: reduceproject-item-vl ease 500ms;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    transition: 500ms;
+    border-left: 8px solid black;
+    margin-right: 55px; 
   }
 
   @keyframes enlargeproject-item-vl {
@@ -93,14 +88,6 @@
   margin: 10px !important;
 }
 
-.project-tech-column {
-  // display: flex;
-  // flex-direction: column;
-  // // justify-content: center;
-  // align-items: flex-end;
-  // margin-left: 20px;
-}
-
 .project-tech-icon {
   height: 40px;
   margin: 5px;
@@ -117,15 +104,4 @@
     transform: scale(1.2);
     z-index: 1;
   }
-}
-
-.vl {
-  border-left: 1px solid black;
-  // height: 400px;
-  margin-left: 50px;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }

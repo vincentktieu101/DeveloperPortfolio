@@ -40,7 +40,6 @@ export default function Projects() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          overflowY: "scroll",
         }}
         open={modal.open}
         onClose={handleClose}

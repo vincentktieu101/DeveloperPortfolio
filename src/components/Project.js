@@ -33,7 +33,7 @@ export default function Project({
     </Fragment>
   );
   return (
-    <div className="project-item fade-in">
+    <div className="project-item fade-in appear">
       <div className="project-item-vl" />
       <div>
         <h3>{title}</h3>

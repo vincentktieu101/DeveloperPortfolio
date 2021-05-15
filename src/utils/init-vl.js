@@ -9,11 +9,9 @@ export default function initVl() {
   ) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.remove("disappear");
         entry.target.classList.add("appear");
       } else if (entry.target.classList.contains("appear")) {
         entry.target.classList.remove("appear");
-        entry.target.classList.add("disappear");
       }
     });
   },

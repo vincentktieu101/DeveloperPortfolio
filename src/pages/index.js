@@ -13,6 +13,7 @@ import initFaders from "../utils/init-faders";
 import initEmojiShake from "../utils/init-emoji-shake";
 import initProjectsCollapse from "../utils/init-projects-collapse";
 import initVl from "../utils/init-vl";
+import initProjectTechIcons from "../utils/init-project-tech-icons";
 
 export default function IndexPage() {
   useEffect(() => {
@@ -20,6 +21,7 @@ export default function IndexPage() {
     initEmojiShake();
     initVl();
     initProjectsCollapse();
+    initProjectTechIcons();
   }, []);
 
   return (

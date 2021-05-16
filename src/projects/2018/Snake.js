@@ -2,7 +2,7 @@ import React from "react";
 import SnakeDesktop from "../../images/projects/2018/snake-desktop.png";
 import SnakeDesktop2 from "../../images/projects/2018/snake-desktop2.png";
 import Project from "../../components/Project";
-import getTechIcons from "../getTechIcons";
+import getTechIconsList from "../getTechIconsList";
 
 export default function Snake() {
   const title = "Snake";
@@ -40,10 +40,7 @@ export default function Snake() {
       </div>
     </React.Fragment>
   );
-  const icons = {
-    Pygame: true,
-    Python: true,
-  };
+  const iconsList = ["Pygame", "Python"];
   return (
     <React.Fragment>
       <Project
@@ -52,7 +49,7 @@ export default function Snake() {
         date={date}
         images={images}
         description={description}
-        techIcons={getTechIcons(icons)}
+        techIcons={getTechIconsList(iconsList)}
       />
     </React.Fragment>
   );

@@ -4,7 +4,7 @@ import FreeFromClassMobile2 from "../../images/projects/2020/freefromclass-mobil
 import FreeFromClassMobile3 from "../../images/projects/2020/freefromclass-mobile3.png";
 import FreeFromClassMobile from "../../images/projects/2020/freefromclass-mobile.png";
 import Project from "../../components/Project";
-import getTechIcons from "../getTechIcons";
+import getTechIconsList from "../getTechIconsList";
 
 export default function FreeFromClass() {
   const title = "FreeFromClass";
@@ -31,17 +31,17 @@ export default function FreeFromClass() {
       </div>
     </React.Fragment>
   );
-  const icons = {
-    ReactJS: true,
-    NextJS: true,
-    Heroku: true,
-    Cypress: true,
-    Jest: true,
-    ReactBootstrap: true,
-    Javascript: true,
-    Auth0: true,
-    MongoDB: true,
-  };
+  const iconsList = [
+    "ReactJS",
+    "NextJS",
+    "MongoDB",
+    "Auth0",
+    "Heroku",
+    "Cypress",
+    "Jest",
+    "ReactBootstrap",
+    "Javascript",
+  ];
   return (
     <React.Fragment>
       <Project
@@ -50,7 +50,7 @@ export default function FreeFromClass() {
         date={date}
         images={images}
         description={description}
-        techIcons={getTechIcons(icons)}
+        techIcons={getTechIconsList(iconsList)}
       />
     </React.Fragment>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import LineTrackingCarImage from "../../images/projects/2019/linetrackingcar.jpeg";
 import LineTrackingCarDesktop from "../../images/projects/2019/linetrackingcar-desktop.png";
 import Project from "../../components/Project";
-import getTechIcons from "../getTechIcons";
+import getTechIconsList from "../getTechIconsList";
 
 export default function LineTrackingCar() {
   const title = "Line Tracking Car";
@@ -21,12 +21,7 @@ export default function LineTrackingCar() {
       </div>
     </React.Fragment>
   );
-  const icons = {
-    OpenCV: true,
-    Arduino: true,
-    Python: true,
-    Cpp: true,
-  };
+  const iconsList = ["OpenCV", "Arduino", "Python", "Cpp"];
   return (
     <React.Fragment>
       <Project
@@ -35,7 +30,7 @@ export default function LineTrackingCar() {
         date={date}
         images={images}
         description={description}
-        techIcons={getTechIcons(icons)}
+        techIcons={getTechIconsList(iconsList)}
       />
     </React.Fragment>
   );

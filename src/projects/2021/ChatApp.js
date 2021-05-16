@@ -2,7 +2,7 @@ import React from "react";
 import ChatAppDesktop from "../../images/projects/2021/chatapp-desktop.png";
 import ChatAppMobile from "../../images/projects/2021/chatapp-mobile.png";
 import Project from "../../components/Project";
-import getTechIcons from "../getTechIcons";
+import getTechIconsList from "../getTechIconsList";
 
 export default function ChatApp() {
   const title = "ChatApp";
@@ -21,15 +21,15 @@ export default function ChatApp() {
       </div>
     </React.Fragment>
   );
-  const icons = {
-    NodeJS: true,
-    ReactJS: true,
-    SocketIO: true,
-    ExpressJS: true,
-    Heroku: true,
-    MaterialUI: true,
-    Javascript: true,
-  };
+  const iconsList = [
+    "ReactJS",
+    "ExpressJS",
+    "NodeJS",
+    "SocketIO",
+    "Heroku",
+    "MaterialUI",
+    "Javascript",
+  ];
   return (
     <React.Fragment>
       <Project
@@ -38,7 +38,7 @@ export default function ChatApp() {
         date={date}
         images={images}
         description={description}
-        techIcons={getTechIcons(icons)}
+        techIcons={getTechIconsList(iconsList)}
       />
     </React.Fragment>
   );

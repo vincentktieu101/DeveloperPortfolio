@@ -2,7 +2,7 @@ import React from "react";
 import TheShoppiesDesktop from "../../images/projects/2021/theshoppies-desktop.png";
 import TheShoppiesMobile from "../../images/projects/2021/theshoppies-mobile.png";
 import Project from "../../components/Project";
-import getTechIcons from "../getTechIcons";
+import getTechIconsList from "../getTechIconsList";
 
 export default function TheShoppies() {
   const title = "TheShoppies";
@@ -39,13 +39,13 @@ export default function TheShoppies() {
       </div>
     </React.Fragment>
   );
-  const icons = {
-    ReactJS: true,
-    GoogleDevelopers: true,
-    Netlify: true,
-    Firebase: true,
-    Javascript: true,
-  };
+  const iconsList = [
+    "ReactJS",
+    "Firebase",
+    "Netlify",
+    "GoogleDevelopers",
+    "Javascript",
+  ];
   return (
     <Project
       title={title}
@@ -53,7 +53,7 @@ export default function TheShoppies() {
       date={date}
       images={images}
       description={description}
-      techIcons={getTechIcons(icons)}
+      techIcons={getTechIconsList(iconsList)}
     />
   );
 }

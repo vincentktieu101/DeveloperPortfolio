@@ -3,7 +3,7 @@ import TouchOfEleganceDesktop from "../../images/projects/2021/touchofelegance-d
 import TouchOfEleganceMobile from "../../images/projects/2021/touchofelegance-mobile.png";
 import TouchOfEleganceMobile2 from "../../images/projects/2021/touchofelegance-mobile-2.png";
 import Project from "../../components/Project";
-import getTechIcons from "../getTechIcons";
+import getTechIconsList from "../getTechIconsList";
 
 export default function TouchOfElegance() {
   const title = "Touch Of Elegance";
@@ -28,13 +28,13 @@ export default function TouchOfElegance() {
       </div>
     </React.Fragment>
   );
-  const icons = {
-    ReactJS: true,
-    GatsbyJS: true,
-    Netlify: true,
-    MaterialUI: true,
-    Javascript: true,
-  };
+  const iconsList = [
+    "ReactJS",
+    "GatsbyJS",
+    "Netlify",
+    "MaterialUI",
+    "Javascript",
+  ];
   return (
     <Project
       title={title}
@@ -42,7 +42,7 @@ export default function TouchOfElegance() {
       date={date}
       images={images}
       description={description}
-      techIcons={getTechIcons(icons)}
+      techIcons={getTechIconsList(iconsList)}
     />
   );
 }

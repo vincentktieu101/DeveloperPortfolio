@@ -80,3 +80,71 @@
   transform: scale(1.2);
   z-index: 1;
 }
+
+.project-tech-icon-0,
+.project-tech-icon-1,
+.project-tech-icon-2,
+.project-tech-icon-3,
+.project-tech-icon-4,
+.project-tech-icon-5,
+.project-tech-icon-6,
+.project-tech-icon-7,
+.project-tech-icon-8,
+.project-tech-icon-9 {
+  transition: 250ms;
+  display: inline-block;
+  transform: translateX(-50%);
+}
+
+.project-tech-icon-0 {
+  transition-delay: 100ms;
+}
+
+.project-tech-icon-1 {
+  transition-delay: 200ms;
+}
+
+.project-tech-icon-2 {
+  transition-delay: 300ms;
+}
+
+.project-tech-icon-3 {
+  transition-delay: 400ms;
+}
+
+.project-tech-icon-4 {
+  transition-delay: 500ms;
+}
+
+.project-tech-icon-5 {
+  transition-delay: 600ms;
+}
+
+.project-tech-icon-6 {
+  transition-delay: 700ms;
+}
+
+.project-tech-icon-7 {
+  transition-delay: 800ms;
+}
+
+.project-tech-icon-8 {
+  transition-delay: 900ms;
+}
+
+.project-tech-icon-9 {
+  transition-delay: 1000ms;
+}
+
+.project-tech-icon-0.appear,
+.project-tech-icon-1.appear,
+.project-tech-icon-2.appear,
+.project-tech-icon-3.appear,
+.project-tech-icon-4.appear,
+.project-tech-icon-5.appear,
+.project-tech-icon-6.appear,
+.project-tech-icon-7.appear,
+.project-tech-icon-8.appear,
+.project-tech-icon-9.appear {
+  transform: translateX(0%);
+}

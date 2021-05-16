@@ -1,7 +1,7 @@
 import React from "react";
 import ChristmasCaneRevengeDesktop from "../../images/projects/2017/christmascanerevenge-desktop.png";
 import Project from "../../components/Project";
-import getTechIcons from "../getTechIcons";
+import getTechIconsList from "../getTechIconsList";
 
 export default function ChristmasCaneRevenge() {
   const title = "ChristmasCaneRevenge";
@@ -15,9 +15,7 @@ export default function ChristmasCaneRevenge() {
       <div>This is a little bonus project for scrolling to the end :)</div>
     </React.Fragment>
   );
-  const icons = {
-    Scratch: true,
-  };
+  const iconsList = ["Scratch"];
   return (
     <React.Fragment>
       <Project
@@ -26,7 +24,7 @@ export default function ChristmasCaneRevenge() {
         date={date}
         images={images}
         description={description}
-        techIcons={getTechIcons(icons)}
+        techIcons={getTechIconsList(iconsList)}
       />
     </React.Fragment>
   );

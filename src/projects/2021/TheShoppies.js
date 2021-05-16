@@ -19,7 +19,7 @@ export default function TheShoppies() {
         listed{" "}
         <a
           href="https://docs.google.com/document/d/1SdR9rQpocsH5rPTOcxr9noqHRld5NJlylKO9Hf94U8U/edit#heading=h.31w9woubunro"
-          className="link"
+          className="link link-ltr"
           target="_blank"
           rel="noreferrer"
         >
@@ -28,7 +28,7 @@ export default function TheShoppies() {
         . This is an app that helps query for movies using the{" "}
         <a
           href="https://www.omdbapi.com/"
-          className="link"
+          className="link link-ltr"
           target="_blank"
           rel="noreferrer"
         >

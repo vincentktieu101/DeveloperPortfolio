@@ -42,7 +42,7 @@ export default function About() {
               could elaborate more of on my{" "}
               <a
                 href={getResume()}
-                className="link"
+                className="link link-ltr"
                 target="_blank"
                 rel="noreferrer"
               >

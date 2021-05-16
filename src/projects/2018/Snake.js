@@ -29,7 +29,7 @@ export default function Snake() {
         guide that you can check out
         <a
           href="https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit?usp=sharing"
-          className="link"
+          className="link link-ltr"
           target="_blank"
           rel="noreferrer"
         >

@@ -19,7 +19,7 @@ export default function Project({
         return (
           <React.Fragment key={i}>
             <a
-              className="link"
+              className="link link-ltr"
               href={links[link]}
               target="_blank"
               rel="noreferrer"
@@ -64,7 +64,7 @@ export default function Project({
             );
           })}
         </div>
-        <div className="project-item-tech-row" style={{marginBottom: "10px"}}>{techIcons}</div>
+        <div className="project-item-tech-row">{techIcons}</div>
         <div className="project-item-desc" style={{marginBottom: "10px"}}>{description}</div>
       </div>
     </div>

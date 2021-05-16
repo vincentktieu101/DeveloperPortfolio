@@ -35,10 +35,12 @@
 .nav-link-ltr::before {
   width: 0%;
   top: 20px;
+  left: 50%;
 }
 
 .nav-link::before, .nav-link-ltr:hover::before {
   width: 100%;
+  left: 0%;
 }
 
 .nav-link-disabled {

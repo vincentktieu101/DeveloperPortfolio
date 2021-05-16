@@ -53,6 +53,7 @@
 .project-item-tech-row {
   max-height: 55px;
   overflow-y: hidden;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 700px) {
@@ -153,6 +154,7 @@
 .project-item-desc {
   width: 100%;
   line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 @media(min-width: 700px) {

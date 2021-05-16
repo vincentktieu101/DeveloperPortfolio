@@ -54,11 +54,27 @@ h6 {
 .link {
   color: #007bff;
   text-decoration: none;
+  display: inline-block;
+  position: relative;
 }
 
-.link:hover {
-  color: #007bff;
-  text-decoration: underline;
+.link::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #007bff;
+}
+
+.link-ltr::before {
+  width: 0%;
+  left: 50%;
+  top: 20px;
+}
+
+.link-ltr:hover::before {
+  left: 0%;
+  width: 100%;
 }
 
 .link-no-styles {

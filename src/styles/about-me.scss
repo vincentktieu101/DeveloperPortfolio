@@ -1,19 +1,32 @@
 .about-text {
   width: 100%;
+  max-width: 700px;
   margin-right: 10px;
   line-height: 1.5;
 }
 
-@media(min-width: 800px) {
-  .about-text {
-    width: 480px;
-  }
-}
-
 .about-skills {
-  height: 440px;
+  height: auto;
   max-width: 100%;
   width: auto;
   margin-top: 30px;
   opacity: 0.8;
+}
+
+@media(min-width: 1000px) {
+  .about-text {
+    width: 400px;
+  }
+  .about-skills {
+    height: 380px
+  }
+}
+
+@media(min-width: 1200px) {
+  .about-text {
+    width: 480px;
+  }
+  .about-skills {
+    height: 440px;
+  }
 }

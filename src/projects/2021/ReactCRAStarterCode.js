@@ -23,13 +23,12 @@ export default function ReactGoogleAuthStarter() {
   const description = (
     <React.Fragment>
       <div>
-        In Spring of my junior year at UCSB, I became an Undergraduate Learning
-        Assistant (ULA) for CS148 (Computer Science Project), in which students
+        In Spring of my junior year at UCSB, I became an tutor for CS148 (Computer Science 
+        Project) in which students
         learn how to develop an application. Since most students wanted to
-        create a React application, I wrote some starter code in React CRA
-        (CreateReactApp) along with Google OAuth. I also filmed a mini guide on
-        how to use React/Google OAuth on YouTube as well as wrote a Github
-        Readme.
+        create a React application, I wrote some starter code for
+        Google OAuth. I also filmed a mini guide on how to use React/Google OAuth
+        on YouTube as well as wrote a Github Readme.
       </div>
     </React.Fragment>
   );

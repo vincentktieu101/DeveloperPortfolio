@@ -1,7 +1,7 @@
 export default function initFaders() {
   const intersectors = document.querySelectorAll(".fade-in");
   const appearOptions = {
-    threshold: 0.2,
+    threshold: 0.6,
   };
   const appearOnScroll = new IntersectionObserver(function (
     entries,

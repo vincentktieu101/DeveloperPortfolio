@@ -12,16 +12,14 @@ import Projects from "../sections/Projects";
 import initFaders from "../utils/init-faders";
 import initEmojiShake from "../utils/init-emoji-shake";
 import initProjectsCollapse from "../utils/init-projects-collapse";
-import initVl from "../utils/init-vl";
-import initProjectTechIcons from "../utils/init-project-tech-icons";
+import initProject from "../utils/init-project";
 
 export default function IndexPage() {
   useEffect(() => {
     initFaders();
     initEmojiShake();
-    initVl();
+    initProject();
     initProjectsCollapse();
-    initProjectTechIcons();
   }, []);
 
   return (

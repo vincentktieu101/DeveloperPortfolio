@@ -46,30 +46,27 @@ export default function Project({
           </div>
         </div>
         <br />
-        {images.map((image, i) => {
-          return (
-            <Fragment key={i}>
-              <button
-                onClick={() => handleModal(images, i, linksComponent)}
-                className={i !== 0 ? "desktop-render" : ""}
-              >
-                <img
-                  key={i}
-                  className="project-img"
-                  src={image}
-                  alt="project-img"
-                />
-              </button>{" "}
-            </Fragment>
-          );
-        })}
-        <br />
-        <br />
-        <div className="project-desc">{description}</div>
-        <br />
-        <div className="project-tech-column">{techIcons}</div>
+        <div className="project-item-imgs" style={{marginBottom: "10px"}}>
+          {images.map((image, i) => {
+            return (
+              <Fragment key={i}>
+                <button
+                  onClick={() => handleModal(images, i, linksComponent)}
+                >
+                  <img
+                    key={i}
+                    className="project-img"
+                    src={image}
+                    alt="project-img"
+                  />
+                </button>{" "}
+              </Fragment>
+            );
+          })}
+        </div>
+        <div className="project-item-tech-row" style={{marginBottom: "10px"}}>{techIcons}</div>
+        <div className="project-item-desc" style={{marginBottom: "10px"}}>{description}</div>
       </div>
-      {/* <div className="project-tech-column">{techIcons}</div> */}
     </div>
   );
 }

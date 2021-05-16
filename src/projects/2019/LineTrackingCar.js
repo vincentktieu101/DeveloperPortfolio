@@ -17,7 +17,7 @@ export default function LineTrackingCar() {
       <div>
         The Line Tracking Car was a project from a ECE project class that I
         took. The project required me to learn breadboarding as well as tweak
-        the linear regression algorithm so get the car to turn accordingly.
+        the linear regression algorithm to get the car to turn accordingly.
       </div>
     </React.Fragment>
   );

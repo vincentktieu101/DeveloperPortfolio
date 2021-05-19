@@ -27,8 +27,10 @@ export default function NavBar() {
     window.addEventListener("scroll", () => {
       if (window.pageYOffset < "10") {
         setNavShrink(true);
+        document.getElementById("nav-bar").classList.remove("shrink");
       } else {
         setNavShrink(false);
+        document.getElementById("nav-bar").classList.add("shrink");
       }
 
       if (window.pageYOffset >= contact.offsetTop - 200) {
@@ -51,7 +53,7 @@ export default function NavBar() {
       onKeyDown={() => setDrawer(false)}
     >
       <List>
-        <Link to="/" className="nav-link" style={{ color: "black" }}>
+        <Link to="/" className="link-no-styles">
           <ListItem button key={"Home"}>
             <ListItemIcon>
               <HomeIcon />
@@ -61,7 +63,7 @@ export default function NavBar() {
             </ListItemText>
           </ListItem>
         </Link>
-        <Link to="/#about" className="nav-link" style={{ color: "black" }}>
+        <Link to="/#about" className="link-no-styles">
           <ListItem button>
             <ListItemIcon>
               <MenuBookIcon />
@@ -71,7 +73,7 @@ export default function NavBar() {
             </ListItemText>
           </ListItem>
         </Link>
-        <Link to="/#projects" className="nav-link" style={{ color: "black" }}>
+        <Link to="/#projects" className="link-no-styles">
           <ListItem button>
             <ListItemIcon>
               <CodeIcon />
@@ -81,7 +83,7 @@ export default function NavBar() {
             </ListItemText>
           </ListItem>
         </Link>
-        <Link to="/#contact" className="nav-link" style={{ color: "black" }}>
+        <Link to="/#contact" className="link-no-styles">
           <ListItem button>
             <ListItemIcon>
               <ContactMailIcon />
@@ -97,20 +99,18 @@ export default function NavBar() {
   );
 
   return (
-    <header className="nav-bar">
+    <header id="nav-bar">
       <Container>
         <div className="nav-items">
           <Link to="/" className="brand link-no-styles">
             {navShrink ? (
               <React.Fragment>
-                <h4 className="brand-name">VINCENT'S</h4>
+                <div className="brand-name">VINCENT'S</div>
                 <div className="brand-under">Developer Portfolio</div>
               </React.Fragment>
             ) : (
               <React.Fragment>
-                <h6 style={{ color: "black" }}>
-                  VINCENT'S DEVELOPER PORTFOLIO
-                </h6>
+                <h6>VINCENT'S DEVELOPER PORTFOLIO</h6>
               </React.Fragment>
             )}
           </Link>

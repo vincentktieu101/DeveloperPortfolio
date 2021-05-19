@@ -46,13 +46,11 @@ export default function Project({
           </div>
         </div>
         <br />
-        <div className="project-item-imgs" style={{marginBottom: "10px"}}>
+        <div className="project-item-imgs" style={{ marginBottom: "10px" }}>
           {images.map((image, i) => {
             return (
               <Fragment key={i}>
-                <button
-                  onClick={() => handleModal(images, i, linksComponent)}
-                >
+                <button onClick={() => handleModal(images, i, linksComponent)}>
                   <img
                     key={i}
                     className="project-img"
@@ -65,7 +63,9 @@ export default function Project({
           })}
         </div>
         <div className="project-item-tech-row">{techIcons}</div>
-        <div className="project-item-desc" style={{marginBottom: "10px"}}>{description}</div>
+        <div className="project-item-desc" style={{ marginBottom: "10px" }}>
+          {description}
+        </div>
       </div>
     </div>
   );

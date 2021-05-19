@@ -104,6 +104,11 @@ hr {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+.flex-space-around > * {
+  margin-bottom: 30px;
 }
 
 .flex-center {

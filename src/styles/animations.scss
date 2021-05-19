@@ -16,6 +16,7 @@
 }
 
 .emoji-shake.appear {
+  animation-delay: 500ms;
   animation: shake ease 500ms;
 }
 

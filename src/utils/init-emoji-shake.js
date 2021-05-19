@@ -8,10 +8,9 @@ export default function initShakers() {
     appearOnScroll
   ) {
     entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        entry.target.classList.remove("appear");
-      } else {
+      if (entry.isIntersecting) {
         entry.target.classList.add("appear");
+        appearOnScroll.unobserve(entry.target);
       }
     });
   },

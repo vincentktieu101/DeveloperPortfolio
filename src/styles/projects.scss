@@ -33,8 +33,15 @@
 }
 
 .project-item-imgs {
-  max-height: 300px;
+  max-height: 200px;
   overflow: hidden;
+}
+
+@media (min-width: 700px) {
+  .project-item-imgs {
+    max-height: 300px;
+    overflow: hidden;
+  }
 }
 
 .project-img {

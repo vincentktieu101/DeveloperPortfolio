@@ -40,12 +40,11 @@ export default function AboutSkills() {
         User Experience & Design
       </h2>
       <div>
-        Websites / interfaces need to be functional but they also
-        need to be intuitive and enjoyable to use. I am a programmer first
-        and foremost but I have learned about UI/UX by planning and
-        designing my personal projects. Through learning concepts like responsive design, 
+        Interfaces need to be intuitive and enjoyable to use. I have learned 
+        about UI/UX by planning and designing my personal projects. Through 
+        learning concepts like responsive design, 
         interaction design, and accessibility, I'm able to work with
-        designers to create awesome interfaces.
+        designers to create functional and stunning interfaces.
       </div>
     </React.Fragment>
   );

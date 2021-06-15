@@ -2,7 +2,7 @@
   transition: 200ms ease-out;
   height: 68px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background-color: rgba(236, 236, 236, 0.2);
   padding: 10px 0;
@@ -62,7 +62,7 @@
 }
 
 .brand-name {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 600;
   letter-spacing: 1px;
 }

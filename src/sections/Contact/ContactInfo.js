@@ -6,7 +6,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import PostAddIcon from "@material-ui/icons/PostAdd";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import getResume from "../static/getResume";
+import getResume from "../../static/getResume";
 
 export default function ContactInfo() {
   return (

@@ -5,7 +5,7 @@ import { SnackbarProvider } from "notistack";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import Cover from "../sections/Cover";
-import About from "../sections/About";
+import About from "../sections/About/index.js";
 import Contact from "../sections/Contact";
 // import Experience from "../sections/Experience";
 import Projects from "../sections/Projects";

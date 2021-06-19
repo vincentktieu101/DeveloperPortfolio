@@ -1,5 +1,6 @@
 import React from "react";
 import VincentHeadshot from "../images/main/vincent-headshot.png";
+import Button from "@material-ui/core/Button";
 
 export default function Cover() {
   return (

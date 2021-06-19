@@ -103,7 +103,7 @@ export default function ContactForm() {
           style={{ width: "100%", marginBottom: "5px" }}
           type="submit"
         >
-          Submit
+          <h6>Submit</h6>
         </Button>
         <br />
       </form>

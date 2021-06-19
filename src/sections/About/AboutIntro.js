@@ -9,8 +9,8 @@ export default function AboutIntro() {
         <b>full-stack web developer</b>, based in <b>Los Angeles</b>. I am
         passionate about programming, whether that means starting a web project
         from scratch (like this online portfolio!) or developing an existing
-        code base. I program because I enjoy problem solving and want
-        a creative medium for achieving my goals.
+        code base. I program because I enjoy problem solving and want a creative
+        medium for achieving my goals.
       </div>
       <br />
       <div>

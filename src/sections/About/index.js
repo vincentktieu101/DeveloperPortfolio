@@ -8,8 +8,8 @@ export default function About() {
   return (
     <div id="about">
       <Container>
-        <div className="flex-space-around" style={{ marginBottom: "10vh" }}>
-          <div className="about-text fade-in">
+        <div className="flex-space-around" style={{ marginBottom: "15vh" }}>
+          <div id="about-main-summary" className="fade-in">
             <h1 className="text-center">
               ABOUT ME <hr />
             </h1>
@@ -20,7 +20,7 @@ export default function About() {
             <img
               alt="UC Santa Barbara"
               src={UCSBBirdEyesView}
-              className="about-ucsb"
+              id="about-ucsb-image"
             />
             <br />
             <div style={{ color: "rgb(87, 86, 86)", margin: "5px 0px" }}>

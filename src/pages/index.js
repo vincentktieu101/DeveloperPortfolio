@@ -7,7 +7,7 @@ import SEO from "../components/SEO";
 import Cover from "../sections/Cover";
 import About from "../sections/About/index.js";
 import Contact from "../sections/Contact";
-// import Experience from "../sections/Experience";
+import Experience from "../sections/Experience/index.js";
 import Projects from "../sections/Projects";
 import initFaders from "../utils/init-faders";
 import initEmojiShake from "../utils/init-emoji-shake";
@@ -28,7 +28,7 @@ export default function IndexPage() {
         <SEO title="Home" />
         <Cover />
         <About />
-        {/* <Experience /> */}
+        <Experience />
         <Projects />
         <Contact />
       </Layout>

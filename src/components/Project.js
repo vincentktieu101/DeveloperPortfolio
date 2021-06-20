@@ -1,7 +1,7 @@
 import React, { useContext, Fragment } from "react";
 import { ModalContext } from "../sections/Projects";
 import TodayIcon from "@material-ui/icons/Today";
-import WebIcon from "@material-ui/icons/Web";
+import LaunchIcon from "@material-ui/icons/Launch";
 
 export default function Project({
   title,
@@ -42,7 +42,7 @@ export default function Project({
             <TodayIcon style={{ fontSize: "16px" }} /> {date}
           </div>
           <div>
-            <WebIcon style={{ fontSize: "16px" }} /> {linksComponent}
+            <LaunchIcon style={{ fontSize: "16px" }} /> {linksComponent}
           </div>
         </div>
         <br />

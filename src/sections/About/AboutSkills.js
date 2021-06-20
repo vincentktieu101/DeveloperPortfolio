@@ -38,9 +38,7 @@ export default function AboutSkills() {
             />
             <AboutSkillsHeader />
             <div className="about-skill__body">
-              <div className="about-skill__description">
-                {backgroundTexts[i]}
-              </div>
+              <div className="about-skill__text">{backgroundTexts[i]}</div>
             </div>
           </React.Fragment>
         ))}

@@ -17,6 +17,7 @@ h5,
 h6 {
   font-family: "Oswald", sans-serif;
   margin: 0;
+  line-height: 1.4;
 }
 
 h1 {
@@ -27,7 +28,6 @@ h1 {
 @media (min-width: 700px) {
   h1 {
     font-size: 56px;
-    line-height: 1.2;
   }
 }
 
@@ -45,7 +45,7 @@ h4 {
 }
 
 h5 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 h6 {

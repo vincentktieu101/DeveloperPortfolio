@@ -1,0 +1,31 @@
+#experience-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.experience-item {
+  display: flex;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.experience-item__sidebar {
+  width: 50px;
+  background-color: #2c98f0;
+  position: relative;
+}
+
+.experience-item__body {
+  padding: 8px 20px;
+  border: rgb(160, 160, 160) solid 1px;
+  border-radius: 0px 8px 8px 0;
+}
+
+.experience-item__body-text {
+  margin-top: 5px;
+  line-height: 1.5;
+  width: 700px;
+}

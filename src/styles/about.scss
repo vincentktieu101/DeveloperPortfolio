@@ -57,15 +57,14 @@
   z-index: -1;
 }
 
-.about-skill__description {
-  width: 100%;
+.about-skill__text {
   max-width: 700px;
   line-height: 1.5;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
   margin: 0 20vw;
-  border-radius: 10px;
+  border-radius: 8px;
   max-height: 70vh;
 }
 
@@ -90,10 +89,10 @@
 
 @media (max-width: 700px) {
   .about-skill__bg {
-    height: 135vh;
+    height: 120vh;
   }
   .about-skill__header, .about-skill__header-bg {
-    height: 50vh;
+    height: 40vh;
   }
   .about-skill__header-grid {
    flex-direction: column; 
@@ -102,9 +101,9 @@
     border-bottom: 1px solid white;
   }
   .about-skill__body {
-    height: 85vh;
+    height: 70vh;
   }
-  .about-skill__description {
+  .about-skill__text {
     margin: 0 50vw;
   }
 }

@@ -4,7 +4,7 @@ import ExperienceItem from "../ExperienceItem";
 export default function Syntiant() {
   const type = "work";
   const title = "Frontend Developer Intern";
-  const company = "Syntiant"
+  const company = "Syntiant";
   const location = "Irvine CA";
   const time = "June - September 2021";
   const text = `Worked full-time with the data team in implementing internal and 

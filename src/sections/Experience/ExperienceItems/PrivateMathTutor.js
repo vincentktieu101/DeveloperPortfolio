@@ -4,7 +4,7 @@ import ExperienceItem from "../ExperienceItem";
 export default function PrivateMathTutor() {
   const type = "work";
   const title = "Private Math Tutor";
-  const company = "Freelance"
+  const company = "Freelance";
   const location = "Los Angeles CA";
   const time = "February - June 2018";
   const text = `Prepared two students for an Algebra II placement exam, writing lesson plans and assigning homework.`;

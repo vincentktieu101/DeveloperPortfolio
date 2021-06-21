@@ -69,11 +69,11 @@ const UserInterfaceText = (
       User Experience & Design
     </h2>
     <div>
-      It is important to me that interfaces not only functional but also fun to use.
-      I have learned about UI/UX by planning and designing my personal projects. 
-      By learning concepts like responsive design, interaction design, and accessibility,
-      I'm able to work with designers to create functional and stunning
-      interfaces.
+      It is important to me that interfaces not only functional but also fun to
+      use. I have learned about UI/UX by planning and designing my personal
+      projects. By learning concepts like responsive design, interaction design,
+      and accessibility, I'm able to work with designers to create functional
+      and stunning interfaces.
     </div>
   </React.Fragment>
 );

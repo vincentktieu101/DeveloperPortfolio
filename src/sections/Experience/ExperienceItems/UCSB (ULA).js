@@ -11,7 +11,7 @@ export default function UCSB_ULA() {
   Computer Science Project, where students learn about Agile development
   practices, testing, and software reliability. Students also build a self
   guided project together using techniques learned, most commonly using React, NoSQL,
-  Flask / Express, Git, and app deployment.`
+  Flask / Express, Git, and app deployment.`;
   return (
     <ExperienceItem
       type={type}

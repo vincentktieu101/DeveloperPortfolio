@@ -4,15 +4,7 @@ import Container from "@material-ui/core/Container";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Drawer from "@material-ui/core/Drawer";
-import Divider from "@material-ui/core/Divider";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import HomeIcon from "@material-ui/icons/Home";
-import MenuBookIcon from "@material-ui/icons/MenuBook";
-import CodeIcon from "@material-ui/icons/Code";
-import ContactMailIcon from "@material-ui/icons/ContactMail";
+import DrawerContent from "./DrawerContent";
 
 export default function NavBar() {
   const [drawer, setDrawer] = useState();
@@ -21,6 +13,7 @@ export default function NavBar() {
 
   useEffect(() => {
     const about = document.getElementById("about");
+    const experience = document.getElementById("experience");
     const projects = document.getElementById("projects");
     const contact = document.getElementById("contact");
 
@@ -37,66 +30,15 @@ export default function NavBar() {
         setCurrentSection("contact");
       } else if (window.pageYOffset >= projects.offsetTop - 200) {
         setCurrentSection("projects");
+      } else if (window.pageYOffset >= experience.offsetTop - 200) {
+        setCurrentSection("experience");
       } else if (window.pageYOffset >= about.offsetTop - 200) {
         setCurrentSection("about");
       } else {
         setCurrentSection("cover");
       }
     });
-  }, [currentSection]);
-
-  const list = (
-    <div
-      role="presentation"
-      style={{ width: "250px" }}
-      onClick={() => setDrawer(false)}
-      onKeyDown={() => setDrawer(false)}
-    >
-      <List>
-        <Link to="/" className="link-no-styles">
-          <ListItem button key={"Home"}>
-            <ListItemIcon>
-              <HomeIcon />
-            </ListItemIcon>
-            <ListItemText>
-              <b>HOME</b>
-            </ListItemText>
-          </ListItem>
-        </Link>
-        <Link to="/#about" className="link-no-styles">
-          <ListItem button>
-            <ListItemIcon>
-              <MenuBookIcon />
-            </ListItemIcon>
-            <ListItemText>
-              <b>ABOUT</b>
-            </ListItemText>
-          </ListItem>
-        </Link>
-        <Link to="/#projects" className="link-no-styles">
-          <ListItem button>
-            <ListItemIcon>
-              <CodeIcon />
-            </ListItemIcon>
-            <ListItemText>
-              <b>PROJECTS</b>
-            </ListItemText>
-          </ListItem>
-        </Link>
-        <Link to="/#contact" className="link-no-styles">
-          <ListItem button>
-            <ListItemIcon>
-              <ContactMailIcon />
-            </ListItemIcon>
-            <ListItemText>
-              <b>CONTACT</b>
-            </ListItemText>
-          </ListItem>
-        </Link>
-        <Divider />
-      </List>
-    </div>
-  );
+  }, []);
 
   return (
     <header id="nav-bar">
@@ -138,6 +80,17 @@ export default function NavBar() {
               <b>ABOUT</b>
             </Link>
             <Link
+              to="/#experience"
+              className={
+                currentSection === "experience"
+                  ? "nav-link nav-link-ltr"
+                  : "nav-link-disabled nav-link-ltr"
+              }
+              style={{ margin: "0 10px" }}
+            >
+              <b>EXPERIENCE</b>
+            </Link>
+            <Link
               to="/#projects"
               className={
                 currentSection === "projects"
@@ -173,7 +126,14 @@ export default function NavBar() {
               onClose={() => setDrawer(false)}
               className="drawer"
             >
-              {list}
+              <div
+                role="presentation"
+                style={{ width: "250px" }}
+                onClick={() => setDrawer(false)}
+                onKeyDown={() => setDrawer(false)}
+              >
+                <DrawerContent />
+              </div>
             </Drawer>
           </div>
         </div>

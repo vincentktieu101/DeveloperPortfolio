@@ -7,12 +7,14 @@ import UCSBComputerScience from "./UCSB (ComputerScience)";
 import PrivateMathTutor from "./PrivateMathTutor";
 
 export default function ExperienceItems() {
-  return <div id="experience-items">
-    <Syntiant />
-    <CodePath />
-    <UCSBUndergraduateLearningAssistant />
-    <Ugig />
-    <UCSBComputerScience />
-    <PrivateMathTutor />
-  </div>;
+  return (
+    <div id="experience-items">
+      <Syntiant />
+      <CodePath />
+      <UCSBUndergraduateLearningAssistant />
+      <Ugig />
+      <UCSBComputerScience />
+      <PrivateMathTutor />
+    </div>
+  );
 }

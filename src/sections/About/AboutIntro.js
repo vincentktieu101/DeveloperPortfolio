@@ -15,14 +15,14 @@ export default function AboutIntro() {
       <br />
       <div>
         I'm currently a 3rd year <b>Computer Science</b> major at{" "}
-        <b>UC Santa Barbara</b>, (already taken / currently taking) classes in
+        <b>UC Santa Barbara</b> graduating <b>December '21</b>. I already taken classes in
         Data Structures & Algorithms, Operating Systems, Compilers, Databases,
         Artificial Intellegence, Web Development, HCI, Networking, etc.
       </div>
       <br />
       <div>
         However, I also enjoy learning outside of the classroom. Here is my
-        online portfolio for my personal projects, something I wish I could
+        portfolio for my personal projects, something I wish I could
         elaborate more of on my{" "}
         <a
           href={getResume()}

@@ -57,7 +57,7 @@ const FrontendDevelopmentText = (
       Frontend is more than getting interfaces pixel perfect. It's about
       building functional interfaces into detailed architechitures that promote
       rapid continous development. I'm proficient with HTML, CSS, and Javascript
-      along with frameworks like React, Redux, and Google OAuth.
+      along with tools like React, Redux, and Google OAuth.
     </div>
   </React.Fragment>
 );
@@ -69,9 +69,9 @@ const UserInterfaceText = (
       User Experience & Design
     </h2>
     <div>
-      Interfaces need to be intuitive and enjoyable to use. I have learned about
-      UI/UX by planning and designing my personal projects. Through learning
-      concepts like responsive design, interaction design, and accessibility,
+      It is important to me that interfaces not only functional but also fun to use.
+      I have learned about UI/UX by planning and designing my personal projects. 
+      By learning concepts like responsive design, interaction design, and accessibility,
       I'm able to work with designers to create functional and stunning
       interfaces.
     </div>
@@ -87,9 +87,9 @@ const BackendDevelopmentText = (
     <div>
       From my background in CS, I have practice with Object-Oriented
       Programming, Data Structures & Algorithms, Database Design &
-      Implementation, and APIs. Reliablity, efficiency, and security are super
-      important to me as a programmer. Some backend frameworks I am familiar
-      with include NodeJS, Express, Flask, and Django.
+      Implementation, and APIs. Testing, app reliablity, and security are super
+      important to me as a programmer. Some backend frameworks I am skilled at
+      include NodeJS, Express, Flask, and Django.
     </div>
   </React.Fragment>
 );

@@ -21,7 +21,7 @@ import MaterialUIIcon from "../images/tech-icons/materialui.png";
 import ReactBootstrapIcon from "../images/tech-icons/reactbootstrap.svg";
 import ScratchIcon from "../images/tech-icons/scratch.svg";
 import FirebaseIcon from "../images/tech-icons/firebase.svg";
-import MongoDBIcon from "../images/tech-icons/MongoDB.svg";
+import MongoDBIcon from "../images/tech-icons/mongodb.svg";
 import CppIcon from "../images/tech-icons/c++.svg";
 
 export default function Icons(iconsList) {

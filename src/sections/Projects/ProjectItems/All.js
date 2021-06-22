@@ -9,7 +9,7 @@ import Tetris from "./2019/Tetris";
 import Snake from "./2018/Snake";
 import ChristmasCaneRevenge from "./2017/ChristmasCaneRevenge";
 
-const getAllProjects = () => [
+const ProjectItems = () => [
   TheShoppies,
   ChatApp,
   ReactCRAStarterCode,
@@ -22,4 +22,4 @@ const getAllProjects = () => [
   ChristmasCaneRevenge,
 ];
 
-export default getAllProjects;
+export default ProjectItems;

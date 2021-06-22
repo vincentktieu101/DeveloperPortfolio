@@ -26,13 +26,13 @@ export default function NavBar() {
         document.getElementById("nav-bar").classList.add("shrink");
       }
 
-      if (window.pageYOffset >= contact.offsetTop - 200) {
+      if (contact && window.pageYOffset >= contact.offsetTop - 200) {
         setCurrentSection("contact");
-      } else if (window.pageYOffset >= projects.offsetTop - 200) {
+      } else if (projects && window.pageYOffset >= projects.offsetTop - 200) {
         setCurrentSection("projects");
-      } else if (window.pageYOffset >= experience.offsetTop - 200) {
+      } else if (experience && window.pageYOffset >= experience.offsetTop - 200) {
         setCurrentSection("experience");
-      } else if (window.pageYOffset >= about.offsetTop - 200) {
+      } else if (about && window.pageYOffset >= about.offsetTop - 200) {
         setCurrentSection("about");
       } else {
         setCurrentSection("cover");

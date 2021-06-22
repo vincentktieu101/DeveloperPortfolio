@@ -1,15 +1,13 @@
-import React, { useState, createContext } from "react";
+import React, { useState } from "react";
 import Container from "@material-ui/core/Container";
-import Button from "@material-ui/core/Button";
 import Modal from "@material-ui/core/Modal";
 import Fab from "@material-ui/core/Fab";
+import { Link } from "gatsby";
 import CloseIcon from "@material-ui/icons/Close";
-import { useSnackbar } from "notistack";
 
+import { ModalContext } from "../../components/Layout";
 import ProjectModalContent from "../../components/ProjectModalContent";
-import getAllProjects from "./ProjectItems";
-
-export const ModalContext = createContext();
+import ProjectItems from "./ProjectItems/All";
 
 export default function Projects() {
   const [modal, setModal] = useState({
@@ -29,9 +27,9 @@ export default function Projects() {
   const handleClose = () => {
     setModal({ ...modal, open: false });
   };
-  const projects = getAllProjects();
-  const [projectsViewing, setProjectsViewing] = useState(3);
-  const { enqueueSnackbar } = useSnackbar();
+  const projectsItems = ProjectItems();
+  // const [projectsViewing, setProjectsViewing] = useState(3);
+  // const { enqueueSnackbar } = useSnackbar();
 
   return (
     <div id="projects">
@@ -69,45 +67,28 @@ export default function Projects() {
           <hr />
         </h1>
         <ModalContext.Provider value={handleModal}>
-          {projects.map((Component, i) => {
+          {projectsItems.map((Component, i) => {
             return (
-              <div key={i} className={i < projectsViewing ? "" : "hidden"}>
+              <div key={i}>
                 <Component />
               </div>
             );
           })}
         </ModalContext.Provider>
-        <div className="mobile-center">
-          {projects.length > projectsViewing ? (
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={() => setProjectsViewing(projectsViewing + 2)}
-            >
-              <h6>See More Projects</h6>
-            </Button>
-          ) : (
-            <Button variant="contained" onClick={() => setProjectsViewing(3)}>
-              <h6>Collapse Projects</h6>
-            </Button>
-          )}
-        </div>
-        <div id="projects-fab" className="hidden">
-          {projectsViewing > 3 && (
+        <Link to="/#projects">
+          <div id="projects-fab" className="hidden">
             <Fab
               size="large"
               variant="extended"
               color="primary"
               onClick={() => {
-                setProjectsViewing(3);
-                enqueueSnackbar("Collapsed!", { variant: "success" });
               }}
             >
-              <CloseIcon style={{ marginRight: "5px" }} />
+              <CloseIcon />
               <h6>Collapse Projects</h6>
             </Fab>
-          )}
-        </div>
+          </div>
+        </Link>
       </Container>
     </div>
   );

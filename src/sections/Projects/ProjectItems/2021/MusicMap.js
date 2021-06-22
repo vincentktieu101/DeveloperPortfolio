@@ -1,7 +1,7 @@
 import React from "react";
-import MusicMapDesktop from "../../images/projects/2021/musicmap-desktop.png";
-import MusicMapMobile from "../../images/projects/2021/musicmap-mobile.png";
-import Project from "../../components/Project";
+import MusicMapDesktop from "../../../../images/projects/2021/musicmap-desktop.png";
+import MusicMapMobile from "../../../../images/projects/2021/musicmap-mobile.png";
+import Project from "../../ProjectItem";
 import getTechIconsList from "../getTechIconsList";
 
 export default function MusicMap() {

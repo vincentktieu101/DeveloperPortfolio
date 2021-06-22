@@ -4,10 +4,10 @@ import Button from "@material-ui/core/Button";
 import Modal from "@material-ui/core/Modal";
 import Fab from "@material-ui/core/Fab";
 import CloseIcon from "@material-ui/icons/Close";
-
-import ProjectModalContent from "../components/ProjectModalContent";
 import { useSnackbar } from "notistack";
-import getAllProjects from "../projects";
+
+import ProjectModalContent from "../../components/ProjectModalContent";
+import getAllProjects from "./ProjectItems";
 
 export const ModalContext = createContext();
 

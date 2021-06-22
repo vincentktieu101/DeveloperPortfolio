@@ -1,7 +1,7 @@
 import React from "react";
-import TheShoppiesDesktop from "../../images/projects/2021/theshoppies-desktop.png";
-import TheShoppiesMobile from "../../images/projects/2021/theshoppies-mobile.png";
-import Project from "../../components/Project";
+import TheShoppiesDesktop from "../../../../images/projects/2021/theshoppies-desktop.png";
+import TheShoppiesMobile from "../../../../images/projects/2021/theshoppies-mobile.png";
+import Project from "../../ProjectItem";
 import getTechIconsList from "../getTechIconsList";
 
 export default function TheShoppies() {

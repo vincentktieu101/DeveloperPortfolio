@@ -1,7 +1,7 @@
 import React from "react";
-import SnakeDesktop from "../../images/projects/2018/snake-desktop.png";
-import SnakeDesktop2 from "../../images/projects/2018/snake-desktop2.png";
-import Project from "../../components/Project";
+import SnakeDesktop from "../../../../images/projects/2018/snake-desktop.png";
+import SnakeDesktop2 from "../../../../images/projects/2018/snake-desktop2.png";
+import Project from "../../ProjectItem";
 import getTechIconsList from "../getTechIconsList";
 
 export default function Snake() {

@@ -1,6 +1,6 @@
 import React from "react";
-import ChristmasCaneRevengeDesktop from "../../images/projects/2017/christmascanerevenge-desktop.png";
-import Project from "../../components/Project";
+import ChristmasCaneRevengeDesktop from "../../../../images/projects/2017/christmascanerevenge-desktop.png";
+import Project from "../../ProjectItem";
 import getTechIconsList from "../getTechIconsList";
 
 export default function ChristmasCaneRevenge() {

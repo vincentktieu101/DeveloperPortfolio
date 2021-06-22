@@ -1,9 +1,9 @@
 import React from "react";
-import FreeFromClassDesktop from "../../images/projects/2020/freefromclass-desktop.png";
-import FreeFromClassMobile2 from "../../images/projects/2020/freefromclass-mobile2.png";
-import FreeFromClassMobile3 from "../../images/projects/2020/freefromclass-mobile3.png";
-import FreeFromClassMobile from "../../images/projects/2020/freefromclass-mobile.png";
-import Project from "../../components/Project";
+import FreeFromClassDesktop from "../../../../images/projects/2020/freefromclass-desktop.png";
+import FreeFromClassMobile2 from "../../../../images/projects/2020/freefromclass-mobile2.png";
+import FreeFromClassMobile3 from "../../../../images/projects/2020/freefromclass-mobile3.png";
+import FreeFromClassMobile from "../../../../images/projects/2020/freefromclass-mobile.png";
+import Project from "../../ProjectItem";
 import getTechIconsList from "../getTechIconsList";
 
 export default function FreeFromClass() {

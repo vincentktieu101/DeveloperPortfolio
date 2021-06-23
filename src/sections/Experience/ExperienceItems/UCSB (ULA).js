@@ -7,11 +7,11 @@ export default function UCSB_ULA() {
   const company = "UCSB";
   const location = "Santa Barbara CA";
   const time = "March - June 2021";
-  const text = `Worked part-time undergraduate learning assistant for CS148,
+  const text = `Worked part-time as an undergraduate teaching assistant for CS148,
   Computer Science Project, where students learn about Agile development
-  practices, testing, and software reliability. Students also build a self
-  guided project together using techniques learned, most commonly using React, NoSQL,
-  Flask / Express, Git, and app deployment.`;
+  practices, testing, and software reliability. Students also build a
+  project together using techniques learned, most commonly using React, NoSQL,
+  Flask / Express, Git, and Heroku.`;
   return (
     <ExperienceItem
       type={type}

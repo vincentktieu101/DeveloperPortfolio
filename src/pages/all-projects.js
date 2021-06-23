@@ -18,6 +18,7 @@ export default function ProjectsPage() {
     <Layout>
       <div style={{height: "5vh"}} />
       <Projects />
+      <div style={{height: "10vh"}} />
     </Layout>
   )
 }

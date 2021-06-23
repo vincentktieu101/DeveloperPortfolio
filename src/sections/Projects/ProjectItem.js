@@ -63,7 +63,7 @@ export default function Project({
           })}
         </div>
         <div className="project-item-tech-row">{techIcons}</div>
-        <div className="project-item-desc" style={{ marginBottom: "10px" }}>
+        <div className="project-item-desc">
           {description}
         </div>
       </div>

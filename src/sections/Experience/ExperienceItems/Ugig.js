@@ -9,7 +9,7 @@ export default function Syntiant() {
   const time = "February - May 2020";
   const text = `Assisted in developing, creating, and adjusting web features and
   components within Django. Redesigned important web forms to enhance user 
-  experience and improve communication between customers and their clients.`;
+  experience and improve communication with customers and clients.`;
   return (
     <ExperienceItem
       type={type}

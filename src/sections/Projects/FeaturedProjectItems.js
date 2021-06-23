@@ -55,7 +55,7 @@ export default function Projects() {
               🚀
             </span>
           </span>{" "} */}
-          PERSONAL PROJECTS{" "}
+          FEATURED PROJECTS{" "}
           {/* <span className="emoji-shake">
             <span role="img" aria-label="emoji" className="hover-shake">
               🌕

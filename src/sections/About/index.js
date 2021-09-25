@@ -1,8 +1,8 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 import UCSBBirdEyesView from "../../images/main/ucsb-birdseyeview.jpg";
-import AboutInfo from "./AboutIntro";
-import AboutSkills from "./AboutSkills";
+import Intro from "../../markdown/intro";
+import Skills from "./Skills";
 
 export default function About() {
   return (
@@ -14,7 +14,7 @@ export default function About() {
               ABOUT ME <hr />
             </h1>
             <br />
-            <AboutInfo />
+            <Intro />
           </div>
           <div className="fade-in">
             <img
@@ -29,7 +29,7 @@ export default function About() {
           </div>
         </div>
       </Container>
-      <AboutSkills />
+      <Skills />
     </div>
   );
 }

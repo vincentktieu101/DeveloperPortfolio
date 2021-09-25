@@ -78,8 +78,7 @@ export default function Projects() {
               size="large"
               variant="extended"
               color="primary"
-              onClick={() => {
-              }}
+              onClick={() => {}}
             >
               <h6>See All Projects</h6>
             </Fab>

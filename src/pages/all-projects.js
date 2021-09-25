@@ -16,9 +16,9 @@ export default function ProjectsPage() {
 
   return (
     <Layout>
-      <div style={{height: "5vh"}} />
+      <div style={{ height: "5vh" }} />
       <Projects />
-      <div style={{height: "10vh"}} />
+      <div style={{ height: "10vh" }} />
     </Layout>
-  )
+  );
 }

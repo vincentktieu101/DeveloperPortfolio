@@ -30,7 +30,10 @@ export default function NavBar() {
         setCurrentSection("contact");
       } else if (projects && window.pageYOffset >= projects.offsetTop - 200) {
         setCurrentSection("projects");
-      } else if (experience && window.pageYOffset >= experience.offsetTop - 200) {
+      } else if (
+        experience &&
+        window.pageYOffset >= experience.offsetTop - 200
+      ) {
         setCurrentSection("experience");
       } else if (about && window.pageYOffset >= about.offsetTop - 200) {
         setCurrentSection("about");

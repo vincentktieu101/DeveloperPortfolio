@@ -89,7 +89,7 @@ export default function ContactInfo() {
       </h6>
       <h6>
         <a
-          href="https://drive.google.com/file/d/1l3-zCMzStkjxINq-O0eYbfC6zM7Kep9u/view?usp=sharing"
+          href="https://drive.google.com/file/d/1C_F7pFjvxAtaEg8cRhYUk0UfXWM83t63/view?usp=sharing"
           className="link-no-styles"
           target="_blank"
           rel="noreferrer"

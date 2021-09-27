@@ -18,7 +18,7 @@ export default function Cover() {
         </div>
         <div id="cover-buttons">
           <a
-            href={"https://drive.google.com/file/d/1l3-zCMzStkjxINq-O0eYbfC6zM7Kep9u/view?usp=sharing"}
+            href={"https://drive.google.com/file/d/1C_F7pFjvxAtaEg8cRhYUk0UfXWM83t63/view?usp=sharing"}
             target="_blank"
             rel="noreferrer"
             className="link-no-styles cover-a"

@@ -6,7 +6,6 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import PostAddIcon from "@material-ui/icons/PostAdd";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import getResume from "../../static/getResume";
 
 export default function ContactInfo() {
   return (
@@ -90,7 +89,7 @@ export default function ContactInfo() {
       </h6>
       <h6>
         <a
-          href={getResume()}
+          href="https://drive.google.com/file/d/1l3-zCMzStkjxINq-O0eYbfC6zM7Kep9u/view?usp=sharing"
           className="link-no-styles"
           target="_blank"
           rel="noreferrer"

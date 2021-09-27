@@ -1,7 +1,6 @@
 import React from "react";
 import VincentHeadshot from "../images/main/vincent-headshot.png";
 import Button from "@material-ui/core/Button";
-import getResume from "../static/getResume";
 import { Link } from "gatsby";
 
 export default function Cover() {
@@ -19,7 +18,7 @@ export default function Cover() {
         </div>
         <div id="cover-buttons">
           <a
-            href={getResume()}
+            href={"https://drive.google.com/file/d/1l3-zCMzStkjxINq-O0eYbfC6zM7Kep9u/view?usp=sharing"}
             target="_blank"
             rel="noreferrer"
             className="link-no-styles cover-a"
@@ -34,7 +33,6 @@ export default function Cover() {
           </a>
           <Link to="/#contact" className="link-no-styles cover-a">
             <Button
-              onClick={() => getResume()}
               variant="contained"
               className="cover-a__button"
             >

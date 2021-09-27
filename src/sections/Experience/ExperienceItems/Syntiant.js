@@ -6,7 +6,7 @@ export default function Syntiant() {
   const title = "Full-Stack Developer Intern";
   const company = "Syntiant";
   const location = "Irvine CA";
-  const time = "June - September 2021";
+  const time = "June 2021 - Present";
   const text = `Worked full-time with the data team in implementing internal and 
   external web applications using React, Redux, Javascript, HTML, and CSS.`;
   return (

@@ -3,7 +3,7 @@ import ExperienceItem from "../ExperienceItem";
 
 export default function Syntiant() {
   const type = "work";
-  const title = "Full-Stack Developer Intern";
+  const title = "Full-Stack Web Developer Intern";
   const company = "Syntiant";
   const location = "Irvine CA";
   const time = "June 2021 - Present";

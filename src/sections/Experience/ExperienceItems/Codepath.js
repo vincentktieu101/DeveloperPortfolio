@@ -7,9 +7,7 @@ export default function CodePath() {
   const company = "CodePath";
   const location = "Remote";
   const time = "June 2021 - August 2021";
-  const text = `Enrolled in a course in technical interviewing preparation. 
-  Students solve challenging algorithm problems done in real whiteboard and coding interviews,
-  network, and practice behavior interviews.`;
+  const text = `Enrolled in a course focused on solving challenging algorithm and data structures problems. Students also practice whiteboarding, coding interviews, networking, and behavior interviews.`;
   return (
     <ExperienceItem
       type={type}

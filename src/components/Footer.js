@@ -12,11 +12,19 @@ export default function Footer() {
         <div>
           Built with
           {` `}
-          <NoRefLink href="https://www.gatsbyjs.com">
+          <NoRefLink
+            href="https://www.gatsbyjs.com"
+            style={{ color: "white" }}
+            className="link"
+          >
             <b>Gatsby</b>
           </NoRefLink>
           . Check source code{" "}
-          <NoRefLink href="https://github.com/vincentktieu101/DeveloperPortfolio">
+          <NoRefLink
+            href="https://github.com/vincentktieu101/DeveloperPortfolio"
+            style={{ color: "white" }}
+            className="link"
+          >
             <b>here</b>
           </NoRefLink>
           .

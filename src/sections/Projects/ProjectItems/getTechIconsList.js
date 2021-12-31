@@ -1,4 +1,6 @@
 import React from "react";
+import NoRefLink from "../../../components/Link/NoRefLink";
+
 import NodeJSIcon from "../../../images/tech-icons/nodejs.svg";
 import ExpressJSIcon from "../../../images/tech-icons/expressjs.svg";
 import ReactJSIcon from "../../../images/tech-icons/reactjs.svg";
@@ -30,153 +32,153 @@ export default function Icons(iconsList) {
   }
 
   const NodeJS = (
-    <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://nodejs.org/en/">
       <img src={NodeJSIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const ExpressJS = (
-    <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://expressjs.com/">
       <img src={ExpressJSIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const ReactJS = (
-    <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://reactjs.org/">
       <img src={ReactJSIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const SocketIO = (
-    <a href="https://socket.io/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://socket.io/">
       <img src={SocketIOIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const Heroku = (
-    <a href="https://www.heroku.com/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://www.heroku.com/">
       <img src={HerokuIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const Netlify = (
-    <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://www.netlify.com/">
       <img src={NetlifyIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const Github = (
-    <a href="https://pages.github.com/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://pages.github.com/">
       <img src={GithubIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const Arduino = (
-    <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://www.arduino.cc/">
       <img src={ArduinoIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const GoogleDevelopers = (
-    <a href="https://developers.google.com/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://developers.google.com/">
       <img src={GoogleDevelopersIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const OpenCV = (
-    <a href="https://opencv.org/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://opencv.org/">
       <img src={OpenCVIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const GatsbyJS = (
-    <a href="https://opencv.org/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://opencv.org/">
       <img src={GatsbyJSIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const NextJS = (
-    <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://nextjs.org/">
       <img src={NextJSIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const Cypress = (
-    <a href="https://www.cypress.io/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://www.cypress.io/">
       <img
         src={CypressIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </a>
+    </NoRefLink>
   );
   const Auth0 = (
-    <a href="https://auth0.com/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://auth0.com/">
       <img src={Auth0Icon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const Pygame = (
-    <a href="https://www.pygame.org/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://www.pygame.org/">
       <img src={PygameIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const Python = (
-    <a href="https://www.python.org/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://www.python.org/">
       <img
         src={PythonIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "-5px", height: "50px" }}
       />
-    </a>
+    </NoRefLink>
   );
   const Jest = (
-    <a href="https://jestjs.io/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://jestjs.io/">
       <img src={JestIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const MaterialUI = (
-    <a href="https://material-ui.com/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://material-ui.com/">
       <img src={MaterialUIIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const ReactBootstrap = (
-    <a
+    <NoRefLink
       href="https://react-bootstrap.github.io/"
       target="_blank"
       rel="noreferrer"
     >
       <img src={ReactBootstrapIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const Scratch = (
-    <a href="https://scratch.mit.edu/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://scratch.mit.edu/">
       <img src={ScratchIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const Javascript = (
-    <a href="https://www.javascript.com/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://www.javascript.com/">
       <img
         src={JavascriptIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </a>
+    </NoRefLink>
   );
   const Firebase = (
-    <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://firebase.google.com/">
       <img src={FirebaseIcon} className="project-tech-icon" alt="" />
-    </a>
+    </NoRefLink>
   );
   const MongoDB = (
-    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://www.mongodb.com/">
       <img
         src={MongoDBIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </a>
+    </NoRefLink>
   );
   const Cpp = (
-    <a href="https://www.cplusplus.com/" target="_blank" rel="noreferrer">
+    <NoRefLink href="https://www.cplusplus.com/">
       <img
         src={CppIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </a>
+    </NoRefLink>
   );
 
   const techIconsDict = {

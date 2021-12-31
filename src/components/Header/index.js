@@ -36,7 +36,7 @@ function Header() {
 
       for (const section of sections.slice().reverse()) {
         if (
-          section &&
+          documentSections[section] &&
           window.pageYOffset >= documentSections[section].offsetTop - 200
         ) {
           setCurrentSection(section);

@@ -2,13 +2,14 @@ import React from "react";
 import Container from "@material-ui/core/Container";
 import UCSBBirdEyesView from "../../images/main/ucsb-birdseyeview.jpg";
 import Skills from "./Skills";
+import { AboutMainSummary, AboutUcsbImage } from "./styles";
 
 export default function About() {
   return (
     <div id="about">
       <Container>
         <div className="flex-space-around" style={{ marginBottom: "15vh" }}>
-          <div id="about-main-summary" className="fade-in">
+          <AboutMainSummary className="fade-in">
             <h1 className="text-center">
               ABOUT ME <hr />
             </h1>
@@ -23,7 +24,7 @@ export default function About() {
             </div>
             <br />
             <div>
-              I'm currently a 3rd year <b>Computer Science</b> major at
+              I'm currently a 3rd year <b>Computer Science</b> major at{" "}
               <b>UC Santa Barbara</b> graduating <b>December '21</b>. I already
               taken classes in Data Structures & Algorithms, Operating Systems,
               Compilers, Databases, Artificial Intelligence, Web Development,
@@ -44,12 +45,11 @@ export default function About() {
               </a>
               .
             </div>
-          </div>
+          </AboutMainSummary>
           <div className="fade-in">
-            <img
+            <AboutUcsbImage
               alt="UC Santa Barbara"
               src={UCSBBirdEyesView}
-              id="about-ucsb-image"
             />
             <br />
             <div style={{ color: "rgb(87, 86, 86)", margin: "5px 0px" }}>

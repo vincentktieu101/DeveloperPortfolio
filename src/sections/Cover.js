@@ -18,7 +18,9 @@ export default function Cover() {
         </div>
         <div id="cover-buttons">
           <a
-            href={"https://drive.google.com/file/d/1C_F7pFjvxAtaEg8cRhYUk0UfXWM83t63/view?usp=sharing"}
+            href={
+              "https://drive.google.com/file/d/1C_F7pFjvxAtaEg8cRhYUk0UfXWM83t63/view?usp=sharing"
+            }
             target="_blank"
             rel="noreferrer"
             className="link-no-styles cover-a"
@@ -32,10 +34,7 @@ export default function Cover() {
             </Button>
           </a>
           <Link to="/#contact" className="link-no-styles cover-a">
-            <Button
-              variant="contained"
-              className="cover-a__button"
-            >
+            <Button variant="contained" className="cover-a__button">
               <h6>CONTACT</h6>
             </Button>
           </Link>

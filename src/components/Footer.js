@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
+import NoRefLink from "./Link/NoRefLink";
 
 export default function Footer() {
   return (
@@ -11,25 +12,13 @@ export default function Footer() {
         <div>
           Built with
           {` `}
-          <a
-            href="https://www.gatsbyjs.com"
-            target="_blank"
-            className="link"
-            rel="noreferrer"
-            style={{ color: "white" }}
-          >
+          <NoRefLink href="https://www.gatsbyjs.com">
             <b>Gatsby</b>
-          </a>
+          </NoRefLink>
           . Check source code{" "}
-          <a
-            href="https://github.com/vincentktieu101/DeveloperPortfolio"
-            className="link"
-            target="_blank"
-            rel="noreferrer"
-            style={{ color: "white" }}
-          >
+          <NoRefLink href="https://github.com/vincentktieu101/DeveloperPortfolio">
             <b>here</b>
-          </a>
+          </NoRefLink>
           .
         </div>
       </Container>

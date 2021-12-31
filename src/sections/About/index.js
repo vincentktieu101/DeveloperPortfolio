@@ -15,7 +15,7 @@ export default function About() {
             </h1>
             <br />
             <div>
-              Hi! I'm <b>Vincent Tieu</b>, a <b>software engineer</b> and
+              Hi! I'm <b>Vincent Tieu</b>, a <b>software engineer</b> and{" "}
               <b>full-stack web developer</b>, based in <b>Los Angeles</b>. I am
               passionate about programming, whether that means starting a web
               project from scratch (like this online portfolio!) or developing
@@ -47,10 +47,7 @@ export default function About() {
             </div>
           </AboutMainSummary>
           <div className="fade-in">
-            <AboutUcsbImage
-              alt="UC Santa Barbara"
-              src={UCSBBirdEyesView}
-            />
+            <AboutUcsbImage alt="UC Santa Barbara" src={UCSBBirdEyesView} />
             <br />
             <div style={{ color: "rgb(87, 86, 86)", margin: "5px 0px" }}>
               View of my University, UC Santa Barbara

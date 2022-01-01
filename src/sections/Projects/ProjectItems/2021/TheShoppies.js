@@ -1,9 +1,9 @@
 import React from "react";
-import TheShoppiesDesktop from "../../../../images/projects/2021/theshoppies-desktop.png";
-import TheShoppiesMobile from "../../../../images/projects/2021/theshoppies-mobile.png";
+import TheShoppiesDesktop from "@images/projects/2021/theshoppies-desktop.png";
+import TheShoppiesMobile from "@images/projects/2021/theshoppies-mobile.png";
 import Project from "../../ProjectItem";
 import getTechIconsList from "../getTechIconsList";
-import NewLink from "../../../../components/Link/NewLink";
+import NewLink from "@components/Link/NewLink";
 
 export default function TheShoppies() {
   const title = "TheShoppies";

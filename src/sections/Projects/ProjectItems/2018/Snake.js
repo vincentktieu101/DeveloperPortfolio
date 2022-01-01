@@ -1,9 +1,9 @@
 import React from "react";
-import SnakeDesktop from "../../../../images/projects/2018/snake-desktop.png";
-import SnakeDesktop2 from "../../../../images/projects/2018/snake-desktop2.png";
+import SnakeDesktop from "@images/projects/2018/snake-desktop.png";
+import SnakeDesktop2 from "@images/projects/2018/snake-desktop2.png";
 import Project from "../../ProjectItem";
 import getTechIconsList from "../getTechIconsList";
-import NewLink from "../../../../components/Link/NewLink";
+import NewLink from "@components/Link/NewLink";
 
 export default function Snake() {
   const title = "Snake";

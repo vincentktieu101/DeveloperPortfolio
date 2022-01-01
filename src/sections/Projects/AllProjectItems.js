@@ -5,8 +5,8 @@ import Fab from "@material-ui/core/Fab";
 import { Link } from "gatsby";
 import CloseIcon from "@material-ui/icons/Close";
 
-import { ModalContext } from "../../components/Layout";
-import ProjectModalContent from "../../components/ProjectModalContent";
+import { ModalContext } from "@components/Layout";
+import ProjectModalContent from "@components/ProjectModalContent";
 import ProjectItems from "./ProjectItems/All";
 
 export default function Projects() {

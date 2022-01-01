@@ -1,6 +1,6 @@
 import React, { useContext, Fragment } from "react";
-import { ModalContext } from "../../components/Layout";
-import NewLink from "../../components/Link/NewLink";
+import { ModalContext } from "@components/Layout";
+import NewLink from "@components/Link/NewLink";
 import TodayIcon from "@material-ui/icons/Today";
 import LaunchIcon from "@material-ui/icons/Launch";
 

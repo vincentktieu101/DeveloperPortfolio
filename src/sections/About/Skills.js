@@ -1,14 +1,14 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import SkillsHeader from "./SkillsHeader";
-import Computer from "../../images/main/computer.webp";
-import Backend from "../../images/main/backend.webp";
-import Design from "../../images/main/design.webp";
-import Product from "../../images/main/product.webp";
-import FrontendDevelopmentBg from "../../images/backgrounds/frontend-development.jpeg";
-import BackendDevelopmentBg from "../../images/backgrounds/backend-development.png";
-import UserInterfaceBg from "../../images/backgrounds/user-interface.jpeg";
-import ProductDevelopmentBg from "../../images/backgrounds/product-development.jpeg";
+import Computer from "@images/main/computer.webp";
+import Backend from "@images/main/backend.webp";
+import Design from "@images/main/design.webp";
+import Product from "@images/main/product.webp";
+import FrontendDevelopmentBg from "@images/backgrounds/frontend-development.jpeg";
+import BackendDevelopmentBg from "@images/backgrounds/backend-development.png";
+import UserInterfaceBg from "@images/backgrounds/user-interface.jpeg";
+import ProductDevelopmentBg from "@images/backgrounds/product-development.jpeg";
 
 export default function AboutSkills() {
   const backgrounds = [

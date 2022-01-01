@@ -1,6 +1,6 @@
 import React from "react";
-import LineTrackingCarImage from "../../../../images/projects/2019/linetrackingcar.jpeg";
-import LineTrackingCarDesktop from "../../../../images/projects/2019/linetrackingcar-desktop.png";
+import LineTrackingCarImage from "@images/projects/2019/linetrackingcar.jpeg";
+import LineTrackingCarDesktop from "@images/projects/2019/linetrackingcar-desktop.png";
 import Project from "../../ProjectItem";
 import getTechIconsList from "../getTechIconsList";
 

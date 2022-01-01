@@ -4,8 +4,8 @@ import { Link } from "gatsby";
 import Modal from "@material-ui/core/Modal";
 import Fab from "@material-ui/core/Fab";
 
-import { ModalContext } from "../../components/Layout";
-import ProjectModalContent from "../../components/ProjectModalContent";
+import { ModalContext } from "@components/Layout";
+import ProjectModalContent from "@components/ProjectModalContent";
 import ProjectItems from "./ProjectItems/Featured";
 
 export default function Projects() {

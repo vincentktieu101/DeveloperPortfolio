@@ -1,8 +1,8 @@
 import React from "react";
-import VincentHeadshot from "../images/main/vincent-headshot.png";
+import VincentHeadshot from "@images/main/vincent-headshot.png";
 import Button from "@material-ui/core/Button";
 import { Link } from "gatsby";
-import NewLink from "../components/Link/NewLink";
+import NewLink from "@components/Link/NewLink";
 
 export default function Cover() {
   return (

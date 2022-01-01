@@ -1,6 +1,6 @@
 import React from "react";
-import TetrisDesktop from "../../../../images/projects/2019/tetris-desktop.png";
-import TetrisDesktop2 from "../../../../images/projects/2019/tetris-desktop2.png";
+import TetrisDesktop from "@images/projects/2019/tetris-desktop.png";
+import TetrisDesktop2 from "@images/projects/2019/tetris-desktop2.png";
 import Project from "../../ProjectItem";
 import getTechIconsList from "../getTechIconsList";
 

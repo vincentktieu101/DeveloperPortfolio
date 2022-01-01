@@ -6,7 +6,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import PostAddIcon from "@material-ui/icons/PostAdd";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import NoRefLink from "../../components/Link/NoRefLink";
+import NewLink from "../../components/Link/NewLink";
 
 export default function ContactInfo() {
   return (
@@ -22,7 +22,7 @@ export default function ContactInfo() {
       </h1>
       <br />
       <h6>
-        <NoRefLink
+        <NewLink
           href="https://www.google.com/maps/place/Rosemead,+CA/@34.064641,-118.1168945,13z/data=!3m1!4b1!4m5!3m4!1s0x80c2d074766c77b1:0xa0351d489643887c!8m2!3d34.0805651!4d-118.072846"
           className="link-no-styles"
         >
@@ -30,10 +30,10 @@ export default function ContactInfo() {
             <HomeIcon fontSize="small" />
           </IconButton>{" "}
           Rosemead, Los Angeles
-        </NoRefLink>
+        </NewLink>
       </h6>
       <h6>
-        <NoRefLink
+        <NewLink
           href="https://www.google.com/search?q=6265375590&source=hp&ei=LttzYIS5Icvb-gSCrYiYCA&iflsig=AINFCbYAAAAAYHPpPhPl2um35fphoMiN7ljN2XEbmanf&oq=6265375590&gs_lcp=Cgdnd3Mtd2l6EAM6AggAOg4ILhCxA
               xCDARDHARCjAjoICAAQsQMQgwE6CAguELEDEIMBOgUIABCxAzoFCC4QsQM6CwguELEDEIMBEJMCOg4ILhCxAxCDARDHARCvAToICC4QxwEQrwE6BAgAEB46BwgAEMkDEB46BggAEAUQHlD8BlioJWCnJ2gCcAB4AIABdYgBqQmSAQM2LjaYAQCgAQGqA
               Qdnd3Mtd2l6sAEA&sclient=gws-wiz&ved=0ahUKEwiEiMyZ_ffvAhXLrZ4KHYIWAoMQ4dUDCAg&uact=5"
@@ -43,10 +43,10 @@ export default function ContactInfo() {
             <PhoneIcon fontSize="small" />
           </IconButton>{" "}
           (626) 537-5590
-        </NoRefLink>
+        </NewLink>
       </h6>
       <h6>
-        <NoRefLink
+        <NewLink
           href="mailto:vincentktieu101@gmail.com"
           className="link-no-styles"
         >
@@ -54,10 +54,10 @@ export default function ContactInfo() {
             <MailOutlineIcon fontSize="small" />
           </IconButton>{" "}
           vincentktieu101@gmail.com
-        </NoRefLink>
+        </NewLink>
       </h6>
       <h6>
-        <NoRefLink
+        <NewLink
           href="https://github.com/vincentktieu101"
           className="link-no-styles"
         >
@@ -65,10 +65,10 @@ export default function ContactInfo() {
             <GitHubIcon fontSize="small" />
           </IconButton>{" "}
           https://github.com/vincentktieu101
-        </NoRefLink>
+        </NewLink>
       </h6>
       <h6>
-        <NoRefLink
+        <NewLink
           href="https://www.linkedin.com/in/vincentktieu/"
           className="link-no-styles"
         >
@@ -76,10 +76,10 @@ export default function ContactInfo() {
             <LinkedInIcon fontSize="small" className="hover-shake" />
           </IconButton>{" "}
           https://www.linkedin.com/in/vincentktieu/
-        </NoRefLink>
+        </NewLink>
       </h6>
       <h6>
-        <NoRefLink
+        <NewLink
           href="https://drive.google.com/file/d/1C_F7pFjvxAtaEg8cRhYUk0UfXWM83t63/view?usp=sharing"
           className="link-no-styles"
         >
@@ -87,7 +87,7 @@ export default function ContactInfo() {
             <PostAddIcon fontSize="small" />
           </IconButton>{" "}
           Resume
-        </NoRefLink>
+        </NewLink>
       </h6>
     </div>
   );

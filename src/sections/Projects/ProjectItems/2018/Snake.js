@@ -3,6 +3,7 @@ import SnakeDesktop from "../../../../images/projects/2018/snake-desktop.png";
 import SnakeDesktop2 from "../../../../images/projects/2018/snake-desktop2.png";
 import Project from "../../ProjectItem";
 import getTechIconsList from "../getTechIconsList";
+import NewLink from "../../../../components/Link/NewLink";
 
 export default function Snake() {
   const title = "Snake";
@@ -27,15 +28,13 @@ export default function Snake() {
       <div>
         I wrote this app in Python and Pygame. I also wrote a mini programming
         guide that you can check out
-        <a
+        <NewLink
           href="https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit?usp=sharing"
           className="link link-ltr"
-          target="_blank"
-          rel="noreferrer"
         >
           {" "}
           here
-        </a>
+        </NewLink>
         . I even designed an 8-bit music theme for the game!
       </div>
     </React.Fragment>

@@ -1,6 +1,6 @@
 import React from "react";
 
-function NoRef(props) {
+function NewLink(props) {
   const { children, ...rest } = props;
 
   return (
@@ -10,4 +10,4 @@ function NoRef(props) {
   );
 }
 
-export default NoRef;
+export default NewLink;

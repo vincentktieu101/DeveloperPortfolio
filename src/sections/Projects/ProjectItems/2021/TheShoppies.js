@@ -3,6 +3,7 @@ import TheShoppiesDesktop from "../../../../images/projects/2021/theshoppies-des
 import TheShoppiesMobile from "../../../../images/projects/2021/theshoppies-mobile.png";
 import Project from "../../ProjectItem";
 import getTechIconsList from "../getTechIconsList";
+import NewLink from "../../../../components/Link/NewLink";
 
 export default function TheShoppies() {
   const title = "TheShoppies";
@@ -17,23 +18,16 @@ export default function TheShoppies() {
       <div>
         Simple app used to enter in Shopify's UX & Web Developer Challenge
         listed{" "}
-        <a
+        <NewLink
           href="https://docs.google.com/document/d/1SdR9rQpocsH5rPTOcxr9noqHRld5NJlylKO9Hf94U8U/edit#heading=h.31w9woubunro"
           className="link link-ltr"
-          target="_blank"
-          rel="noreferrer"
         >
           here
-        </a>
+        </NewLink>
         . This is an app that helps query for movies using the{" "}
-        <a
-          href="https://www.omdbapi.com/"
-          className="link link-ltr"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <NewLink href="https://www.omdbapi.com/" className="link link-ltr">
           OMDb API
-        </a>{" "}
+        </NewLink>{" "}
         so that users can "nominate" them and save their nominations to a
         database.
       </div>

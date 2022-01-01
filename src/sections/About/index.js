@@ -3,6 +3,7 @@ import Container from "@material-ui/core/Container";
 import UCSBBirdEyesView from "../../images/main/ucsb-birdseyeview.jpg";
 import Skills from "./Skills";
 import { AboutMainSummary, AboutUcsbImage } from "./styles";
+import NewLink from "../../components/Link/NewLink";
 
 export default function About() {
   return (
@@ -35,14 +36,12 @@ export default function About() {
               However, I also enjoy learning outside of the classroom. Here is
               my portfolio for my personal projects, something I wish I could
               elaborate more of on my{" "}
-              <a
+              <NewLink
                 href="https://drive.google.com/file/d/1C_F7pFjvxAtaEg8cRhYUk0UfXWM83t63/view?usp=sharing"
                 className="link link-ltr"
-                target="_blank"
-                rel="noreferrer"
               >
                 resume
-              </a>
+              </NewLink>
               .
             </div>
           </AboutMainSummary>

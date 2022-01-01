@@ -2,6 +2,7 @@ import React from "react";
 import VincentHeadshot from "../images/main/vincent-headshot.png";
 import Button from "@material-ui/core/Button";
 import { Link } from "gatsby";
+import NewLink from "../components/Link/NewLink";
 
 export default function Cover() {
   return (
@@ -17,12 +18,8 @@ export default function Cover() {
           </div>
         </div>
         <div id="cover-buttons">
-          <a
-            href={
-              "https://drive.google.com/file/d/1C_F7pFjvxAtaEg8cRhYUk0UfXWM83t63/view?usp=sharing"
-            }
-            target="_blank"
-            rel="noreferrer"
+          <NewLink
+            href="https://drive.google.com/file/d/1C_F7pFjvxAtaEg8cRhYUk0UfXWM83t63/view?usp=sharing"
             className="link-no-styles cover-a"
           >
             <Button
@@ -32,7 +29,7 @@ export default function Cover() {
             >
               <h6>RESUME</h6>
             </Button>
-          </a>
+          </NewLink>
           <Link to="/#contact" className="link-no-styles cover-a">
             <Button variant="contained" className="cover-a__button">
               <h6>CONTACT</h6>

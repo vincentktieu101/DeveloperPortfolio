@@ -1,5 +1,5 @@
 import React from "react";
-import NoRefLink from "../../../components/Link/NoRefLink";
+import NewLink from "../../../components/Link/NewLink";
 
 import NodeJSIcon from "../../../images/tech-icons/nodejs.svg";
 import ExpressJSIcon from "../../../images/tech-icons/expressjs.svg";
@@ -32,153 +32,149 @@ export default function Icons(iconsList) {
   }
 
   const NodeJS = (
-    <NoRefLink href="https://nodejs.org/en/">
+    <NewLink href="https://nodejs.org/en/">
       <img src={NodeJSIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const ExpressJS = (
-    <NoRefLink href="https://expressjs.com/">
+    <NewLink href="https://expressjs.com/">
       <img src={ExpressJSIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const ReactJS = (
-    <NoRefLink href="https://reactjs.org/">
+    <NewLink href="https://reactjs.org/">
       <img src={ReactJSIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const SocketIO = (
-    <NoRefLink href="https://socket.io/">
+    <NewLink href="https://socket.io/">
       <img src={SocketIOIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const Heroku = (
-    <NoRefLink href="https://www.heroku.com/">
+    <NewLink href="https://www.heroku.com/">
       <img src={HerokuIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const Netlify = (
-    <NoRefLink href="https://www.netlify.com/">
+    <NewLink href="https://www.netlify.com/">
       <img src={NetlifyIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const Github = (
-    <NoRefLink href="https://pages.github.com/">
+    <NewLink href="https://pages.github.com/">
       <img src={GithubIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const Arduino = (
-    <NoRefLink href="https://www.arduino.cc/">
+    <NewLink href="https://www.arduino.cc/">
       <img src={ArduinoIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const GoogleDevelopers = (
-    <NoRefLink href="https://developers.google.com/">
+    <NewLink href="https://developers.google.com/">
       <img src={GoogleDevelopersIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const OpenCV = (
-    <NoRefLink href="https://opencv.org/">
+    <NewLink href="https://opencv.org/">
       <img src={OpenCVIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const GatsbyJS = (
-    <NoRefLink href="https://opencv.org/">
+    <NewLink href="https://opencv.org/">
       <img src={GatsbyJSIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const NextJS = (
-    <NoRefLink href="https://nextjs.org/">
+    <NewLink href="https://nextjs.org/">
       <img src={NextJSIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const Cypress = (
-    <NoRefLink href="https://www.cypress.io/">
+    <NewLink href="https://www.cypress.io/">
       <img
         src={CypressIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </NoRefLink>
+    </NewLink>
   );
   const Auth0 = (
-    <NoRefLink href="https://auth0.com/">
+    <NewLink href="https://auth0.com/">
       <img src={Auth0Icon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const Pygame = (
-    <NoRefLink href="https://www.pygame.org/">
+    <NewLink href="https://www.pygame.org/">
       <img src={PygameIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const Python = (
-    <NoRefLink href="https://www.python.org/">
+    <NewLink href="https://www.python.org/">
       <img
         src={PythonIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "-5px", height: "50px" }}
       />
-    </NoRefLink>
+    </NewLink>
   );
   const Jest = (
-    <NoRefLink href="https://jestjs.io/">
+    <NewLink href="https://jestjs.io/">
       <img src={JestIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const MaterialUI = (
-    <NoRefLink href="https://material-ui.com/">
+    <NewLink href="https://material-ui.com/">
       <img src={MaterialUIIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const ReactBootstrap = (
-    <NoRefLink
-      href="https://react-bootstrap.github.io/"
-      target="_blank"
-      rel="noreferrer"
-    >
+    <NewLink href="https://react-bootstrap.github.io/">
       <img src={ReactBootstrapIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const Scratch = (
-    <NoRefLink href="https://scratch.mit.edu/">
+    <NewLink href="https://scratch.mit.edu/">
       <img src={ScratchIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const Javascript = (
-    <NoRefLink href="https://www.javascript.com/">
+    <NewLink href="https://www.javascript.com/">
       <img
         src={JavascriptIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </NoRefLink>
+    </NewLink>
   );
   const Firebase = (
-    <NoRefLink href="https://firebase.google.com/">
+    <NewLink href="https://firebase.google.com/">
       <img src={FirebaseIcon} className="project-tech-icon" alt="" />
-    </NoRefLink>
+    </NewLink>
   );
   const MongoDB = (
-    <NoRefLink href="https://www.mongodb.com/">
+    <NewLink href="https://www.mongodb.com/">
       <img
         src={MongoDBIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </NoRefLink>
+    </NewLink>
   );
   const Cpp = (
-    <NoRefLink href="https://www.cplusplus.com/">
+    <NewLink href="https://www.cplusplus.com/">
       <img
         src={CppIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </NoRefLink>
+    </NewLink>
   );
 
   const techIconsDict = {

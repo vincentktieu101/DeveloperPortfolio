@@ -1,6 +1,6 @@
 import React, { useContext, Fragment } from "react";
 import { ModalContext } from "../../components/Layout";
-import NoRefLink from "../../components/Link/NoRefLink";
+import NewLink from "../../components/Link/NewLink";
 import TodayIcon from "@material-ui/icons/Today";
 import LaunchIcon from "@material-ui/icons/Launch";
 
@@ -19,9 +19,9 @@ export default function Project({
       {Object.keys(links).map((link, i) => {
         return (
           <React.Fragment key={i}>
-            <NoRefLink className="link link-ltr" href={links[link]}>
+            <NewLink href={links[link]} className="link link-ltr">
               {link}
-            </NoRefLink>
+            </NewLink>
             {i !== Object.keys(links).length - 1 ? " | " : ""}
           </React.Fragment>
         );

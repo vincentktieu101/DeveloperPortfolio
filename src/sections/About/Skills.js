@@ -55,9 +55,9 @@ const FrontendDevelopmentText = (
     </h2>
     <div>
       Frontend is more than getting interfaces pixel perfect. It's about
-      building functional interfaces into detailed architechitures that promote
-      rapid continous development. I'm proficient with HTML, CSS, and Javascript
-      along with tools like React, Redux, and Google OAuth.
+      building functional interfaces into detailed architechitures that are
+      ready for rapid continous development. I'm proficient with HTML, CSS, and
+      Javascript along with tools like React, Redux, and Google OAuth.
     </div>
   </React.Fragment>
 );
@@ -69,11 +69,10 @@ const UserInterfaceText = (
       User Experience & Design
     </h2>
     <div>
-      It is important to me that interfaces not only functional but also fun to
-      use. I have learned about UI/UX by planning and designing my personal
-      projects. By learning concepts like responsive design, interaction design,
-      and accessibility, I'm able to work with designers to create functional
-      and stunning interfaces.
+      I love design! I've learned a lot about UI/UX through personal experience:
+      by planning and designing my personal projects. By knowing concepts like
+      responsive design, interaction design, and accessibility, I can create
+      functional and stunning interfaces.
     </div>
   </React.Fragment>
 );
@@ -85,11 +84,11 @@ const BackendDevelopmentText = (
       Backend Development
     </h2>
     <div>
-      From my background in CS, I have practice with Object-Oriented
-      Programming, Data Structures & Algorithms, Database Design &
-      Implementation, and APIs. Testing, app reliablity, and security are super
-      important to me as a programmer. Some backend frameworks I am skilled at
-      include NodeJS, Express, Flask, and Django.
+      From my bachelors in CS from UC Santa Barbara, I have lots of experience
+      with backend programming: NoSQL, SQL, Data Structures & Algorithms,
+      Object-Oriented Programming, APIs, testing, and Operating Systems. Some
+      backend frameworks I have experience in include NodeJS, Express, Flask,
+      and Django.
     </div>
   </React.Fragment>
 );

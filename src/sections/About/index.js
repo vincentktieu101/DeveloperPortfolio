@@ -17,25 +17,23 @@ export default function About() {
             <br />
             <div>
               Hi! I'm <b>Vincent Tieu</b>, a <b>software engineer</b> and{" "}
-              <b>full-stack web developer</b>, based in <b>Los Angeles</b>. I am
+              <b>full-stack web developer</b>, based in <b>Los Angeles</b>! I am
               passionate about programming, whether that means starting a web
               project from scratch (like this online portfolio!) or developing
-              an existing codebase. I program because I enjoy problem-solving
-              and want a creative medium for achieving my goals.
+              an existing codebase.
             </div>
             <br />
             <div>
-              I'm currently a 3rd year <b>Computer Science</b> major at{" "}
-              <b>UC Santa Barbara</b> graduating <b>December '21</b>. I already
-              taken classes in Data Structures & Algorithms, Operating Systems,
-              Compilers, Databases, Artificial Intelligence, Web Development,
-              HCI, Networking, etc.
+              I'm a new graduate from <b>UC Santa Barbara</b> in{" "}
+              <b>Computer Science</b>! I enjoy programming, from designing and
+              developing frontends, building RESTful APIs, and optimizing
+              backend operations. I'm most comfortable in the React and NodeJS
+              frameworks.
             </div>
             <br />
             <div>
-              However, I also enjoy learning outside of the classroom. Here is
-              my portfolio for my personal projects, something I wish I could
-              elaborate more of on my{" "}
+              Below, you can view my professional experience as well as some
+              personal projects. For a quick summary, check out my{" "}
               <NewLink
                 href="https://drive.google.com/file/d/1C_F7pFjvxAtaEg8cRhYUk0UfXWM83t63/view?usp=sharing"
                 className="link link-ltr"

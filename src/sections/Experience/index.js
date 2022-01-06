@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 import ExperienceItem from "./ExperienceItem";
-import experiences from "./experiences-items/index";
+import experiences from "./experience-items";
 
 export default function Experience() {
   return (

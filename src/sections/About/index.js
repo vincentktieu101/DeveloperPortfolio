@@ -34,7 +34,7 @@ export default function About() {
               Below, you can view my professional experience as well as some
               personal projects. For a quick summary, check out my{" "}
               <NewLink
-                href="https://drive.google.com/file/d/1UQZ-4dJIKJW1wzn4xQyDO94vKZN6ngr2/view"
+                href="https://drive.google.com/drive/u/0/folders/1YqByLi_xIEFTmu5gQi651inomF3WKCec"
                 className="link link-ltr"
               >
                 resume

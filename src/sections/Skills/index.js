@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import SkillsHeader from "./SkillsHeader";
+import Header from "./Header";
 import Computer from "@images/main/computer.webp";
 import Backend from "@images/main/backend.webp";
 import Design from "@images/main/design.webp";
@@ -36,7 +36,7 @@ export default function AboutSkills() {
                 backgroundImage: `url(${background})`,
               }}
             />
-            <SkillsHeader />
+            <Header />
             <div className="about-skill__body">
               <div className="about-skill__text">{backgroundTexts[i]}</div>
             </div>

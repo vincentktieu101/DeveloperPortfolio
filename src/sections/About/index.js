@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 import UCSBBirdEyesView from "@images/main/ucsb-birdseyeview.jpg";
-import Skills from "./Skills";
+import Skills from "../Skills";
 import { AboutMainSummary, AboutUcsbImage } from "./styles";
 import NewLink from "@components/Link/NewLink";
 
@@ -52,7 +52,6 @@ export default function About() {
           </div>
         </div>
       </Container>
-      <Skills />
     </div>
   );
 }

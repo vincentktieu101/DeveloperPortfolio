@@ -68,7 +68,6 @@ export default function Projects() {
               size="large"
               variant="extended"
               color="primary"
-              onClick={() => {}}
             >
               <CloseIcon />
               <h6>Collapse Projects</h6>

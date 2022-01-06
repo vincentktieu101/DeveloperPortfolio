@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import ExperienceItems from "./ExperienceItems/index";
+import ExperienceItem from "./ExperienceItem";
+import experiences from "./experiences-items/index";
 
 export default function Experience() {
   return (
@@ -9,7 +10,11 @@ export default function Experience() {
         <h1 className="text-center">EXPERIENCE</h1>
         <hr />
         <br />
-        <ExperienceItems />
+        <div id="experience-items">
+          {experiences.map((experience) => (
+            <ExperienceItem {...experience} />
+          ))}
+        </div>
       </div>
     </Container>
   );

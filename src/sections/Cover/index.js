@@ -28,7 +28,7 @@ export default function Cover() {
         </CoverText>
         <CoverButtons>
           <NewLink
-            href="https://drive.google.com/file/d/1C_F7pFjvxAtaEg8cRhYUk0UfXWM83t63/view?usp=sharing"
+            href="https://drive.google.com/file/d/1UQZ-4dJIKJW1wzn4xQyDO94vKZN6ngr2/view"
             className="link-no-styles"
             style={{ width: "100%" }}
           >

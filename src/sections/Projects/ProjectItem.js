@@ -3,7 +3,7 @@ import { ModalContext } from "@components/Layout";
 import NewLink from "@components/Link/NewLink";
 import TodayIcon from "@material-ui/icons/Today";
 import LaunchIcon from "@material-ui/icons/Launch";
-import getTechIconsList from "./ProjectItems/getTechIconsList";
+import getTechIconsList from "./getTechIconsList";
 
 export default function Project({
   title,

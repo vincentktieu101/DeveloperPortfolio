@@ -9,6 +9,6 @@ const frontendDevelopment = {
   building functional interfaces into detailed architechitures that are
   ready for rapid continous development. I'm proficient with HTML, CSS, and
   Javascript along with tools like React, Redux, and Google OAuth.`,
-}
+};
 
 export default frontendDevelopment;

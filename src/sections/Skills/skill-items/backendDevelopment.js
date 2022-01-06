@@ -10,6 +10,6 @@ const backendDevelopment = {
   Object-Oriented Programming, APIs, testing, and Operating Systems. Some
   backend frameworks I have experience in include NodeJS, Express, Flask,
   and Django.`,
-}
+};
 
 export default backendDevelopment;

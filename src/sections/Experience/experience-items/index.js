@@ -7,7 +7,7 @@ import ugig from "./ugig";
 import ucsbComputerScience from "./ucsbComputerScience";
 import privateMathTutor from "./privateMathTutor";
 
-const experiences = [
+const experienceItems = [
   syntiant2,
   ucsbUndergraduateLearningAssistant2,
   syntiant,
@@ -18,4 +18,4 @@ const experiences = [
   privateMathTutor,
 ];
 
-export default experiences;
+export default experienceItems;

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Container from "@material-ui/core/Container";
-import { Link } from "gatsby";
 import Modal from "@material-ui/core/Modal";
 import Fab from "@material-ui/core/Fab";
+import { Link } from "gatsby";
 
 import { ModalContext } from "@components/Layout";
 import ProjectModalContent from "@components/ProjectModalContent";
-import ProjectItems from "./ProjectItems/Featured";
+import ProjectItem from "./ProjectItem";
+import featuredItems from "./project-items/featured";
 
 export default function Projects() {
   const [modal, setModal] = useState({
@@ -26,7 +27,6 @@ export default function Projects() {
   const handleClose = () => {
     setModal({ ...modal, open: false });
   };
-  const projectsItems = ProjectItems();
 
   return (
     <div id="projects">
@@ -50,24 +50,13 @@ export default function Projects() {
 
       <Container>
         <h1 className="text-center fade-in">
-          {/* <span className="emoji-shake">
-            <span role="img" aria-label="emoji" className="hover-shake">
-              🚀
-            </span>
-          </span>{" "} */}
-          FEATURED PROJECTS{" "}
-          {/* <span className="emoji-shake">
-            <span role="img" aria-label="emoji" className="hover-shake">
-              🌕
-            </span>
-          </span> */}
-          <hr />
+          FEATURED PROJECTS <hr />
         </h1>
         <ModalContext.Provider value={handleModal}>
-          {projectsItems.map((Component, i) => {
+          {featuredItems.map((project, i) => {
             return (
               <div key={i}>
-                <Component />
+                <ProjectItem {...project} />
               </div>
             );
           })}

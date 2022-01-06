@@ -3,6 +3,7 @@ import { ModalContext } from "@components/Layout";
 import NewLink from "@components/Link/NewLink";
 import TodayIcon from "@material-ui/icons/Today";
 import LaunchIcon from "@material-ui/icons/Launch";
+import getTechIconsList from "./ProjectItems/getTechIconsList";
 
 export default function Project({
   title,
@@ -10,7 +11,7 @@ export default function Project({
   date,
   images,
   description,
-  techIcons,
+  iconsList,
 }) {
   const handleModal = useContext(ModalContext);
   const linksComponent = (
@@ -58,7 +59,9 @@ export default function Project({
             );
           })}
         </div>
-        <div className="project-item-tech-row">{techIcons}</div>
+        <div className="project-item-tech-row">
+          {getTechIconsList(iconsList)}
+        </div>
         <div className="project-item-desc">{description}</div>
       </div>
     </div>

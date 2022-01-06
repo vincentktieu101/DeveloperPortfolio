@@ -7,7 +7,8 @@ import CloseIcon from "@material-ui/icons/Close";
 
 import { ModalContext } from "@components/Layout";
 import ProjectModalContent from "@components/ProjectModalContent";
-import ProjectItems from "./ProjectItems/All";
+import ProjectItem from "./ProjectItem";
+import projectItems from "./project-items";
 
 export default function Projects() {
   const [modal, setModal] = useState({
@@ -27,9 +28,6 @@ export default function Projects() {
   const handleClose = () => {
     setModal({ ...modal, open: false });
   };
-  const projectsItems = ProjectItems();
-  // const [projectsViewing, setProjectsViewing] = useState(3);
-  // const { enqueueSnackbar } = useSnackbar();
 
   return (
     <div id="projects">
@@ -53,24 +51,13 @@ export default function Projects() {
 
       <Container>
         <h1 className="text-center fade-in">
-          {/* <span className="emoji-shake">
-            <span role="img" aria-label="emoji" className="hover-shake">
-              🚀
-            </span>
-          </span>{" "} */}
-          PERSONAL PROJECTS{" "}
-          {/* <span className="emoji-shake">
-            <span role="img" aria-label="emoji" className="hover-shake">
-              🌕
-            </span>
-          </span> */}
-          <hr />
+          PERSONAL PROJECTS <hr />
         </h1>
         <ModalContext.Provider value={handleModal}>
-          {projectsItems.map((Component, i) => {
+          {projectItems.map((project, i) => {
             return (
               <div key={i}>
-                <Component />
+                <ProjectItem {...project} />
               </div>
             );
           })}

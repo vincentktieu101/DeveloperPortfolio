@@ -1,5 +1,5 @@
 import React from "react";
-import contactItems from "./contact-items";
+import contactItems from "@objects/contacts";
 import IconNewLink from "@components/Link/IconNewLink";
 
 export default function ContactInfo() {

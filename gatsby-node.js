@@ -16,6 +16,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         "@pages": path.resolve(__dirname, "src/pages"),
         "@sections": path.resolve(__dirname, "src/sections"),
         "@utils": path.resolve(__dirname, "src/utils"),
+        "@objects": path.resolve(__dirname, "src/objects"),
       },
     },
   });

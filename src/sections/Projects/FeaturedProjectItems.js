@@ -63,11 +63,7 @@ export default function Projects() {
         </ModalContext.Provider>
         <Link to="/all-projects">
           <div id="projects-fab" className="hidden">
-            <Fab
-              size="large"
-              variant="extended"
-              color="primary"
-            >
+            <Fab size="large" variant="extended" color="primary">
               <h6>See All Projects</h6>
             </Fab>
           </div>

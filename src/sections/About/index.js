@@ -3,6 +3,7 @@ import Container from "@material-ui/core/Container";
 import UCSBBirdEyesView from "@images/main/ucsb-birdseyeview.jpg";
 import { AboutMainSummary, AboutUcsbImage } from "./styles";
 import NewLink from "@components/Link/NewLink";
+import resume from "@utils/resume-link";
 
 export default function About() {
   return (
@@ -33,10 +34,7 @@ export default function About() {
             <div>
               Below, you can view my professional experience as well as some
               personal projects. For a quick summary, check out my{" "}
-              <NewLink
-                href="https://drive.google.com/file/d/1Ch2iSVpyJ4ceXsiwBEqqW-Fz9l3a6uW0/view?usp=sharing"
-                className="link link-ltr"
-              >
+              <NewLink href={resume} className="link link-ltr">
                 resume
               </NewLink>
               .

@@ -2,6 +2,7 @@ import React from "react";
 import VincentHeadshot from "@images/main/vincent-headshot.png";
 import { Link } from "gatsby";
 import NewLink from "@components/Link/NewLink";
+import resume from "@utils/resume-link";
 import {
   CoverBackground,
   CoverHeroImage,
@@ -28,7 +29,7 @@ export default function Cover() {
         </CoverText>
         <CoverButtons>
           <NewLink
-            href="https://drive.google.com/file/d/1Ch2iSVpyJ4ceXsiwBEqqW-Fz9l3a6uW0/view?usp=sharing"
+            href={resume}
             className="link-no-styles"
             style={{ width: "100%" }}
           >

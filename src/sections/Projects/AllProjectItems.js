@@ -64,11 +64,7 @@ export default function Projects() {
         </ModalContext.Provider>
         <Link to="/#projects">
           <div id="projects-fab" className="hidden">
-            <Fab
-              size="large"
-              variant="extended"
-              color="primary"
-            >
+            <Fab size="large" variant="extended" color="primary">
               <CloseIcon />
               <h6>Collapse Projects</h6>
             </Fab>

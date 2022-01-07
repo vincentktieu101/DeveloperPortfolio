@@ -26,7 +26,7 @@ export default function IndexPage() {
   return (
     <SnackbarProvider maxSnack={3}>
       <Layout>
-        <SEO title="Home" />
+        <SEO title="Vincent Tieu's Developer Portfolio" />
         <Cover />
         <About />
         <Skills />

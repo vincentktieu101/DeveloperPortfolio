@@ -1,13 +1,13 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import SkillItem from "./SkillItem";
-import skillItems from "@objects/skill-items";
+import skills from "@objects/skills";
 
 export default function Skills() {
   return (
     <div className="about-skill fade-in">
       <Carousel swipe={true} navButtonsAlwaysVisible={true} autoPlay={false}>
-        {skillItems.map((skill, i) => (
+        {skills.map((skill, i) => (
           <SkillItem key={i} {...skill} />
         ))}
       </Carousel>

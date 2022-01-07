@@ -9,8 +9,8 @@ export default function ContactInfo() {
         MORE INFO <hr style={{ width: "360px" }} />
       </h1>
       <br />
-      {contactItems.map((contact) => (
-        <IconNewLink {...contact} />
+      {contactItems.map((contact, i) => (
+        <IconNewLink key={i} {...contact} />
       ))}
     </div>
   );

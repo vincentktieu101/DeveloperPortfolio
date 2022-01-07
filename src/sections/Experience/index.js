@@ -11,8 +11,8 @@ export default function Experience() {
         <hr />
         <br />
         <div id="experience-items">
-          {experiences.map((experience) => (
-            <ExperienceItem {...experience} />
+          {experiences.map((experience, i) => (
+            <ExperienceItem key={i} {...experience} />
           ))}
         </div>
       </div>

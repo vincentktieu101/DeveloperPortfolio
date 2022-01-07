@@ -63,8 +63,12 @@ function Header() {
             )}
           </Link>
           <div className="desktop-render">
-            {sections.map((section) => (
-              <NavLink section={section} currentSection={currentSection} />
+            {sections.map((section, i) => (
+              <NavLink
+                key={i}
+                section={section}
+                currentSection={currentSection}
+              />
             ))}
           </div>
           <div className="mobile-render">

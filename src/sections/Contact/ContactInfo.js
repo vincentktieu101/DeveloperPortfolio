@@ -1,6 +1,6 @@
 import React from "react";
 import contactItems from "@objects/contacts";
-import IconNewLink from "@components/Link/IconNewLink";
+import IconExternalLink from "@components/Link/IconExternalLink";
 
 export default function ContactInfo() {
   return (
@@ -10,7 +10,7 @@ export default function ContactInfo() {
       </h1>
       <br />
       {contactItems.map((contact, i) => (
-        <IconNewLink key={i} {...contact} />
+        <IconExternalLink key={i} {...contact} />
       ))}
     </div>
   );

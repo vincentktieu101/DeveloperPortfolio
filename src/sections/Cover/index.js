@@ -1,7 +1,7 @@
 import React from "react";
 import VincentHeadshot from "@images/main/vincent-headshot.png";
 import { Link } from "gatsby";
-import NewLink from "@components/Link/NewLink";
+import ExternalLink from "@components/Link/ExternalLink";
 import resumeLink from "@objects/resume-link";
 import {
   CoverBackground,
@@ -28,18 +28,16 @@ export default function Cover() {
           </CoverAnimatedTitle>
         </CoverText>
         <CoverButtons>
-          <NewLink
+          <ExternalLink
             href={resumeLink}
-            className="link-no-styles"
             style={{ width: "100%" }}
           >
             <CoverButton variant="contained" color="primary">
               <h6>RESUME</h6>
             </CoverButton>
-          </NewLink>
+          </ExternalLink>
           <Link
             to="/#contact"
-            className="link-no-styles"
             style={{ width: "100%" }}
           >
             <CoverButton variant="contained">

@@ -1,5 +1,5 @@
 import React from "react";
-import NewLink from "@components/Link/NewLink";
+import ExternalLink from "@components/Link/ExternalLink";
 import TheShoppiesDesktop from "@images/projects/2021/theshoppies-desktop.png";
 import TheShoppiesMobile from "@images/projects/2021/theshoppies-mobile.png";
 
@@ -16,16 +16,16 @@ const theShoppies = {
       <div>
         Simple app used to enter in Shopify's UX & Web Developer Challenge
         listed{" "}
-        <NewLink
+        <ExternalLink
           href="https://docs.google.com/document/d/1SdR9rQpocsH5rPTOcxr9noqHRld5NJlylKO9Hf94U8U/edit#heading=h.31w9woubunro"
           className="link link-ltr"
         >
           here
-        </NewLink>
+        </ExternalLink>
         . This is an app that helps query for movies using the{" "}
-        <NewLink href="https://www.omdbapi.com/" className="link link-ltr">
+        <ExternalLink href="https://www.omdbapi.com/" className="link link-ltr">
           OMDb API
-        </NewLink>{" "}
+        </ExternalLink>{" "}
         so that users can "nominate" them and save their nominations to a
         database.
       </div>

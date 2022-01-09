@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import NewLink from "./Link/NewLink";
+import ExternalLink from "./Link/ExternalLink";
 
 export default function Footer() {
   return (
@@ -12,21 +12,21 @@ export default function Footer() {
         <div>
           Built with
           {` `}
-          <NewLink
+          <ExternalLink
             href="https://www.gatsbyjs.com"
-            style={{ color: "white" }}
+            color="white"
             className="link"
           >
             <b>Gatsby</b>
-          </NewLink>
+          </ExternalLink>
           . Check source code{" "}
-          <NewLink
+          <ExternalLink
             href="https://github.com/vincentktieu101/DeveloperPortfolio"
-            style={{ color: "white" }}
+            color="white"
             className="link"
           >
             <b>here</b>
-          </NewLink>
+          </ExternalLink>
           .
         </div>
       </Container>

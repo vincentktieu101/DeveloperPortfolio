@@ -1,5 +1,5 @@
 import React from "react";
-import NewLink from "@components/Link/NewLink";
+import ExternalLink from "@components/Link/ExternalLink";
 
 import NodeJSIcon from "@images/tech-icons/nodejs.svg";
 import ExpressJSIcon from "@images/tech-icons/expressjs.svg";
@@ -32,149 +32,149 @@ export default function Icons(iconsList) {
   }
 
   const NodeJS = (
-    <NewLink href="https://nodejs.org/en/">
+    <ExternalLink href="https://nodejs.org/en/">
       <img src={NodeJSIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const ExpressJS = (
-    <NewLink href="https://expressjs.com/">
+    <ExternalLink href="https://expressjs.com/">
       <img src={ExpressJSIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const ReactJS = (
-    <NewLink href="https://reactjs.org/">
+    <ExternalLink href="https://reactjs.org/">
       <img src={ReactJSIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const SocketIO = (
-    <NewLink href="https://socket.io/">
+    <ExternalLink href="https://socket.io/">
       <img src={SocketIOIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const Heroku = (
-    <NewLink href="https://www.heroku.com/">
+    <ExternalLink href="https://www.heroku.com/">
       <img src={HerokuIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const Netlify = (
-    <NewLink href="https://www.netlify.com/">
+    <ExternalLink href="https://www.netlify.com/">
       <img src={NetlifyIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const Github = (
-    <NewLink href="https://pages.github.com/">
+    <ExternalLink href="https://pages.github.com/">
       <img src={GithubIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const Arduino = (
-    <NewLink href="https://www.arduino.cc/">
+    <ExternalLink href="https://www.arduino.cc/">
       <img src={ArduinoIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const GoogleDevelopers = (
-    <NewLink href="https://developers.google.com/">
+    <ExternalLink href="https://developers.google.com/">
       <img src={GoogleDevelopersIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const OpenCV = (
-    <NewLink href="https://opencv.org/">
+    <ExternalLink href="https://opencv.org/">
       <img src={OpenCVIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const GatsbyJS = (
-    <NewLink href="https://opencv.org/">
+    <ExternalLink href="https://opencv.org/">
       <img src={GatsbyJSIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const NextJS = (
-    <NewLink href="https://nextjs.org/">
+    <ExternalLink href="https://nextjs.org/">
       <img src={NextJSIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const Cypress = (
-    <NewLink href="https://www.cypress.io/">
+    <ExternalLink href="https://www.cypress.io/">
       <img
         src={CypressIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </NewLink>
+    </ExternalLink>
   );
   const Auth0 = (
-    <NewLink href="https://auth0.com/">
+    <ExternalLink href="https://auth0.com/">
       <img src={Auth0Icon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const Pygame = (
-    <NewLink href="https://www.pygame.org/">
+    <ExternalLink href="https://www.pygame.org/">
       <img src={PygameIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const Python = (
-    <NewLink href="https://www.python.org/">
+    <ExternalLink href="https://www.python.org/">
       <img
         src={PythonIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "-5px", height: "50px" }}
       />
-    </NewLink>
+    </ExternalLink>
   );
   const Jest = (
-    <NewLink href="https://jestjs.io/">
+    <ExternalLink href="https://jestjs.io/">
       <img src={JestIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const MaterialUI = (
-    <NewLink href="https://material-ui.com/">
+    <ExternalLink href="https://material-ui.com/">
       <img src={MaterialUIIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const ReactBootstrap = (
-    <NewLink href="https://react-bootstrap.github.io/">
+    <ExternalLink href="https://react-bootstrap.github.io/">
       <img src={ReactBootstrapIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const Scratch = (
-    <NewLink href="https://scratch.mit.edu/">
+    <ExternalLink href="https://scratch.mit.edu/">
       <img src={ScratchIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const Javascript = (
-    <NewLink href="https://www.javascript.com/">
+    <ExternalLink href="https://www.javascript.com/">
       <img
         src={JavascriptIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </NewLink>
+    </ExternalLink>
   );
   const Firebase = (
-    <NewLink href="https://firebase.google.com/">
+    <ExternalLink href="https://firebase.google.com/">
       <img src={FirebaseIcon} className="project-tech-icon" alt="" />
-    </NewLink>
+    </ExternalLink>
   );
   const MongoDB = (
-    <NewLink href="https://www.mongodb.com/">
+    <ExternalLink href="https://www.mongodb.com/">
       <img
         src={MongoDBIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </NewLink>
+    </ExternalLink>
   );
   const Cpp = (
-    <NewLink href="https://www.cplusplus.com/">
+    <ExternalLink href="https://www.cplusplus.com/">
       <img
         src={CppIcon}
         className="project-tech-icon"
         alt=""
         style={{ marginBottom: "10px", height: "30px" }}
       />
-    </NewLink>
+    </ExternalLink>
   );
 
   const techIconsDict = {

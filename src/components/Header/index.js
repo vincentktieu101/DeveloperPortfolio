@@ -50,7 +50,7 @@ function Header() {
     <header id="nav-bar">
       <Container>
         <div className="nav-items">
-          <Link to="/" className="brand link-no-styles">
+          <Link to="/" className="brand">
             {navShrink ? (
               <React.Fragment>
                 <BrandName>VINCENT'S</BrandName>

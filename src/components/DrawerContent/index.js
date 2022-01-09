@@ -14,7 +14,7 @@ import ContactMailIcon from "@material-ui/icons/ContactMail";
 export default function Sidebar() {
   return (
     <List>
-      <Link to="/" className="link-no-styles">
+      <Link to="/">
         <ListItem button key={"Home"}>
           <ListItemIcon>
             <HomeIcon />
@@ -24,7 +24,7 @@ export default function Sidebar() {
           </ListItemText>
         </ListItem>
       </Link>
-      <Link to="/#about" className="link-no-styles">
+      <Link to="/#about">
         <ListItem button>
           <ListItemIcon>
             <MenuBookIcon />
@@ -34,7 +34,7 @@ export default function Sidebar() {
           </ListItemText>
         </ListItem>
       </Link>
-      <Link to="/#experience" className="link-no-styles">
+      <Link to="/#experience">
         <ListItem button>
           <ListItemIcon>
             <WorkIcon />
@@ -44,7 +44,7 @@ export default function Sidebar() {
           </ListItemText>
         </ListItem>
       </Link>
-      <Link to="/#projects" className="link-no-styles">
+      <Link to="/#projects">
         <ListItem button>
           <ListItemIcon>
             <CodeIcon />
@@ -54,7 +54,7 @@ export default function Sidebar() {
           </ListItemText>
         </ListItem>
       </Link>
-      <Link to="/#contact" className="link-no-styles">
+      <Link to="/#contact">
         <ListItem button>
           <ListItemIcon>
             <ContactMailIcon />

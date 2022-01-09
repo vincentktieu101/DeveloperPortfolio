@@ -2,7 +2,7 @@ import React from "react";
 import Container from "@material-ui/core/Container";
 import UCSBBirdEyesView from "@images/main/ucsb-birdseyeview.jpg";
 import { AboutMainSummary, AboutUcsbImage } from "./styles";
-import NewLink from "@components/Link/NewLink";
+import ExternalLink from "@components/Link/ExternalLink";
 import resumeLink from "@objects/resume-link";
 
 export default function About() {
@@ -34,9 +34,9 @@ export default function About() {
             <div>
               Below, you can view my professional experience as well as some
               personal projects. For a quick summary, check out my{" "}
-              <NewLink href={resumeLink} className="link link-ltr">
+              <ExternalLink href={resumeLink} className="link link-ltr">
                 resume
-              </NewLink>
+              </ExternalLink>
               .
             </div>
           </AboutMainSummary>

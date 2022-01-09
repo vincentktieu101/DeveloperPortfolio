@@ -8,12 +8,8 @@ function NavLink(props) {
   return (
     <Link
       to={`/${route}`}
-      className={
-        currentSection === section
-          ? "nav-link nav-link-ltr"
-          : "nav-link-disabled nav-link-ltr"
-      }
-      style={{ margin: "0 10px" }}
+      className={`nav-link-ltr ${currentSection === section ? "nav-link" : "nav-link-disabled"}`}
+      style={{marginRight: "10px", marginLeft: "10px"}}
     >
       <b>{section.toUpperCase()}</b>
     </Link>

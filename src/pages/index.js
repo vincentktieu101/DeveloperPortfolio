@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { SnackbarProvider } from "notistack";
-import "../styles/index.css";
+import "../styles/index.scss";
 
 import Layout from "@components/Layout";
 import SEO from "@components/SEO";

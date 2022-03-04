@@ -1,4 +1,6 @@
 const resumeLinks = [
+  // changed some colors
+  "https://drive.google.com/file/d/18mxyuAKMZTMi0VhnKUe4g1SYo1RpYQ4M/view?usp=sharing",
   // made bullets less specific to working on an MVP and more focused towards impact and technical accomplishment
   // also added full-stack to job positions
   "https://drive.google.com/file/d/1bzaPkRKDJM-4bGl41XF3pifm3PyV_imQ/view?usp=sharing",

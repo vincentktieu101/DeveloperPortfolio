@@ -1,7 +1,8 @@
+import zipRecruiter from "./zipRecruiter";
 import syntiant2 from "./syntiant2";
-import codePath from "./codePath";
-import ucsbUndergraduateLearningAssistant2 from "./ucsbUndergraduateAssistant2";
 import syntiant from "./syntiant";
+import ucsbUndergraduateLearningAssistant2 from "./ucsbUndergraduateAssistant2";
+import codePath from "./codePath";
 import ucsbUndergraduateLearningAssistant from "./ucsbUndergraduateAssistant";
 import ugig from "./ugig";
 import ucsbComputerScience from "./ucsbComputerScience";
@@ -17,9 +18,10 @@ interface experience {
 }
 
 const experiences: experience[] = [
+  zipRecruiter,
   syntiant2,
-  ucsbUndergraduateLearningAssistant2,
   syntiant,
+  ucsbUndergraduateLearningAssistant2,
   codePath,
   ucsbUndergraduateLearningAssistant,
   ugig,

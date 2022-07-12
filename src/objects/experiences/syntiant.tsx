@@ -1,10 +1,10 @@
 const Syntiant = {
   type: "work",
-  title: "Software Engineer Intern",
+  title: "Full-Stack Software Engineer Intern",
   company: "Syntiant",
   location: "Irvine CA",
   time: "June 2021 - December 2021",
-  text: `Worked full-time doing feature and test development for a React application involved in crowdsourcing.`,
+  text: `Revived legacy React application used for crowdsourcing audio data and successfully developed a React frontend POC for a new adminstrative feature for creating new crowdsourcing campaigns.`,
 };
 
 export default Syntiant;

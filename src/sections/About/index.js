@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div id="about">
       <Container>
-        <div className="flex-space-around" style={{ marginBottom: "15vh" }}>
+        <div className="flex-space-around">
           <AboutMainSummary className="fade-in">
             <h1 className="text-center">
               ABOUT ME <hr />

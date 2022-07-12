@@ -1,13 +1,10 @@
 const UcsbComputerScience = {
   type: "school",
-  title: "Bachelors in Computer Science",
+  title: "Bachelors of Science in Computer Science",
   company: "UCSB",
   location: "Santa Barbara CA",
   time: "September 2018 - December 2021",
-  text: `I'm currently a 3rd year Computer Science major at
-UC Santa Barbara, (already taken / currently taking) classes in 
-Data Structures & Algorithms, Operating Systems, Compilers, 
-Databases, Artificial Intellegence, Web Development, HCI, Networking, etc.`,
+  text: `Graduated with a 3.75 with 8 quarters of Dean's Honors. Some notable classes I took included Data Structures and Algorithms, Web Development in Java and React, Human-Computer Interaction, Databases, Operating Systems, Compiliers, AI, and ML`,
 };
 
 export default UcsbComputerScience;

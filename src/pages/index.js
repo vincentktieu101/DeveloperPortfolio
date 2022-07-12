@@ -6,7 +6,7 @@ import Layout from "@components/Layout";
 import SEO from "@components/SEO";
 import Cover from "@sections/Cover";
 import About from "@sections/About";
-import Skills from "@sections/Skills";
+// import Skills from "@sections/Skills";
 import Contact from "@sections/Contact";
 import Experience from "@sections/Experience";
 import Projects from "@sections/Projects/FeaturedProjectItems";
@@ -29,7 +29,7 @@ export default function IndexPage() {
         <SEO title="Vincent Tieu's Developer Portfolio" />
         <Cover />
         <About />
-        <Skills />
+        {/* <Skills /> */}
         <Experience />
         <Projects />
         <Contact />

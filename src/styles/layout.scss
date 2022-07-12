@@ -10,25 +10,6 @@
   overflow: hidden;
 }
 
-#about,
-#experience,
-#projects,
-#contact {
-  min-height: 30vh;
-}
-
-#about,
-#experience,
-#projects,
-#contact {
-  padding-top: 10vh;
-}
-
-#contact-info,
-#contact-form {
-  padding-bottom: 10vh
-}
-
 @media (min-width: 700px) {
   #about,
   #experience,
